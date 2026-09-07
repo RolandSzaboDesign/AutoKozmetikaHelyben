@@ -1,0 +1,16 @@
+[
+  {
+    "text": "Roland, nagyon menő lett az autó így tisztán!",
+    "author": "Zsóki",
+    "car": "Toyota Yaris",
+    "image": "/assets/images/testimonial-yaris.webp",
+    "imageAlt": "A megtisztított Toyota Yaris"
+  },
+  {
+    "text": "Nagyon meglepődtem, hogy milyen tiszta lett!",
+    "author": "Ádám",
+    "car": "Nissan Qashqai",
+    "image": "/assets/images/testimonial-qashqai.webp",
+    "imageAlt": "A megtisztított Nissan Qashqai"
+  }
+]

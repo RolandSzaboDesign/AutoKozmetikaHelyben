@@ -1,0 +1,38 @@
+[
+  {
+    "question": "Mennyibe kerül?",
+    "answer": "Minden autó más állapotban van, és nem mindenkinek ugyanazokra a kezelésekre van szüksége. Ezért nem használok fix csomagárakat. Az ingyenes állapotfelmérés után ott helyben kapsz konkrét árajánlatot."
+  },
+  {
+    "question": "Kérhetek csak külső vagy csak belső takarítást?",
+    "answer": "Persze. A külső és a belső takarítás külön is kérhető, és a választható kezelésekből is csak azt választod, amire szükséged van."
+  },
+  {
+    "question": "Kell vizet vagy áramot biztosítanom?",
+    "answer": "Nem. A szükséges vizet és az akkumulátoros eszközöket is én viszem magammal."
+  },
+  {
+    "question": "Hol vállalsz autókozmetikát?",
+    "answer": "Elsősorban a XXII., XI., XX. és XXI. kerületben, valamint Szigetszentmiklóson és a Campona környékén dolgozom. Távolabbi helyszín is megoldható, ilyenkor a kiszállás költségét előre megbeszéljük."
+  },
+  {
+    "question": "Mennyi ideig tart?",
+    "answer": "A választott szolgáltatásoktól és az autó állapotától függően általában 1–3 órával érdemes számolni."
+  },
+  {
+    "question": "Mi történik, ha rossz az idő?",
+    "answer": "Esőben vagy havazásban nem tudok megfelelően dolgozni, ilyenkor új időpontot egyeztetünk. Napos időben is megoldható a munka, ha van megfelelő hely az autó körül."
+  },
+  {
+    "question": "Milyen állapotú autót vállalsz?",
+    "answer": "Elsősorban rendszeresen használt, enyhén vagy közepesen szennyezett autókat vállalok. Extrém szennyeződést, penészes belteret, erős dohányfüstöt vagy komoly kárpittisztítást igénylő autót jelenleg nem vállalok."
+  },
+  {
+    "question": "Ott kell maradnom az autó mellett?",
+    "answer": "Nem. Az állapotfelmérés és az egyeztetés után nyugodtan intézheted a dolgaidat, amíg az autón dolgozom."
+  },
+  {
+    "question": "Hogyan tudok fizetni?",
+    "answer": "Készpénzzel és azonnali banki átutalással is tudsz fizetni."
+  }
+]

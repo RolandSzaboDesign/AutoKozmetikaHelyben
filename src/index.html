@@ -1,0 +1,247 @@
+---
+layout: base.html
+title: Mobil autókozmetika Dél-Budán
+description: Tiszta, ápolt autó anélkül, hogy rámenne a fél napod. Mobil autókozmetika Dél-Budán és környékén, ingyenes helyszíni állapotfelméréssel.
+---
+
+<script type="application/ld+json">{{ schema | json }}</script>
+
+<main id="tartalom">
+  <section class="hero section">
+    <div class="container container--narrow">
+      <h1 class="eyebrow hero__eyebrow">Mobil autókozmetika Dél-Budán és környékén</h1>
+      <p class="hero__title">Tiszta, ápolt autó anélkül, hogy rámenne a fél napod.</p>
+      <p class="hero__lead">Én megyek hozzád, így nem kell autókozmetikába vinned az autót, várnod rá vagy visszabuszoznod érte.</p>
+      <div class="hero__actions">
+        <a class="button" href="#kapcsolat">Ingyenes állapotfelmérés</a>
+        <a class="text-link" href="{{ site.contact.telephoneHref }}">{{ site.author.telephone }}</a>
+      </div>
+      <p class="hero__note">Kérhetsz csak külső vagy csak belső takarítást is. Az ingyenes felmérés után helyben kapsz konkrét ajánlatot.</p>
+    </div>
+  </section>
+
+  <section id="szolgaltatasok" class="section section--soft services">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Mit tudok megcsinálni?</h2>
+        <p class="services__intro">Kérhetsz csak külső vagy csak belső takarítást is. Ezek mellé választhatsz további kezeléseket az autó állapota és az igényeid alapján.</p>
+      </div>
+
+      <div class="services__grid">
+        <article class="service-card">
+          <header class="service-card__header">
+            <div>
+              <h3>Külső tisztítás és ápolás</h3>
+              <p class="service-card__availability">Külön is kérhető</p>
+            </div>
+            <p class="service-card__lead">Kézi külső mosás úgy, hogy a helyszínen nincs szükség víz- vagy áramcsatlakozásra.</p>
+          </header>
+
+          <h4 class="eyebrow treatment-heading">Választható kezelések</h4>
+          <ul class="treatment-list">
+            <li><strong>Viaszvédelem</strong><span>Tovább marad tiszta, és a következő mosás is könnyebb.</span></li>
+            <li><strong>Üvegek tisztítása és vízlepergető kezelése</strong><span>Tiszta kilátás és kevésbé tapadó esővíz.</span></li>
+            <li><strong>Felnik mélytisztítása és védelme</strong><span>Eltűnik a lerakódott fékpor, a viasz pedig segít tisztán tartani a felületet.</span></li>
+            <li><strong>Gumik tisztítása és ápolása</strong><span>A barnult, fakó oldalfal helyett természetes, gyári jellegű megjelenés.</span></li>
+            <li><strong>Külső műanyagok ápolása</strong><span>A kifakult felületek rendezettebb, egységesebb megjelenést kapnak.</span></li>
+            <li><strong>Ajtó- és csomagtartókeretek tisztítása</strong><span>Azok a részek is tiszták lesznek, amik a mosásnál gyakran kimaradnak.</span></li>
+            <li><strong>Rovar- és vízkőfoltok kezelése</strong><span>A makacs, rászáradt szennyeződéseket célzottan kezelem.</span></li>
+            <li><strong>Motortér kíméletes tisztítása</strong><span>Állapottól függően, biztonságosan tisztítható motortérnél.</span></li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <header class="service-card__header">
+            <div>
+              <h3>Belső takarítás és ápolás</h3>
+              <p class="service-card__availability">Külön is kérhető</p>
+            </div>
+            <p class="service-card__lead">Porszívózás, portalanítás, az általános belső felületek kíméletes tisztítása és az üvegek csíkmentes takarítása.</p>
+          </header>
+
+          <h4 class="eyebrow treatment-heading">Választható kezelések</h4>
+          <ul class="treatment-list">
+            <li><strong>Belső felületek részletes tisztítása és ápolása</strong><span>Az anyaghoz és az állapothoz megfelelő szerrel.</span></li>
+            <li><strong>Nehezen elérhető rések tisztítása</strong><span>A hétköznapi takarításnál kimaradó apró helyekhez is hozzáférek.</span></li>
+            <li><strong>Csomagtér takarítása</strong><span>Ha ott is összegyűlt a használatból adódó por és kosz.</span></li>
+            <li><strong>Tetőkárpit kíméletes tisztítása</strong><span>Ha az anyaga és az állapota biztonságosan lehetővé teszi.</span></li>
+            <li><strong>Egyedi foltok kezelése</strong><span>Ha a folt a rendelkezésre álló módszerekkel biztonságosan eltávolítható.</span></li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="services__note">Az állapotfelmérésen megmutatom, mit látok az autón, és elmondom, melyik kezelésnek lehet értelme. <strong>Te döntöd el, mit kérsz belőle.</strong></p>
+    </div>
+  </section>
+
+  <section id="kapcsolat" class="section contact-section">
+    <div class="container contact-layout">
+      <div class="contact-copy">
+        <h2>Megnézzük az autódat?</h2>
+        <p>Kérj visszahívást, és megbeszéljük, hol van az autó, milyen állapotban van, és mikor tudom személyesen megnézni.</p>
+        <p class="contact-copy__small">Az állapotfelmérés ingyenes és nem kötelez megrendelésre. Utána ott helyben konkrét árajánlatot kapsz. Nincs fix csomag, csak azt választod, amire szükséged van.</p>
+
+        <div class="direct-contact">
+          <a class="direct-contact__phone" href="{{ site.contact.telephoneHref }}">{{ site.author.telephone }}</a>
+          <a href="{{ site.contact.emailHref }}">{{ site.author.email }}</a>
+          <div class="social-links" aria-label="További kapcsolatfelvételi lehetőségek">
+            <a href="{{ site.contact.messenger }}">Messenger</a>
+            <a href="{{ site.contact.whatsapp }}">WhatsApp</a>
+            <a href="{{ site.contact.instagram }}">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="callback-form" name="visszahivas" method="POST" action="/koszonom/" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="visszahivas">
+        <p class="visually-hidden"><label>Ne töltsd ki ezt a mezőt: <input name="bot-field"></label></p>
+
+        <div class="field">
+          <label for="name">Név</label>
+          <input id="name" name="nev" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="phone">Telefonszám</label>
+          <input id="phone" name="telefonszam" type="tel" autocomplete="tel" inputmode="tel" required>
+        </div>
+        <div class="field">
+          <label for="car">Autó típusa</label>
+          <input id="car" name="auto-tipusa" type="text" placeholder="2010 Ford Focus kombi" required>
+        </div>
+        <div class="field">
+          <label for="location">Kerület / település</label>
+          <input id="location" name="helyszin" type="text" placeholder="pl. XXII. kerület" required>
+        </div>
+
+        <details class="form-extra" data-focus-on-open="#message">
+          <summary>Szeretnél még valamit hozzátenni?</summary>
+          <div class="field field--textarea">
+            <label for="message">Megjegyzés <span>(nem kötelező)</span></label>
+            <textarea id="message" name="megjegyzes" rows="4"></textarea>
+          </div>
+        </details>
+
+        <button class="button button--full" type="submit">Hívj vissza</button>
+        <p class="form-note">Elküldés után telefonon kereslek a további egyeztetéshez.</p>
+        <p class="form-privacy">A megadott adataidat csak a kapcsolatfelvételhez használom. <a href="/adatkezeles/">Adatkezelési tájékoztató</a></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section section--soft process-results">
+    <div class="container process-results__grid">
+      <section class="results" aria-labelledby="results-title">
+        <h2 id="results-title" class="eyebrow">Előtte / utána</h2>
+        <div class="before-after-grid">
+          <figure class="before-after-item">
+            <img class="before-after-image" src="/assets/images/before-after-01.webp" alt="Külső műanyag tisztítás előtt és után" width="1400" height="980" loading="lazy">
+            <figcaption>Külső műanyag tisztítása és ápolása</figcaption>
+          </figure>
+          <figure class="before-after-item">
+            <img class="before-after-image" src="/assets/images/before-after-02.webp" alt="Gumi tisztítás előtt és után" width="1400" height="980" loading="lazy">
+            <figcaption>Gumi tisztítása és ápolása</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="process" aria-labelledby="process-title">
+        <h2 id="process-title">Így működik</h2>
+        <ol class="steps">
+          <li>
+            <span class="steps__number" aria-hidden="true">1</span>
+            <div><h3>Beszélünk pár percet</h3><p>Felhívsz, vagy kérsz visszahívást. Megbeszéljük, hol van az autó, nagyjából milyen állapotban van, és mikor tudom megnézni.</p></div>
+          </li>
+          <li>
+            <span class="steps__number" aria-hidden="true">2</span>
+            <div><h3>Megnézem az autót</h3><p>Az állapotfelmérés ingyenes. Átbeszéljük, mit szeretnél, mit érdemes megcsinálni, és ott helyben mondok rá konkrét árat.</p></div>
+          </li>
+          <li>
+            <span class="steps__number" aria-hidden="true">3</span>
+            <div><h3>Rendbe rakom</h3><p>Ha előre úgy egyeztettünk és minden adott, akár rögtön neki is állhatok.</p></div>
+          </li>
+        </ol>
+        <div class="utility-note"><strong>Nem kell vizet vagy áramot biztosítanod.</strong> Mindent viszek magammal, ami a munkához szükséges.</div>
+      </section>
+    </div>
+  </section>
+
+  <section class="section about-reviews">
+    <div class="container about-reviews__grid">
+      <article class="about">
+        <h2>Ki fogja rendbe rakni az autódat?</h2>
+        <div class="about__profile">
+          {% if site.author.image %}
+            <img class="about__avatar" src="{{ site.author.image }}" alt="{{ site.author.imageAlt }}" width="96" height="96" loading="lazy">
+          {% else %}
+            <div class="about__avatar about__avatar--placeholder" aria-hidden="true">Fotó</div>
+          {% endif %}
+          <p>Roland vagyok. Fotósként régóta dolgozom autókkal, a sajátomat pedig képtelen vagyok békén hagyni, ha meglátom, hogy koszos.</p>
+        </div>
+        <p>Szeretem, ha egy autó tiszta, rendezett és ápolt, de azt is tudom, hogy nem mindenkinek van ideje órákat tölteni vele. Ezért megyek inkább én hozzád, és csinálom meg helyben.</p>
+        <p>Nem célom mindent rábeszélni az autódra. Megnézem, milyen állapotban van, elmondom, szerintem minek van értelme, aztán te döntöd el, mit kérsz.</p>
+      </article>
+
+      <aside class="reviews" aria-labelledby="reviews-title">
+        <h2 id="reviews-title" class="eyebrow reviews__title">Ezt mondták eddig</h2>
+        <div class="reviews__list">
+          {% for item in testimonials %}
+            <blockquote class="review">
+              {% if item.image %}
+                <img class="review__photo" src="{{ item.image }}" alt="{{ item.imageAlt }}" width="1200" height="800" loading="lazy">
+              {% else %}
+                <div class="review__photo review__photo--placeholder" aria-hidden="true">Autófotó</div>
+              {% endif %}
+              <div class="review__content">
+                <p>„{{ item.text }}”</p>
+                <footer><strong>{{ item.author }}</strong><span>{{ item.car }}</span></footer>
+              </div>
+            </blockquote>
+          {% endfor %}
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--soft faq-section">
+    <div class="container container--narrow">
+      <div class="section-heading">
+        <h2>Gyakori kérdések</h2>
+      </div>
+      <div class="faq-list">
+        {% for item in faq %}
+          <details class="faq-item">
+            <summary>{{ item.question }}</summary>
+            <p>{{ item.answer }}</p>
+          </details>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="container container--narrow final-cta__inner">
+      <p class="eyebrow">Ha rendbe raknád az autódat</p>
+      <h2>Megnézzük?</h2>
+      <p>Kérj ingyenes állapotfelmérést, vagy hívj fel közvetlenül.</p>
+      <div class="final-cta__actions">
+        <a class="button" href="#kapcsolat">Ingyenes állapotfelmérés</a>
+        <a class="button button--secondary" href="{{ site.contact.telephoneHref }}">{{ site.author.telephone }}</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p class="site-footer__title">Mobil autókozmetika Dél-Budán és környékén.</p>
+    <div class="site-footer__links" aria-label="Kapcsolat">
+      <a href="{{ site.contact.telephoneHref }}">{{ site.author.telephone }}</a>
+      <a href="{{ site.contact.emailHref }}">{{ site.author.email }}</a>
+      <a href="{{ site.contact.messenger }}">Messenger</a>
+      <a href="{{ site.contact.whatsapp }}">WhatsApp</a>
+      <a href="{{ site.contact.instagram }}">Instagram</a>
+      <a href="/adatkezeles/">Adatkezelés</a>
+    </div>
+    <p class="site-footer__copyright">© 2026 Szabó Roland</p>
+  </div>
+</footer>

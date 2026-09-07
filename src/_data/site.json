@@ -1,0 +1,24 @@
+{
+  "title": "Autókozmetika helyben",
+  "homepage_title": "Mobil autókozmetika Dél-Budán",
+  "tagline": "Mobil autókozmetika Dél-Budán és környékén",
+  "description_short": "Mobil autókozmetika Dél-Budán és környékén. Külső és belső tisztítás, választható ápoló kezelések, ingyenes helyszíni állapotfelméréssel.",
+  "description_long": "Tiszta, ápolt autó anélkül, hogy rámenne a fél napod. Helyszíni autókozmetika Dél-Budán és környékén, ingyenes állapotfelméréssel és egyedi árajánlattal.",
+  "url": "https://autokozmetikahelyben.hu",
+  "lang": "hu",
+  "locale": "hu_HU",
+  "author": {
+    "name": "Szabó Roland",
+    "email": "szaboka89@gmail.com",
+    "telephone": "+36 20 591 4620",
+    "image": "/assets/images/roland.webp",
+    "imageAlt": "Szabó Roland"
+  },
+  "contact": {
+    "telephoneHref": "tel:+36205914620",
+    "emailHref": "mailto:szaboka89@gmail.com",
+    "messenger": "https://m.me/szaboka89",
+    "whatsapp": "https://wa.me/36205914620",
+    "instagram": "https://www.instagram.com/rolandszabo.photo/"
+  }
+}
