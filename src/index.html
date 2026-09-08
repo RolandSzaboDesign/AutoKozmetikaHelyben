@@ -9,9 +9,9 @@ description: Tiszta, ápolt autó anélkül, hogy rámenne a fél napod. Mobil a
 <main id="tartalom">
   <section class="hero section">
     <div class="container container--narrow">
-      <h1 class="eyebrow hero__eyebrow">Mobil autókozmetika Dél-Budán és környékén</h1>
+      <h1 class="eyebrow hero__eyebrow">Mobil autókozmetika a Campona környékén és Dél-Budán</h1>
       <p class="hero__title">Tiszta, ápolt autó anélkül, hogy rámenne a fél napod.</p>
-      <p class="hero__lead">Én megyek hozzád, így nem kell autókozmetikába vinned az autót, várnod rá vagy visszabuszoznod érte.</p>
+      <p class="hero__lead">Az állapotfelmérés ingyenes, kb. 5 perc és nem kötelez megrendelésre. Utána helyben kapsz konkrét ajánlatot.</p>
       <div class="hero__actions">
         <a class="button" href="#kapcsolat">Ingyenes állapotfelmérés</a>
         <a class="text-link" href="{{ site.contact.telephoneHref }}">{{ site.author.telephone }}</a>
@@ -94,6 +94,12 @@ description: Tiszta, ápolt autó anélkül, hogy rámenne a fél napod. Mobil a
 
       <form class="callback-form" name="visszahivas" method="POST" action="/koszonom/" netlify netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="visszahivas">
+        <input type="hidden" name="utm_source">
+        <input type="hidden" name="utm_medium">
+        <input type="hidden" name="utm_campaign">
+        <input type="hidden" name="utm_content">
+        <input type="hidden" name="utm_placement">
+        <input type="hidden" name="landing_url">
         <p class="visually-hidden"><label>Ne töltsd ki ezt a mezőt: <input name="bot-field"></label></p>
 
         <div class="field">
@@ -106,11 +112,11 @@ description: Tiszta, ápolt autó anélkül, hogy rámenne a fél napod. Mobil a
         </div>
         <div class="field">
           <label for="car">Autó típusa</label>
-          <input id="car" name="auto-tipusa" type="text" placeholder="2010 Ford Focus kombi" required>
+          <input id="car" name="auto-tipusa" type="text" placeholder="pl. 2010 Ford Focus" required>
         </div>
         <div class="field">
           <label for="location">Kerület / település</label>
-          <input id="location" name="helyszin" type="text" placeholder="pl. XXII. kerület" required>
+          <input id="location" name="helyszin" type="text" placeholder="pl. XXII. Rózsakert utca" required>
         </div>
 
         <details class="form-extra" data-focus-on-open="#message">

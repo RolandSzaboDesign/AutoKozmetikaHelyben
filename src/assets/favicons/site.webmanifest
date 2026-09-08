@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Autókozmetika helyben",
+    "short_name": "Autókozmetika",
     "icons": [
         {
             "src": "/assets/favicons/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#f7f5ef",
+    "background_color": "#f7f5ef"
     "display": "standalone"
 }
