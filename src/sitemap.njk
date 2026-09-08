@@ -8,7 +8,6 @@ eleventyExcludeFromCollections: true
   {%- if item.data.robots != "noindex, follow" %}
   <url>
     <loc>{{ site.url }}{{ item.url | url | replace("index.html", "") }}</loc>
-    <lastmod>{{ item.date.toISOString() }}</lastmod>
   </url>
   {%- endif %}
 {%- endfor %}

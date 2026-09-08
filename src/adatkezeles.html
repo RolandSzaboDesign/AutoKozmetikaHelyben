@@ -1,7 +1,7 @@
 ---
 layout: base.html
 title: Adatkezelési tájékoztató | Autókozmetika helyben
-description: Az autokozmetikahelyben.hu kapcsolatfelvételi űrlapjának adatkezelési tájékoztatója.
+description: Az autokozmetikahelyben.hu kapcsolatfelvételi űrlapjának és webanalitikájának adatkezelési tájékoztatója.
 robots: noindex, follow
 ---
 
@@ -10,27 +10,62 @@ robots: noindex, follow
     <div class="container container--narrow legal-page__content">
       <p class="eyebrow">Adatkezelés</p>
       <h1>Adatkezelési tájékoztató</h1>
-      <p>Ez a rövid tájékoztató az autokozmetikahelyben.hu kapcsolatfelvételi űrlapján megadott adatok kezelésére vonatkozik.</p>
+      <p>Ez a tájékoztató az autokozmetikahelyben.hu kapcsolatfelvételi űrlapjára, az egyeztetéshez szükséges adatokra és a weboldal látogatottságának mérésére vonatkozik.</p>
 
-      <h2>Ki kezeli az adatokat?</h2>
-      <p><strong>Adatkezelő:</strong> Szabó Roland<br>
+      <h2>1. Az adatkezelő adatai</h2>
+      <p><strong>Név:</strong> Szabó Roland egyéni vállalkozó<br>
+      <strong>Cím:</strong> 1223 Budapest, Rózsakert utca 19/c<br>
       <strong>E-mail:</strong> <a href="{{ site.contact.emailHref }}">{{ site.author.email }}</a><br>
       <strong>Telefon:</strong> <a href="{{ site.contact.telephoneHref }}">{{ site.author.telephone }}</a></p>
 
-      <h2>Milyen adatokat kérek?</h2>
-      <p>A visszahíváskérő űrlapon a nevedet, telefonszámodat, az autó típusát, a kerületet vagy települést, illetve opcionálisan egy rövid megjegyzést kérek.</p>
+      <h2>2. Milyen adatokat kezelek?</h2>
+      <p>A visszahíváskérő űrlapon az alábbi adatokat kérem el:</p>
+      <ul>
+        <li>név,</li>
+        <li>telefonszám,</li>
+        <li>az autó típusa,</li>
+        <li>kerület vagy település,</li>
+        <li>opcionális megjegyzés.</li>
+      </ul>
+      <p>Ha hirdetésből érkezel, az űrlap a linkben szereplő technikai kampányparamétereket (UTM-adatokat) és az érkezési oldal címét is továbbíthatja. Ezek arra szolgálnak, hogy lássam, melyik hirdetésből érkezett a megkeresés.</p>
 
-      <h2>Miért használom ezeket?</h2>
-      <p>Azért, hogy fel tudjam venni veled a kapcsolatot, egyeztessük az állapotfelmérést, és kérésedre ajánlatot tudjak adni. Az adatkezelés jogalapja a szerződéskötést megelőző, a te kérésedre történő lépések megtétele.</p>
+      <h2>3. Az adatkezelés célja és jogalapja</h2>
+      <p>A nevet, telefonszámot és az autóval kapcsolatos adatokat azért kezelem, hogy fel tudjam venni veled a kapcsolatot, egyeztessük az ingyenes állapotfelmérést, és kérésedre ajánlatot tudjak adni. Ennek jogalapja a GDPR 6. cikk (1) bekezdés b) pontja: a szerződés megkötését megelőző, a te kérésedre történő lépések megtétele.</p>
+      <p>A kampányparamétereket a hirdetések eredményének mérésére használom. Ennek jogalapja a GDPR 6. cikk (1) bekezdés f) pontja szerinti jogos érdek: annak megértése, mely hirdetésekből érkeznek valódi megkeresések. Ezeket nem használom profilalkotásra, hírlevélre vagy személyre szabott reklámküldésre.</p>
 
-      <h2>Meddig őrzöm meg?</h2>
-      <p>Ha a kapcsolatfelvételből nem lesz megrendelés, az űrlapon megadott adatokat csak addig őrzöm meg, amíg az egyeztetéshez szükséges. Ha szolgáltatást rendelsz, az abból keletkező számlázási és egyéb kötelező adatokat a vonatkozó jogszabályok szerinti ideig kell megőriznem.</p>
+      <h2>4. Az adatok tárolásának módja és időtartama</h2>
+      <p>A kapcsolatfelvételi űrlap adatait a Netlify Forms dolgozza fel és tárolja. A beérkezett űrlapokról e-mailes értesítést kapok, ezért az adatok a Google levelezőrendszerében is megjelenhetnek.</p>
+      <p>Ha a kapcsolatfelvételből nem lesz megrendelés, az adatokat addig őrzöm, amíg az egyeztetéshez szükséges, ezt követően törlöm őket. Ha szolgáltatást rendelsz, a számlázási és egyéb, jogszabály alapján kötelezően megőrzendő adatokat a vonatkozó megőrzési idő végéig kell tárolnom.</p>
 
-      <h2>Ki kapja meg az űrlap adatait?</h2>
-      <p>Az oldal Netlify tárhelyen működik, az űrlap beküldéseit a Netlify Forms technikai szolgáltatása továbbítja és tárolja. Az adatokat nem értékesítem és nem használom reklámcélú adatbázis építésére.</p>
+      <h2>5. Adatfeldolgozók és technikai szolgáltatók</h2>
+      <p>Az adatokat nem értékesítem és nem továbbítom marketingcélra harmadik félnek. A weboldal és a kapcsolatfelvétel működéséhez azonban az alábbi szolgáltatók közreműködnek:</p>
+      <ul>
+        <li><strong>Netlify, Inc.</strong> – weboldal üzemeltetése és Netlify Forms űrlapfeldolgozás,</li>
+        <li><strong>Google</strong> – e-mail szolgáltatás,</li>
+        <li><strong>Ahrefs Pte. Ltd.</strong> – webanalitika.</li>
+      </ul>
 
-      <h2>Milyen jogaid vannak?</h2>
-      <p>Kérhetsz tájékoztatást a rólad kezelt adatokról, kérheted azok helyesbítését vagy törlését, illetve az adatkezelés korlátozását, ha annak jogszabályi feltételei fennállnak. Ilyen kérésnél írj a <a href="{{ site.contact.emailHref }}">{{ site.author.email }}</a> címre.</p>
+      <h2>6. Webanalitika</h2>
+      <p>Az oldalon Ahrefs Web Analytics működik. A szolgáltatás alapbeállításban nem használ cookie-kat vagy tartós azonosítókat. Forgalmi adatokat mér, például a meglátogatott oldal címét, a hivatkozó oldalt, a böngésző és eszköz típusát, valamint ország- és városszintű helyadatot. A nyers IP-címet az Ahrefs tájékoztatása szerint nem tárolja; a napi egyedi látogatók számításához rövid életű, naponta változó technikai azonosítást használ.</p>
+      <p>Az Ahrefs automatikusan mérhet olyan eseményeket is, mint a külső linkre kattintás vagy az űrlap elküldése. Ezeket összesített forgalmi és konverziós adatok értékelésére használom, jogos érdek alapján.</p>
+
+      <h2>7. Milyen jogaid vannak?</h2>
+      <p>A GDPR alapján jogosult vagy többek között:</p>
+      <ul>
+        <li>tájékoztatást kérni arról, hogy milyen adataidat kezelem,</li>
+        <li>kérni azok helyesbítését vagy törlését,</li>
+        <li>kérni az adatkezelés korlátozását,</li>
+        <li>az alkalmazandó feltételek mellett kérni az adataid hordozhatóságát.</li>
+      </ul>
+      <p>Kérésedet a fenti e-mail-címen vagy telefonszámon jelezheted.</p>
+
+      <h2>8. Panasz benyújtása</h2>
+      <p>Ha úgy gondolod, hogy a személyes adataid kezelése nem megfelelő, panasszal fordulhatsz a Nemzeti Adatvédelmi és Információszabadság Hatósághoz (NAIH):</p>
+      <p><strong>Cím:</strong> 1055 Budapest, Falk Miksa utca 9–11.<br>
+      <strong>Levelezési cím:</strong> 1363 Budapest, Pf. 9.<br>
+      <strong>E-mail:</strong> <a href="mailto:ugyfelszolgalat@naih.hu">ugyfelszolgalat@naih.hu</a><br>
+      <strong>Telefon:</strong> <a href="tel:+3613911400">+36 1 391 1400</a><br>
+      <strong>Web:</strong> <a href="https://naih.hu/">naih.hu</a></p>
 
       <p class="legal-page__back"><a class="button button--secondary" href="/">Vissza a főoldalra</a></p>
     </div>

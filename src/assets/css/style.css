@@ -36,6 +36,11 @@ body {
 }
 
 ::selection { background: var(--green-soft); }
+
+:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 3px;
+}
 a { color: inherit; }
 button, input, textarea { font: inherit; }
 img { max-width: 100%; display: block; }
@@ -495,3 +500,14 @@ h4 {
 .legal-page__content h2 { margin-top: 2.8rem; font-size: clamp(1.7rem, 3vw, 2.35rem); }
 .legal-page__content a:not(.button) { text-underline-offset: .18em; }
 .legal-page__back { margin-top: 3rem; }
+
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

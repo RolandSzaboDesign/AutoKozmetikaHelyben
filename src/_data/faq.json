@@ -16,12 +16,16 @@
     "answer": "Elsősorban a XXII., XI., XX. és XXI. kerületben, valamint Szigetszentmiklóson és a Campona környékén dolgozom. Távolabbi helyszín is megoldható, ilyenkor a kiszállás költségét előre megbeszéljük."
   },
   {
+    "question": "Mekkora hely kell az autó körül?",
+    "answer": "Egy normál parkolóhelyre és annyi szabad helyre van szükség, hogy körbe tudjam járni az autót. Árnyék előny, erős napsütésnél a helyszíntől függően egyeztetünk."
+  },
+  {
     "question": "Mennyi ideig tart?",
     "answer": "A választott szolgáltatásoktól és az autó állapotától függően általában 1–3 órával érdemes számolni."
   },
   {
     "question": "Mi történik, ha rossz az idő?",
-    "answer": "Esőben vagy havazásban nem tudok megfelelően dolgozni, ilyenkor új időpontot egyeztetünk. Napos időben is megoldható a munka, ha van megfelelő hely az autó körül."
+    "answer": "Esőben vagy havazásban nem tudok megfelelően dolgozni, ilyenkor új időpontot egyeztetünk. Árnyék előny, de napsütésben is megoldható a munka, ha a helyszín és az autó körüli hely megfelelő."
   },
   {
     "question": "Milyen állapotú autót vállalsz?",
