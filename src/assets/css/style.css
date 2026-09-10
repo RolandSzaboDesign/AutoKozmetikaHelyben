@@ -281,6 +281,8 @@ h4 {
 }
 .before-after-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .before-after-item { margin: 0; }
+.before-after-item--mobile-hidden,
+.before-after-item--tablet-hidden { display: block; }
 .before-after-item figcaption { margin-top: .55rem; color: var(--muted); font-size: .9rem; line-height: 1.35; }
 .before-after-image {
   display: block;
@@ -449,6 +451,7 @@ h4 {
 }
 
 @media (max-width: 950px) {
+  .before-after-item--tablet-hidden { display: none; }
   .site-header__phone { display: none; }
   .services__grid,
   .contact-layout,
@@ -462,6 +465,7 @@ h4 {
 }
 
 @media (max-width: 620px) {
+  .before-after-item--mobile-hidden { display: none; }
   body { font-size: 1rem; }
   .container,
   .container--narrow { width: min(calc(100% - 1.5rem), var(--max)); }
