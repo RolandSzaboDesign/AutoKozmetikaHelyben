@@ -12,5 +12,12 @@
     "car": "Nissan Qashqai",
     "image": "/assets/images/testimonial-qashqai.webp",
     "imageAlt": "A megtisztított Nissan Qashqai"
+  },
+  {
+    "text": "Olyan pöpec lett az autó, hogy smink nélkül be se merek szállni. Roland, le a kalappal!",
+    "author": "Péter",
+    "car": "Opel Zafira",
+    "image": "/assets/images/testimonial-zafira.webp",
+    "imageAlt": "A megtisztított Opel Zafira"
   }
 ]

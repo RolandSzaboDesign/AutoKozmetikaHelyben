@@ -339,9 +339,11 @@ h4 {
   font-size: .8rem;
 }
 .reviews__title { margin-bottom: 1.15rem; }
-.reviews__list { display: grid; gap: 1.25rem; }
+.reviews__list { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
 .review {
-  display: block;
+  display: grid;
+  grid-template-columns: minmax(10rem, .25fr) minmax(0, 1fr);
+  align-items: stretch;
   margin: 0;
   overflow: hidden;
   border: 1px solid var(--line-dark);
@@ -350,9 +352,11 @@ h4 {
 }
 .review__photo {
   width: 100%;
-  height: auto;
+  height: 100%;
+  min-height: 100%;
   display: block;
-  border-bottom: 1px solid var(--line);
+  object-fit: cover;
+  border-right: 1px solid var(--line);
 }
 .review__photo--placeholder {
   display: grid;
@@ -371,10 +375,6 @@ h4 {
 .review footer { display: flex; flex-wrap: wrap; gap: .45rem; color: var(--muted); font-size: .9rem; }
 .review footer strong { color: var(--text); }
 .review footer span::before { content: '· '; }
-
-@media (min-width: 1181px) {
-  .reviews__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
 
 .faq-list { border-top: 1px solid var(--line-dark); }
 .faq-item { border-bottom: 1px solid var(--line-dark); }
@@ -447,7 +447,6 @@ h4 {
 
 @media (max-width: 1180px) {
   .about-reviews__grid { grid-template-columns: 1fr; }
-  .reviews__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 950px) {
@@ -457,7 +456,6 @@ h4 {
   .contact-layout,
   .process-results__grid { grid-template-columns: 1fr; }
   .service-card__lead { max-width: 46rem; }
-  .reviews__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .site-footer__inner { grid-template-columns: 1fr; gap: .8rem; }
   .site-footer__links,
   .site-footer__copyright { grid-column: auto; grid-row: auto; }
@@ -482,6 +480,15 @@ h4 {
   .about__profile { grid-template-columns: 4.8rem 1fr; gap: .9rem; }
   .about__avatar { width: 4.8rem; height: 4.8rem; }
   .reviews__list { grid-template-columns: 1fr; }
+  .review { display: block; }
+  .review__photo {
+    height: clamp(11rem, 48vw, 13rem);
+    min-height: 0;
+    object-fit: cover;
+    object-position: center;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
   .review__content { padding: 1.1rem 1.15rem 1.2rem; }
   .final-cta__actions { width: 100%; }
 }
