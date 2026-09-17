@@ -5,7 +5,7 @@ module.exports = [
   {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Mobil autókozmetika Dél-Budán és környékén',
+    name: 'Mobil autókozmetika Budapest XXII. kerületében',
     serviceType: 'Mobil autókozmetika',
     url: site.url,
     description: site.description_short,

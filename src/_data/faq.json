@@ -5,7 +5,7 @@
   },
   {
     "question": "Kérhetek csak külső vagy csak belső takarítást?",
-    "answer": "Persze. A külső és a belső takarítás külön is kérhető, és a választható kezelésekből is csak azt választod, amire szükséged van."
+    "answer": "Persze. A külső és a belső ápolás külön is kérhető. Mindkettőnek van egy alap tartalma, az extrákból pedig csak azt választod, amire szükséged van."
   },
   {
     "question": "Kell vizet vagy áramot biztosítanom?",
@@ -13,7 +13,7 @@
   },
   {
     "question": "Hol vállalsz autókozmetikát?",
-    "answer": "Elsősorban a XXII., XI., XX. és XXI. kerületben, valamint Szigetszentmiklóson és a Campona környékén dolgozom. Távolabbi helyszín is megoldható, ilyenkor a kiszállás költségét előre megbeszéljük."
+    "answer": "Elsősorban Budapest XXII. kerületében dolgozom. A közeli XI., XX. és XXI. kerület, valamint Szigetszentmiklós is szóba jöhet; a kiszállást előre egyeztetjük."
   },
   {
     "question": "Mekkora hely kell az autó körül?",
@@ -21,7 +21,7 @@
   },
   {
     "question": "Mennyi ideig tart?",
-    "answer": "A választott szolgáltatásoktól és az autó állapotától függően általában 1–3 órával érdemes számolni."
+    "answer": "A választott szolgáltatásoktól és az autó állapotától függően általában 1–4 órával érdemes számolni."
   },
   {
     "question": "Mi történik, ha rossz az idő?",
