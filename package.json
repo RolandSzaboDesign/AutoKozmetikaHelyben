@@ -7,7 +7,7 @@
     "@11ty/eleventy-img": "^7.0.0"
   },
   "scripts": {
-    "start": "eleventy --serve",
+    "start": "eleventy --serve --output=.local/preview",
     "build": "eleventy"
   }
 }

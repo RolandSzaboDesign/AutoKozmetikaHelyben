@@ -2,13 +2,13 @@
   "title": "Autókozmetika helyben",
   "homepage_title": "Autókozmetika helyben",
   "tagline": "Mobil autókozmetika Budapest XXII. kerületében",
-  "description_short": "Házhoz menős mobil autókozmetika Budapest XXII. kerületében. Külső-belső autóápolás ingyenes helyszíni állapotfelméréssel.",
-  "description_long": "Mobil autókozmetika Budapest XXII. kerületében. Külső és belső autóápolás nálad, ahol az autó parkol, ingyenes helyszíni állapotfelméréssel.",
+  "description_short": "Mobil autókozmetika Budapest XXII. kerületében. Külső és belső tisztítás, gondos ápolás háznál, ingyenes helyszíni állapotfelméréssel.",
+  "description_long": "Külső és belső autótisztítás, gondos ápolás háznál Budapest XXII. kerületében. Kérj visszahívást Rolandtól, és egyeztessetek ingyenes helyszíni állapotfelmérést.",
   "url": "https://autokozmetikahelyben.hu",
   "lang": "hu",
   "locale": "hu_HU",
   "ogImage": "/assets/images/og-autokozmetikahelyben.jpg",
-  "ogImageAlt": "Házhoz menős mobil autókozmetika Budapest XXII. kerületében",
+  "ogImageAlt": "Kia XCeed tisztítás és ápolás után – Autókozmetika helyben, Budapest XXII. kerület",
   "author": {
     "name": "Szabó Roland",
     "email": "szaboka89@gmail.com",
@@ -21,6 +21,7 @@
     "emailHref": "mailto:szaboka89@gmail.com",
     "messenger": "https://m.me/szaboka89",
     "whatsapp": "https://wa.me/36205914620",
-    "instagram": "https://www.instagram.com/autokozmetikahelyben/"
+    "instagram": "https://www.instagram.com/autokozmetikahelyben/",
+    "googleReviews": "https://www.google.com/search?q=Aut%C3%B3KozmetikaHelyben.hu&stick=H4sIAAAAAAAA_-NgU1I1qLBIM7Q0TLU0NLEwMUxJMTW2MqhINDUySDE0MDM1SklLBAovYpVwLC05vNk7vyo3tSQzO9EjNacyKTVPL6MUAOubA21EAAAA&hl=hu"
   }
 }

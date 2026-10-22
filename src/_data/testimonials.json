@@ -1,23 +1,16 @@
 [
   {
-    "text": "Roland, nagyon menő lett az autó így tisztán!",
-    "author": "Zsóki",
-    "car": "Toyota Yaris",
-    "image": "/assets/images/testimonial-yaris.webp",
-    "imageAlt": "A megtisztított Toyota Yaris"
+    "author": "Kibédiné Mária",
+    "rating": 5,
+    "source": "Google",
+    "text": "Nagyon alapos, precíz és igényes munkát végzett, látszik, hogy szívvel-lélekkel dolgozik. Az eredmény magáért beszél, teljes mértékben elégedett vagyok!",
+    "fullText": "Ma Roland jött hozzánk, és a már eleve gyönyörű autóból még szebbet varázsolt! Nagyon alapos, precíz és igényes munkát végzett, látszik, hogy szívvel-lélekkel dolgozik. Az eredmény magáért beszél, teljes mértékben elégedett vagyok! 😊 Szívből ajánlom mindenkinek, aki igazán szép és minőségi munkát szeretne! 🚙✨"
   },
   {
-    "text": "Nagyon meglepődtem, hogy milyen tiszta lett!",
-    "author": "Ádám",
-    "car": "Nissan Qashqai",
-    "image": "/assets/images/testimonial-qashqai.webp",
-    "imageAlt": "A megtisztított Nissan Qashqai"
-  },
-  {
-    "text": "Olyan pöpec lett az autó, hogy smink nélkül be se merek szállni. Roland, le a kalappal!",
-    "author": "Péter",
-    "car": "Opel Zafira",
-    "image": "/assets/images/testimonial-zafira.webp",
-    "imageAlt": "A megtisztított Opel Zafira"
+    "author": "Tamás Bíró",
+    "rating": 5,
+    "source": "Google",
+    "text": "Rögtön neki is állt és aprólékosan 2 óra alatt kész is lett. Jó munkához idő kell. Ajánlom mindenkinek.",
+    "fullText": "Időpont egyeztetés után még aznap kijött adott egy ajánlatot az autó belső takarításra és rábólintottam. Rögtön neki is állt és aprólékosan 2 óra alatt kész is lett. Jó munkához idő kell. Ajánlom mindenkinek."
   }
 ]

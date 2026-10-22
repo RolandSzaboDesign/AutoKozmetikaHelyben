@@ -1,42 +1,42 @@
 [
   {
     "question": "Mennyibe kerül?",
-    "answer": "Minden autó más állapotban van, és nem mindenkinek ugyanazokra a kezelésekre van szüksége. Ezért nem használok fix csomagárakat. Az ingyenes állapotfelmérés után ott helyben kapsz konkrét árajánlatot."
+    "answer": "Ezt az autó mellett tudom megmondani. Nem ugyanannyi munka lemosni egy poros autót, mint eltávolítani a rászáradt rovarokat és vízkőfoltokat. Mielőtt elkezdem, elmondom, mit javaslok, mennyi idővel és milyen díjjal számolj. A felmérés ingyenes, és nem kell utána megrendelned a munkát."
   },
   {
-    "question": "Kérhetek csak külső vagy csak belső takarítást?",
-    "answer": "Persze. A külső és a belső ápolás külön is kérhető. Mindkettőnek van egy alap tartalma, az extrákból pedig csak azt választod, amire szükséged van."
+    "question": "A felmérés után rögtön kezdhetsz?",
+    "answer": "Igen, ha telefonon így beszéltük meg, és a helyszín meg az időjárás is megfelelő. Minden szükséges eszközt viszek. Ha elfogadod az ajánlatot, rögtön nekiállhatok."
+  },
+  {
+    "question": "Kérhetek csak külső vagy csak belső tisztítást?",
+    "answer": "Persze. Csak egy külső mosással is kereshetsz, és kérhetsz külön belső takarítást is. Az ajtókereteket akkor tisztítom meg, ha kívül-belül kéred a munkát. A csomagtartót és a motorteret külön megbeszéljük."
+  },
+  {
+    "question": "Hol tudsz dolgozni?",
+    "answer": "Főleg a XXII. kerületben dolgozom: Budafokon, Budatétényben és Nagytétényben. A közeli XI., XX. és XXI. kerület, illetve Szigetszentmiklós is szóba jöhet. Saját kocsibeálló vagy más alkalmas magánterület a legjobb, ahol körbe tudom járni az autót. Telefonon megbeszéljük, nálad megoldható-e."
   },
   {
     "question": "Kell vizet vagy áramot biztosítanom?",
-    "answer": "Nem. A szükséges vizet és az akkumulátoros eszközöket is én viszem magammal."
-  },
-  {
-    "question": "Hol vállalsz autókozmetikát?",
-    "answer": "Elsősorban Budapest XXII. kerületében dolgozom. A közeli XI., XX. és XXI. kerület, valamint Szigetszentmiklós is szóba jöhet; a kiszállást előre egyeztetjük."
-  },
-  {
-    "question": "Mekkora hely kell az autó körül?",
-    "answer": "Egy normál parkolóhelyre és annyi szabad helyre van szükség, hogy körbe tudjam járni az autót. Árnyék előny, erős napsütésnél a helyszíntől függően egyeztetünk."
+    "answer": "Viszek vizet és akkumulátoros eszközöket, így a szokásos tisztításhoz nem kell helyszíni csatlakozás. Ha van víz vagy áram, az megkönnyíti a munkát. Ha valamelyik külön kezeléshez szükségem lesz rá, azt előre megbeszéljük."
   },
   {
     "question": "Mennyi ideig tart?",
-    "answer": "A választott szolgáltatásoktól és az autó állapotától függően általában 1–4 órával érdemes számolni."
+    "answer": "Egy kisebb munka körülbelül 1–1,5 óra. Egy alapos külső-belső tisztítás 4–5 óra is lehet, erősebb szennyeződésnél több. Telefonon mondok egy becslést, amit a helyszínen pontosítok."
   },
   {
-    "question": "Mi történik, ha rossz az idő?",
-    "answer": "Esőben vagy havazásban nem tudok megfelelően dolgozni, ilyenkor új időpontot egyeztetünk. Árnyék előny, de napsütésben is megoldható a munka, ha a helyszín és az autó körüli hely megfelelő."
-  },
-  {
-    "question": "Milyen állapotú autót vállalsz?",
-    "answer": "Elsősorban rendszeresen használt, enyhén vagy közepesen szennyezett autókat vállalok. Extrém szennyeződést, penészes belteret, erős dohányfüstöt vagy komoly kárpittisztítást igénylő autót jelenleg nem vállalok."
+    "question": "Milyen belső tisztítást vállalsz?",
+    "answer": "Kézzel tisztítom és ápolom a belső felületeket, általában enyhén vagy közepesen szennyezett autókon. Porszívózást és gépi kárpittisztítást jelenleg nem végzek. A foltoknál előre elmondom, mit tudok vállalni. Penészes vagy gépi mélytisztítást igénylő belteret nem vállalok."
   },
   {
     "question": "Ott kell maradnom az autó mellett?",
-    "answer": "Nem. Az állapotfelmérés és az egyeztetés után nyugodtan intézheted a dolgaidat, amíg az autón dolgozom."
+    "answer": "Nem kell végig ott lenned. Az elején megbeszéljük a munkát, a végén együtt átnézzük az autót. Belső takarításhoz a kulcsra is szükségem lesz. Közben nyugodtan intézheted a dolgaidat."
+  },
+  {
+    "question": "Mi történik rossz idő esetén?",
+    "answer": "Ha eső, hó vagy hideg miatt nem tudok megfelelően dolgozni, másik időpontot beszélünk meg. A helyszíntől is függ, milyen időben végezhető el a munka."
   },
   {
     "question": "Hogyan tudok fizetni?",
-    "answer": "Készpénzzel és azonnali banki átutalással is tudsz fizetni."
+    "answer": "Készpénzzel vagy azonnali banki átutalással."
   }
 ]
