@@ -1,0 +1,18 @@
+<section class='section faq-section' aria-labelledby='faq-title'>
+  <div class='container container--narrow'>
+    <h2 id='faq-title'>Gyakori kérdések</h2>
+    {% if serviceKey -%}
+      {%- assign faqItems = servicePages[serviceKey].faq -%}
+    {%- else -%}
+      {%- assign faqItems = faq -%}
+    {%- endif %}
+    <div class='faq-list'>
+      {% for item in faqItems %}
+        <details class='faq-item'>
+          <summary>{{ item.question | escape }}</summary>
+          <p>{{ item.answer | escape }}</p>
+        </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>

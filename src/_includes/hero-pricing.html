@@ -1,0 +1,28 @@
+<aside id='csomagarak' class='hero-pricing' aria-labelledby='hero-pricing-title'>
+  <h2 id='hero-pricing-title'>Csomagok és alapárak</h2>
+  <ul class='hero-pricing__list' aria-describedby='hero-pricing-note'>
+    {% assign packageGroup = serviceHub.groups | first -%}
+    {%- for card in packageGroup.items -%}
+      {%- assign package = servicePages[card.serviceKey] %}
+      <li>
+        <a
+          class='hero-pricing__option'
+          href='{{ package.url }}'
+          data-service='{{ package.id }}'
+          aria-label='{{ package.name | escape }} – {{ package.price | forint }} Ft alapár – részletek'
+        >
+          <span class='hero-pricing__name'>
+            {%- render 'service-icon.html', iconId: package.id -%}
+            <span>{{ package.name | escape }}</span></span
+          >
+          <span class='hero-pricing__price'>{% render 'price.html', priceValue: package.price %}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <p id='hero-pricing-note' class='hero-pricing__note'>
+    Személyautókra és személyautó méretű crossoverekre. XXII. kerületi kiszállással; nagyobb autóra vagy
+    többletmunkára előzetes ajánlat.
+  </p>
+  <a class='text-link hero-pricing__details' href='/szolgaltatasok/'>Csomagok összehasonlítása</a>
+</aside>

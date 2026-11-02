@@ -1,0 +1,93 @@
+---
+layout: base.html
+eleventyComputed:
+  title: "{{ servicePages[serviceKey].name }} – {{ servicePages[serviceKey].price | forint }} Ft-tól | {{ site.title }}"
+  description: "{{ servicePages[serviceKey].metaDescription }} {{ servicePages[serviceKey].price | forint }} Ft-tól, előre egyeztetett tartalommal és feltételekkel."
+---
+{% assign service = servicePages[serviceKey] %}
+<main id='tartalom' class='service-page'>
+  <section class='service-page__hero' aria-labelledby='service-title'>
+    <div class='container'>
+      <nav class='service-page__breadcrumb' aria-label='Morzsamenü'>
+        <a href='/'>Főoldal</a><span aria-hidden='true'>/</span><a href='/szolgaltatasok/'>Szolgáltatások</a>
+      </nav>
+      <div class='service-page__hero-grid'>
+        <div>
+          <p class='eyebrow'>Kézi autóápolás · {{ site.serviceAreaLabel }}</p>
+          <h1 id='service-title'>{{ service.name | escape }}</h1>
+          <p class='service-page__lead'>{{ service.lead | escape }}</p>
+          <div class='service-page__price-panel'>
+            {% render 'price.html', priceValue: service.price %}
+            <p>Személyautókra és személyautó méretű crossoverekre. A végleges árat előre egyeztetjük.</p>
+          </div>
+          <div class='service-page__hero-actions'>
+            <a class='button' href='#kapcsolat'>Kapcsolatfelvétel</a>
+          </div>
+        </div>
+        <figure class='service-page__photo'>
+          <img
+            src='{{ service.image.src | escape }}'
+            width='{{ service.image.width }}'
+            height='{{ service.image.height }}'
+            alt='{{ service.image.alt | escape }}'
+            fetchpriority='high'
+          >
+          <div class='service-page__review reviews'>
+            {% assign reviewIndex = service.reviewIndex | default: 0 -%}
+            {%- assign item = testimonials[reviewIndex] -%}
+            {%- include 'review.html' -%}
+            {%- include 'review-source.html' %}
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section class='section section--soft' aria-labelledby='service-included'>
+    <div class='container'>
+      <h2 id='service-included'>Mit tartalmaz az alapár?</h2>
+      {% render 'service-item-list.html', detailItems: service.included %}
+      {% if service.componentLinks %}
+        <div class='service-page__component-links'>
+          {% for link in service.componentLinks -%}
+            <a class='text-link' href='{{ link.href | escape }}'>{{ link.label | escape }}</a>
+          {%- endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </section>
+  <section class='section' aria-labelledby='service-extras'>
+    <div class='container'>
+      <div>
+        <h2 id='service-extras'>Külön kérhető kezelések</h2>
+        <p class='service-page__intro'>{{ service.extrasIntro | escape }}</p>
+        <span class='service-page__extra-badge'>Feláras extrák · az alapár nem tartalmazza</span>
+      </div>
+      {% render 'service-item-list.html', detailItems: service.extras, detailExtra: true %}
+    </div>
+  </section>
+  {% include 'contact.html' %}
+  {% include 'faq.html' %}
+  <nav class='section section--soft' aria-labelledby='service-related'>
+    <div class='container'>
+      <h2 id='service-related'>Másra van szükséged?</h2>
+      <div class='service-cards service-cards--related'>
+        {% for related in service.related %}
+          {% assign relatedService = servicePages | serviceById: related.id %}
+          {% render 'service-card.html',
+            cardService: relatedService,
+            cardTitle: related.question,
+            cardDescription: related.text,
+            cardLinkLabel: related.label
+          %}
+        {% endfor %}
+      </div>
+    </div>
+  </nav>
+</main>
+
+<script type='application/ld+json'>
+  {{ service | serviceSchema: site | json }}
+</script>
+<script type='application/ld+json'>
+  {{ service.faq | faqSchema | json }}
+</script>

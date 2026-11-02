@@ -1,0 +1,87 @@
+<section
+  id='kapcsolat'
+  class='section {% unless contactBackground == 'white' %}section--soft{% endunless %} contact-section'
+  aria-labelledby='contact-title'
+>
+  <div class='container contact-layout'>
+    <div class='contact-copy'>
+      <h2 id='contact-title' tabindex='-1'>Kapcsolat</h2>
+      <a class='direct-contact__phone' href='{{ site.contact.telephoneHref }}'>
+        {{ site.author.telephone }}
+      </a>
+      <p>Hívj fel, vagy kérj visszahívást az űrlapon. A munkát és a végleges árat előre egyeztetjük.</p>
+      <div class='social-links' aria-label='További kapcsolatfelvételi lehetőségek'>
+        <a href='{{ site.contact.whatsapp }}'> WhatsApp </a>
+        <a href='{{ site.contact.messenger }}'> Messenger </a>
+        <a href='{{ site.contact.emailHref }}'> E-mail </a>
+      </div>
+    </div>
+    <form
+      class='callback-form'
+      name='visszahivas'
+      method='POST'
+      action='/koszonom/'
+      netlify
+      netlify-honeypot='bot-field'
+    >
+      <input type='hidden' name='form-name' value='visszahivas'>
+      <input
+        type='hidden'
+        name='csomag'
+        value='{% if serviceKey %}{{ servicePages[serviceKey].id }}{% else %}nem-tudom{% endif %}'
+      >
+      <input type='hidden' name='utm_source'>
+      <input type='hidden' name='utm_medium'>
+      <input type='hidden' name='utm_campaign'>
+      <input type='hidden' name='utm_content'>
+      <input type='hidden' name='utm_placement'>
+      <input type='hidden' name='landing_url'>
+      <p hidden>
+        <label>
+          Ne töltsd ki ezt a mezőt:
+          <input name='bot-field' tabindex='-1' autocomplete='off'>
+        </label>
+      </p>
+      <div class='field field--full'>
+        <h3>Inkább visszahívást kérsz?</h3>
+        <p class='field__help'>Elég a telefonszámod. Általában 1–2 órán belül kereslek.</p>
+      </div>
+      <div class='field field--full'>
+        <label for='phone'>Telefonszám <span>(kötelező)</span></label>
+        <input
+          id='phone'
+          name='telefonszam'
+          type='tel'
+          autocomplete='tel'
+          inputmode='tel'
+          placeholder='Ezen a számon kereslek'
+          required
+        >
+      </div>
+      <details class='form-extra'>
+        <summary>Név, autótípus vagy helyszín hozzáadása</summary>
+        <div class='form-extra__fields'>
+          <div class='field field--full'>
+            <label for='name'>Név <span>(nem kötelező)</span></label>
+            <input id='name' name='nev' type='text' autocomplete='name' placeholder='Hogy szólíthatlak?'>
+          </div>
+          <div class='field'>
+            <label for='car'>Autó típusa <span>(nem kötelező)</span></label>
+            <input id='car' name='auto-tipusa' type='text' placeholder='Pl. Kia XCeed'>
+          </div>
+          <div class='field'>
+            <label for='location'>Kerület / település <span>(nem kötelező)</span></label>
+            <input id='location' name='helyszin' type='text' placeholder='Pl. XXII. kerület'>
+          </div>
+        </div>
+      </details>
+      <button class='button button--full' type='submit'>Visszahívást kérek</button>
+      <p class='form-note'>A visszahíváskérés nem kötelez megrendelésre.</p>
+      <p class='form-privacy'>
+        A megadott adataidat csak a kapcsolatfelvételhez és az egyeztetéshez használom. Nem küldök hírlevelet.
+        <a href='/adatkezeles/'> Adatkezelési tájékoztató </a>
+      </p>
+      <p data-form-status role='status' aria-live='polite' hidden></p>
+    </form>
+  </div>
+</section>

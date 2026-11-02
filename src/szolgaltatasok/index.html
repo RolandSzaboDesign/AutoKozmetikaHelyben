@@ -1,0 +1,53 @@
+---
+layout: base.html
+title: Autókozmetikai szolgáltatások és alapárak | Autókozmetika helyben
+description: Válassz kézi külső mosást, alapos külső ápolást, belső vagy külső-belső tisztítást Budapest XXII. kerületében, Szigetszentmiklóson és környékükön. Csomagtartalmak és alapárak egy helyen.
+permalink: /szolgaltatasok/
+hasContact: true
+contactBackground: white
+---
+<main id='tartalom' class='service-hub'>
+  <section class='service-hub__hero' aria-labelledby='hub-title'>
+    <div class='container'>
+      <nav class='service-page__breadcrumb' aria-label='Morzsamenü'>
+        <a href='/'>Főoldal</a><span aria-hidden='true'>/</span
+        ><span aria-current='page'>Szolgáltatások</span>
+      </nav>
+      <p class='eyebrow'>Kézi autóápolás háznál · {{ site.serviceAreaLabel }}</p>
+      <h1 id='hub-title'>Szolgáltatások</h1>
+      <p class='service-hub__lead'>
+        Csak kívül, csak belül, vagy teljesen? Válaszd ki, mire van szüksége az autódnak. A részletes
+        oldalakon megtalálod a csomagtartalmat, az extrákat és a tudnivalókat.
+      </p>
+    </div>
+  </section>
+  {% for group in serviceHub.groups %}
+    <section
+      id='{{ group.id }}'
+      class='section section--soft service-hub__packages'
+      aria-labelledby='hub-{{ group.id }}-title'
+    >
+      <div class='container'>
+        <h2 id='hub-{{ group.id }}-title'>{{ group.title | escape }}</h2>
+        <div class='service-cards'>
+          {% for card in group.items -%}
+            {%- render 'service-card.html',
+              cardService: servicePages[card.serviceKey],
+              cardDescription: card.benefit,
+              cardFeatures: card.features
+            -%}
+          {%- endfor %}
+        </div>
+        <p class='service-hub__note'>
+          Az alapárak személyautókra és személyautó méretű crossoverekre, szokásos szennyezettség mellett
+          érvényesek. Nagyobb autóra és jelentős többletmunkára előzetes ajánlatot adok. A külön kérhető
+          kezelések díját előre egyeztetjük.
+        </p>
+      </div>
+    </section>
+  {% endfor %}
+  {% include 'contact.html' %}
+</main>
+<script type='application/ld+json'>
+  {{ hubSchema | json }}
+</script>

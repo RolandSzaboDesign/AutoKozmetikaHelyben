@@ -1,0 +1,68 @@
+<section id='munkak' class='section work home-gallery' aria-labelledby='work-title'>
+  <div class='container'>
+    <div class='section-heading'>
+      <h2 id='work-title'>Saját munkák</h2>
+      <p class='home-work__lead'>
+        Saját fotók az elkészült autókról. A képekre kattintva nagyobb méretben is körülnézhetsz.
+      </p>
+      {% assign draftPhotos = gallery | where: 'draft', true -%}
+      {%- if draftPhotos.size > 0 %}
+        <p class='gallery-draft-note'>A képaláírások leírásai egyelőre szerkesztendő példaszövegek.</p>
+      {% endif %}
+    </div>
+    <div class='work__grid home-gallery__grid'>
+      {% for photo in gallery %}
+        <figure>
+          <a
+            class='home-gallery__open'
+            href='{{ photo.large }}'
+            data-gallery-index='{{ forloop.index0 }}'
+            aria-label='{{ photo.caption | escape }}, kép nagyítása'
+            ><img
+              src='{{ photo.src }}'
+              width='{{ photo.width }}'
+              height='{{ photo.height }}'
+              alt='{{ photo.alt | escape }}'
+              loading='lazy'
+              decoding='async'
+          ></a>
+          <figcaption>
+            <strong class='gallery-title'>{{ photo.caption | escape }}</strong>
+            <p class='gallery-description'>{{ photo.description | escape }}</p>
+          </figcaption>
+        </figure>
+      {% endfor %}
+    </div>
+  </div>
+  <dialog class='gallery-viewer' aria-labelledby='gallery-caption' aria-describedby='gallery-description'>
+    <div class='gallery-viewer__inner'>
+      <div class='gallery-viewer__top'>
+        <span data-gallery-counter aria-live='polite'></span
+        ><button type='button' class='button button--small button--secondary' data-gallery-close>
+          Bezárás
+        </button>
+      </div>
+      <img data-gallery-image alt=''>
+      <div class='gallery-viewer__bottom'>
+        <button
+          type='button'
+          class='button button--small button--secondary'
+          data-gallery-prev
+          aria-label='Előző kép'
+        >
+          Előző
+        </button>
+        <h2 id='gallery-caption'></h2>
+        <button
+          type='button'
+          class='button button--small button--secondary'
+          data-gallery-next
+          aria-label='Következő kép'
+        >
+          Következő
+        </button>
+      </div>
+      <p id='gallery-description' class='gallery-viewer__description'></p>
+    </div>
+  </dialog>
+</section>

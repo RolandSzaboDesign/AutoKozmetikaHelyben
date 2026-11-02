@@ -1,0 +1,488 @@
+{
+  "exterior": {
+    "id": "kulso-vedelem",
+    "name": "Alapos külső mosás és védelem",
+    "lead": "Kézi mosás, külső műanyagápolás és kerámiás spray- vagy waxvédelem. Házhoz megyek, előre egyeztetett helyszínre.",
+    "price": 14900,
+    "included": [
+      {
+        "name": "Karosszéria",
+        "text": "Előáztatás és kézi mosás. Szokásos rovarszennyeződés eltávolítása megfelelő öblítési lehetőségnél."
+      },
+      {
+        "name": "Ajtófalcok",
+        "text": "Egyszerű, kézi áttisztítás a hozzáférhető felületeken."
+      },
+      {
+        "name": "Felnik és gumik",
+        "text": "A felnik külső felületének tisztítása, a gumioldalfalak tisztítása és ápolása."
+      },
+      {
+        "name": "Külső műanyagok",
+        "text": "Tisztítás és színélénkítő ápolás a rendezett összképért."
+      },
+      {
+        "name": "Fényezésvédelem",
+        "text": "Kerámiás spray- vagy waxvédelem, a helyszínhez igazított eljárással."
+      },
+      {
+        "name": "Külső üvegek",
+        "text": "Üvegtisztítás a munka végén, a tiszta végeredményért."
+      }
+    ],
+    "extras": [
+      {
+        "name": "Karosszéria-röprozsdaoldás",
+        "text": "A mosás után is látszanak apró, rozsdaszínű pöttyök a fényezésen? A megtapadt fémszennyeződések külön oldásával ezeket a lerakódásokat célzottan kezelem, hogy tisztább legyen a felület. Nem a karosszéria korróziójának javítása."
+      },
+      {
+        "name": "Vízkőoldás",
+        "text": "A rászáradt vízcseppek után maradó ásványi lerakódások mosás után is foltossá tehetik az autót. Célzott kezelésükkel egységesebb, tisztább megjelenés érhető el; az eredmény a lerakódás és a felület állapotától függ."
+      },
+      {
+        "name": "Rain-Off üvegkezelés",
+        "text": "A megtisztított külső üvegre kerülő vízlepergető kezelés segíti, hogy az esővíz cseppekbe álljon össze és könnyebben távozzon a felületről. A kezelt üvegeket előre kiválasztjuk; ez külön ápolási lépés a szokásos üvegtisztításon felül."
+      },
+      {
+        "name": "Felni mélytisztítása",
+        "text": "Ha a szokásos felnitisztítás után is marad makacs fékpor vagy lerakódás, részletesebb kezelés kérhető a rendezettebb összképért. Igény szerint a felszerelt keréknél hozzáférhető belső palástot is megtisztítom; a terjedelmet és a várható eredményt előre egyeztetjük."
+      }
+    ],
+    "related": [
+      {
+        "question": "Csak egy gyors külső frissítés kell?",
+        "text": "Kézi mosás és gyorsfényesítő ápolás a rendezett külsőért.",
+        "label": "Gyors mosás",
+        "href": "/szolgaltatasok/gyors-mosas/",
+        "id": "kulso-mosas"
+      },
+      {
+        "question": "Most inkább a belteret tennéd rendbe?",
+        "text": "Aprólékos belső tisztítás, felületi üléskezelés és ápolás.",
+        "label": "Belső tisztítás és ápolás",
+        "href": "/szolgaltatasok/belso-tisztitas-es-apolas/",
+        "id": "belso"
+      },
+      {
+        "question": "Kívül-belül rendbe tennéd az autót?",
+        "text": "A teljes alapos külső és a teljes belső együtt, csomagkedvezménnyel.",
+        "label": "Külső-belső tisztítás és ápolás",
+        "href": "/szolgaltatasok/kulso-belso-tisztitas-es-apolas/",
+        "id": "teljes"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Szükséges slagot biztosítanom?",
+        "answer": "A mosás slag nélkül is megoldható. A külön rovaroldás, röprozsdaoldás és vízkőoldás megfelelő vizes öblítési lehetőséghez kötött."
+      },
+      {
+        "question": "Milyen védelmet kap az autó? Polírozást is tartalmaz a csomag?",
+        "answer": "A helyszínhez igazított kerámiás spray-t vagy waxot használok. A szolgáltatás polírozást nem tartalmaz."
+      },
+      {
+        "question": "Mire vonatkozik az alapár, és mikor változhat?",
+        "answer": "Az alapár személyautókra és személyautó méretű crossoverekre, szokásos szennyezettség mellett érvényes. Nagyobb járműre és jelentős többletmunkára egyedi ajánlatot adok. Feláras munkát csak a jóváhagyásoddal végzek."
+      },
+      {
+        "question": "Mennyi időre lesz szükség az autóra?",
+        "answer": "Normál állapotú személyautónál körülbelül 2 órával számolj. A méret, a szennyezettség és a választott extrák befolyásolják az időigényt, ezért ezt előre egyeztetjük."
+      },
+      {
+        "question": "Milyen helyszínen tudsz dolgozni?",
+        "answer": "Saját kocsibeálló vagy más alkalmas magánterület a legjobb, ahol körbe tudom járni az autót. Társasházi vagy más parkoló esetén előre beszéljük meg a helyszín adottságait és a szükséges öblítési lehetőséget."
+      },
+      {
+        "question": "Ott kell maradnom a munka alatt?",
+        "answer": "Nem kell végig az autó mellett maradnod. Az elején megbeszéljük a kért munkát, az átadáskor pedig együtt átnézzük az eredményt. Az ajtófalcok tisztításához az autó nyitását is egyeztetjük."
+      },
+      {
+        "question": "Mi történik rossz idő esetén?",
+        "answer": "Ha eső, hó vagy hideg miatt nem tudok megfelelően dolgozni, másik időpontot beszélünk meg. A helyszín adottságaitól is függ, milyen időben végezhető el a munka."
+      }
+    ],
+    "url": "/szolgaltatasok/alapos-kulso-mosas-es-vedelem/",
+    "image": {
+      "src": "/assets/images/szolgaltatasok/alapos-kulso-mosas-es-vedelem.webp",
+      "width": 1200,
+      "height": 800,
+      "alt": "Narancssárga Kia XCeed tiszta, fényes karosszériával, elölről és oldalról fotózva"
+    },
+    "reviewIndex": 0,
+    "extrasIntro": "Az extrák tartalmát és díját a munka előtt egyeztetjük. A röprozsda- és vízkőoldáshoz megfelelő vizes öblítés szükséges.",
+    "metaDescription": "Kézi külső autómosás, külső műanyagápolás és kerámiás spray- vagy waxvédelem Budapest XXII. kerületében, Szigetszentmiklóson és környékükön."
+  },
+  "quick": {
+    "id": "kulso-mosas",
+    "name": "Gyors mosás",
+    "price": 9900,
+    "url": "/szolgaltatasok/gyors-mosas/",
+    "lead": "Kézi külső mosás, tiszta üvegek és ápolt kerekek, gyorsfényesítő ápolással. Házhoz megyek, előre egyeztetett helyszínre.",
+    "image": {
+      "src": "/assets/images/szolgaltatasok/gyors-mosas.webp",
+      "width": 1200,
+      "height": 800,
+      "alt": "Narancssárga Kia XCeed hátsó lámpája és tiszta csomagtérajtaja"
+    },
+    "reviewIndex": 2,
+    "included": [
+      {
+        "name": "Kézi karosszériamosás",
+        "text": "Előáztatás után kézzel tisztítom az autó külső felületeit."
+      },
+      {
+        "name": "Ajtófalcok",
+        "text": "Egyszerű, kézi áttisztítás a hozzáférhető felületeken."
+      },
+      {
+        "name": "Felnik külső felülete",
+        "text": "A látható külső felület tisztítása, szükség esetén fékportisztítással."
+      },
+      {
+        "name": "Gumioldalfalak",
+        "text": "Tisztítás és ápolás a rendezett, egységes megjelenésért."
+      },
+      {
+        "name": "Gyorsfényesítő ápolás",
+        "text": "Mosás után szintetikus gyorsviaszos ápolás teszi teljessé a végeredményt."
+      },
+      {
+        "name": "Külső üvegek",
+        "text": "A külső üvegfelületeket a munka végén megtisztítom."
+      }
+    ],
+    "extrasIntro": "Az alapmosáson felüli kezelések tartalmát és díját előre egyeztetjük. Megtapadt szennyeződésnél az öblítési lehetőséget is megbeszéljük.",
+    "extras": [
+      {
+        "name": "Külső műanyagok ápolása",
+        "text": "A megfakult külső műanyagok színélénkítő ápolása rendezettebb összképet adhat. Ha kerámiás fényezésvédelmet is szeretnél, válaszd az alapos külső csomagot."
+      },
+      {
+        "name": "Karosszéria-röprozsdaoldás",
+        "text": "A mosás után is látszanak apró, rozsdaszínű pöttyök a fényezésen? A megtapadt fémszennyeződések külön oldásával ezeket a lerakódásokat célzottan kezelem, hogy tisztább legyen a felület. Nem a karosszéria korróziójának javítása."
+      },
+      {
+        "name": "Vízkőoldás",
+        "text": "A rászáradt vízcseppek után maradó ásványi lerakódások mosás után is foltossá tehetik az autót. Célzott kezelésükkel egységesebb, tisztább megjelenés érhető el; az eredmény a lerakódás és a felület állapotától függ."
+      },
+      {
+        "name": "Rain-Off üvegkezelés",
+        "text": "A megtisztított külső üvegre kerülő vízlepergető kezelés segíti, hogy az esővíz cseppekbe álljon össze és könnyebben távozzon a felületről. A kezelt üvegeket előre kiválasztjuk; ez külön ápolási lépés a szokásos üvegtisztításon felül."
+      },
+      {
+        "name": "Felni mélytisztítása",
+        "text": "Ha a szokásos felnitisztítás után is marad makacs fékpor vagy lerakódás, részletesebb kezelés kérhető a rendezettebb összképért. Igény szerint a felszerelt keréknél hozzáférhető belső palástot is megtisztítom; a terjedelmet és a várható eredményt előre egyeztetjük."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Miben más az alapos külső mosás?",
+        "answer": "Az alapos külső csomag a kézi mosás mellett külső műanyagápolást és kerámiás spray- vagy waxvédelmet is tartalmaz. A Gyors mosás befejező kezelése szintetikus gyorsfényesítő ápolás."
+      },
+      {
+        "question": "Szükséges slagot biztosítanom?",
+        "answer": "A mosás slag nélkül is megoldható. A külön rovaroldás, röprozsdaoldás és vízkőoldás megfelelő vizes öblítési lehetőséghez kötött."
+      },
+      {
+        "question": "Mire vonatkozik az alapár, és mikor változhat?",
+        "answer": "Az alapár személyautókra és személyautó méretű crossoverekre, szokásos szennyezettség mellett érvényes. Nagyobb járműre és jelentős többletmunkára egyedi ajánlatot adok. Feláras munkát csak a jóváhagyásoddal végzek."
+      },
+      {
+        "question": "Mennyi időre lesz szükség az autóra?",
+        "answer": "Normál állapotú személyautónál általában 60–90 perccel számolj. A pontos időt a méret és a szennyezettség alapján előre egyeztetjük."
+      },
+      {
+        "question": "Milyen helyszínen tudsz dolgozni?",
+        "answer": "Saját kocsibeálló vagy más alkalmas magánterület a legjobb, ahol körbe tudom járni az autót. Társasházi vagy más parkoló esetén előre beszéljük meg a helyszín adottságait és a szükséges öblítési lehetőséget."
+      },
+      {
+        "question": "Ott kell maradnom a munka alatt?",
+        "answer": "Nem kell végig az autó mellett maradnod. Az elején megbeszéljük a kért munkát, az átadáskor pedig együtt átnézzük az eredményt. Az ajtófalcok tisztításához az autó nyitását is egyeztetjük."
+      },
+      {
+        "question": "Mi történik rossz idő esetén?",
+        "answer": "Ha eső, hó vagy hideg miatt nem tudok megfelelően dolgozni, másik időpontot beszélünk meg. A helyszín adottságaitól is függ, milyen időben végezhető el a munka."
+      }
+    ],
+    "related": [
+      {
+        "question": "Több külső ápolást és védelmet szeretnél?",
+        "text": "Alapos külső mosás műanyagápolással és kerámiás védelemmel.",
+        "label": "Alapos külső mosás és védelem",
+        "href": "/szolgaltatasok/alapos-kulso-mosas-es-vedelem/",
+        "id": "kulso-vedelem"
+      },
+      {
+        "question": "Most inkább a belteret tennéd rendbe?",
+        "text": "Aprólékos belső tisztítás, felületi üléskezelés és ápolás.",
+        "label": "Belső tisztítás és ápolás",
+        "href": "/szolgaltatasok/belso-tisztitas-es-apolas/",
+        "id": "belso"
+      },
+      {
+        "question": "Kívül-belül rendbe tennéd az autót?",
+        "text": "A teljes alapos külső és a teljes belső együtt, csomagkedvezménnyel.",
+        "label": "Külső-belső tisztítás és ápolás",
+        "href": "/szolgaltatasok/kulso-belso-tisztitas-es-apolas/",
+        "id": "teljes"
+      }
+    ],
+    "metaDescription": "Gyors mosás háznál Budapest XXII. kerületében, Szigetszentmiklóson és környékükön."
+  },
+  "interior": {
+    "id": "belso",
+    "name": "Belső tisztítás és ápolás",
+    "price": 19900,
+    "url": "/szolgaltatasok/belso-tisztitas-es-apolas/",
+    "lead": "Aprólékos beltéri tisztítás a tárolóktól a szellőzőkig, felületi üléskezeléssel és műanyagápolással. Házhoz megyek, előre egyeztetett helyszínre.",
+    "image": {
+      "src": "/assets/images/szolgaltatasok/belso-tisztitas-es-apolas.webp",
+      "width": 1200,
+      "height": 800,
+      "alt": "Mazda utastere tiszta kormánnyal, műszerfallal és középkonzollal"
+    },
+    "reviewIndex": 1,
+    "included": [
+      {
+        "name": "Tetőkárpit és felső részek",
+        "text": "Kíméletes portörlés a tetőkárpiton, enyhe helyi szennyeződések kezelése. Oszlopok, kapaszkodók és napellenzők tisztítása."
+      },
+      {
+        "name": "Műszerfal és ajtókárpitok",
+        "text": "A műszerfal, középkonzol és ajtókárpitok tisztítása, a megfelelő műanyag felületek ápolásával."
+      },
+      {
+        "name": "Tárolók és apró részletek",
+        "text": "Pohártartók, ajtózsebek, szellőzőlamellák, ülésállítók és övcsatok környékének aprólékos tisztítása."
+      },
+      {
+        "name": "Ülések",
+        "text": "Szövetülések felületi tisztítása és szokásos helyi foltkezelése. Bőrüléseknél tisztítás és bőrápolás."
+      },
+      {
+        "name": "Kormány és kezelőszervek",
+        "text": "A kormány és a hozzáférhető kezelőfelületek tisztítása. A kormány fogófelületére nem kerül ápolószer."
+      },
+      {
+        "name": "Szőnyegek és padló",
+        "text": "Gumi- és szövetszőnyegek felületi tisztítása, padlóportalanítás, a hozzáférhető ülés alatti részekkel. Pedáltisztítás."
+      },
+      {
+        "name": "Csomagtér",
+        "text": "A hozzáférhető csomagtéri felületek tisztítása, szétszerelés nélkül."
+      },
+      {
+        "name": "Belső üvegek és tükrök",
+        "text": "Belső üvegfelületek, visszapillantó és sminktükrök tisztítása."
+      },
+      {
+        "name": "Ajtófalcok",
+        "text": "A hozzáférhető ajtófalcok kézi áttisztítása."
+      }
+    ],
+    "extrasIntro": "Az ózonos kezelés külön kérhető. A nagy mennyiségű állatszőr és a rendkívüli szennyezettség többletmunkájának díját szintén előre egyeztetjük.",
+    "extras": [
+      {
+        "name": "Ózonos kezelés",
+        "text": "A belső tisztítás kiegészítéseként külön egyeztethető, helyszíni áramellátással. A kezelés menetét, a szellőztetést és az autó átadásának időpontját előre megbeszéljük; a szag forrásának megszüntetését nem helyettesíti."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Kell porszívót vagy áramot biztosítanom?",
+        "answer": "Saját porszívóm jelenleg nincs. Porszívózáshoz az általad biztosított, megfelelő porszívót használom, előzetes egyeztetéssel. Enélkül kézzel portalanítok, amennyire lehetséges; a vállalható eredményt előre megbeszéljük. Az ózonos extrához helyszíni áram szükséges."
+      },
+      {
+        "question": "Ez gépi kárpittisztítást is jelent?",
+        "answer": "Az ülések és szőnyegek felületi tisztítást, szükség szerint helyi foltkezelést kapnak. Extrakciós kárpitmosást nem végzek, minden folt teljes eltűnését nem lehet előre garantálni. A bőrüléseket tisztítom és ápolom is."
+      },
+      {
+        "question": "Sok kutyaszőr vagy erős szennyeződés esetén is ennyi az ár?",
+        "answer": "Nagy mennyiségű állatszőr vagy rendkívüli szennyezettség esetén előre egyeztetett felárral dolgozom. Jelezd az autó állapotát, szükség esetén fotók alapján pontosítjuk a munkát és a fizetendő összeget."
+      },
+      {
+        "question": "Hogyan készítsem elő az autót?",
+        "answer": "A személyes tárgyakat érdemes előre kivenni az utastérből és a csomagtartóból, hogy hozzáférjek a tisztítandó részekhez. A gyermekülések és más, hozzáférést akadályozó tárgyak kezelését előre egyeztetjük. Alkatrészek kiszerelése nem része a csomagnak."
+      },
+      {
+        "question": "Mennyi időre lesz szükség az autóra?",
+        "answer": "Az időigényt az autó mérete és állapota alapján előre egyeztetjük. A bőrülések, a makacs foltok és a sok állatszőr hosszabb munkát jelenthetnek, ezért ezekről már az ajánlatkéréskor beszéljünk."
+      },
+      {
+        "question": "Ott kell maradnom a munka alatt?",
+        "answer": "Nem szükséges végig ott lenned. Az autót a belső munkához ki kell nyitni, az elején megbeszéljük a feladatokat, az átadáskor pedig együtt átnézzük az eredményt."
+      },
+      {
+        "question": "Mire vonatkozik az alapár, és mikor változhat?",
+        "answer": "Az alapár személyautókra és személyautó méretű crossoverekre, szokásos szennyezettség mellett érvényes. Nagyobb járműre és jelentős többletmunkára egyedi ajánlatot adok. Feláras munkát csak a jóváhagyásoddal végzek."
+      },
+      {
+        "question": "Mi történik rossz idő esetén?",
+        "answer": "Ha eső, hó vagy hideg miatt nem tudok megfelelően dolgozni, másik időpontot beszélünk meg. A helyszín adottságaitól is függ, milyen időben végezhető el a munka."
+      }
+    ],
+    "related": [
+      {
+        "question": "Több külső ápolást és védelmet szeretnél?",
+        "text": "Alapos külső mosás műanyagápolással és kerámiás védelemmel.",
+        "label": "Alapos külső mosás és védelem",
+        "href": "/szolgaltatasok/alapos-kulso-mosas-es-vedelem/",
+        "id": "kulso-vedelem"
+      },
+      {
+        "question": "Csak egy gyors külső frissítés kell?",
+        "text": "Kézi mosás és gyorsfényesítő ápolás a rendezett külsőért.",
+        "label": "Gyors mosás",
+        "href": "/szolgaltatasok/gyors-mosas/",
+        "id": "kulso-mosas"
+      },
+      {
+        "question": "Kívül-belül rendbe tennéd az autót?",
+        "text": "A teljes alapos külső és a teljes belső együtt, csomagkedvezménnyel.",
+        "label": "Külső-belső tisztítás és ápolás",
+        "href": "/szolgaltatasok/kulso-belso-tisztitas-es-apolas/",
+        "id": "teljes"
+      }
+    ],
+    "metaDescription": "Belső tisztítás és ápolás háznál Budapest XXII. kerületében, Szigetszentmiklóson és környékükön."
+  },
+  "complete": {
+    "id": "teljes",
+    "name": "Külső-belső tisztítás és ápolás",
+    "price": 29900,
+    "url": "/szolgaltatasok/kulso-belso-tisztitas-es-apolas/",
+    "lead": "A teljes alapos külső és a teljes belső tisztítás egy alkalommal, tartalmi rövidítés nélkül. Kívül-belül tiszta, ápolt autó, egyetlen kiszállással.",
+    "image": {
+      "src": "/assets/images/szolgaltatasok/kulso-belso-tisztitas-es-apolas.webp",
+      "width": 1200,
+      "height": 800,
+      "alt": "Fehér BMW szabadidő-autó tiszta karosszériával egy ház előtt"
+    },
+    "reviewIndex": 2,
+    "included": [
+      {
+        "name": "Kézi külső mosás",
+        "text": "Karosszéria, hozzáférhető ajtófalcok és külső üvegek tisztítása. Szokásos rovarszennyeződés kezelése megfelelő öblítési lehetőségnél."
+      },
+      {
+        "name": "Felnik és gumik",
+        "text": "A felnik külső felületének tisztítása, a gumioldalfalak tisztítása és ápolása."
+      },
+      {
+        "name": "Külső ápolás és védelem",
+        "text": "Külső műanyagápolás és a helyszínhez igazított kerámiás spray- vagy waxvédelem."
+      },
+      {
+        "name": "Belső felületek és részletek",
+        "text": "Műszerfal, ajtókárpitok, középkonzol, kormány, kezelőszervek, szellőzők és tárolók tisztítása. A megfelelő műanyag felületek ápolása is jár."
+      },
+      {
+        "name": "Ülések és szőnyegek",
+        "text": "Felületi textiltisztítás, szokásos helyi foltkezelés, bőrüléseknél tisztítás és ápolás. Szőnyegek és padló portalanítása."
+      },
+      {
+        "name": "A teljes beltér",
+        "text": "Tetőkárpit kíméletes portörlése és enyhe helyi tisztítása, oszlopok, kapaszkodók, napellenzők, belső üvegek, tükrök, pedálok és hozzáférhető csomagtér tisztítása."
+      }
+    ],
+    "componentLinks": [
+      {
+        "href": "/szolgaltatasok/alapos-kulso-mosas-es-vedelem/",
+        "label": "Az alapos külső teljes tartalma"
+      },
+      {
+        "href": "/szolgaltatasok/belso-tisztitas-es-apolas/",
+        "label": "A belső tisztítás teljes tartalma"
+      }
+    ],
+    "extrasIntro": "Az alábbi kezelések külön kérhetők, nem részei a kombinált alapárnak. Az állapot miatti többletmunkát, például a sok kutyaszőrt is előre egyeztetjük.",
+    "extras": [
+      {
+        "name": "Karosszéria-röprozsdaoldás",
+        "text": "A mosás után is látszanak apró, rozsdaszínű pöttyök a fényezésen? A megtapadt fémszennyeződések külön oldásával ezeket a lerakódásokat célzottan kezelem, hogy tisztább legyen a felület. Nem a karosszéria korróziójának javítása."
+      },
+      {
+        "name": "Vízkőoldás",
+        "text": "A rászáradt vízcseppek után maradó ásványi lerakódások mosás után is foltossá tehetik az autót. Célzott kezelésükkel egységesebb, tisztább megjelenés érhető el; az eredmény a lerakódás és a felület állapotától függ."
+      },
+      {
+        "name": "Rain-Off üvegkezelés",
+        "text": "A megtisztított külső üvegre kerülő vízlepergető kezelés segíti, hogy az esővíz cseppekbe álljon össze és könnyebben távozzon a felületről. A kezelt üvegeket előre kiválasztjuk; ez külön ápolási lépés a szokásos üvegtisztításon felül."
+      },
+      {
+        "name": "Felni mélytisztítása",
+        "text": "Ha a szokásos felnitisztítás után is marad makacs fékpor vagy lerakódás, részletesebb kezelés kérhető a rendezettebb összképért. Igény szerint a felszerelt keréknél hozzáférhető belső palástot is megtisztítom; a terjedelmet és a várható eredményt előre egyeztetjük."
+      },
+      {
+        "name": "Ózonos kezelés",
+        "text": "A belső tisztítás kiegészítéseként külön egyeztethető, helyszíni áramellátással. A kezelés menetét, a szellőztetést és az autó átadásának időpontját előre megbeszéljük; a szag forrásának megszüntetését nem helyettesíti."
+      },
+      {
+        "name": "Motortér tisztítása és ápolása",
+        "text": "Ha a karosszéria és a beltér mellett a motorteret is rendbe tennéd, külön egyeztetett kezelés kérhető. A hozzáférhető felületeket, a helyszíni feltételeket és a vállalható munkát előzetesen felmérem."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Ugyanazt kapom, mintha külön kérném a két szolgáltatást?",
+        "answer": "Igen. A teljes alapos külső és a teljes belső tisztítást és ápolást végzem el. A közös lépéseket, például az ajtófalcok tisztítását egyszer végzem; a csomag tartalmát nem rövidítem meg."
+      },
+      {
+        "question": "Mennyi a csomagkedvezmény?",
+        "answer": "A 14.900 Ft-os alapos külső és a 19.900 Ft-os belső alapára együtt 34.800 Ft. A kombinált csomag alapára 29.900 Ft, így a külön alapárakhoz képest 4.900 Ft a kedvezmény. Az extrák és az előre egyeztetett felárak külön tételek."
+      },
+      {
+        "question": "Kell porszívót vagy áramot biztosítanom?",
+        "answer": "Saját porszívóm jelenleg nincs. Porszívózáshoz az általad biztosított, megfelelő porszívót használom, előzetes egyeztetéssel. Enélkül kézzel portalanítok, amennyire lehetséges; a vállalható eredményt előre megbeszéljük. Az ózonos extrához helyszíni áram szükséges."
+      },
+      {
+        "question": "Ez gépi kárpittisztítást is jelent?",
+        "answer": "Az ülések és szőnyegek felületi tisztítást, szükség szerint helyi foltkezelést kapnak. Extrakciós kárpitmosást nem végzek, minden folt teljes eltűnését nem lehet előre garantálni. A bőrüléseket tisztítom és ápolom is."
+      },
+      {
+        "question": "Sok kutyaszőr vagy erős szennyeződés esetén is ennyi az ár?",
+        "answer": "Nagy mennyiségű állatszőr vagy rendkívüli szennyezettség esetén előre egyeztetett felárral dolgozom. Jelezd az autó állapotát, szükség esetén fotók alapján pontosítjuk a munkát és a fizetendő összeget."
+      },
+      {
+        "question": "Mennyi időre lesz szükség az autóra?",
+        "answer": "A teljes külső-belső munkára több órát érdemes szánni. A pontos időigényt az autó mérete, állapota és a kért extrák alapján előre egyeztetjük."
+      },
+      {
+        "question": "Szükséges slagot biztosítanom?",
+        "answer": "A mosás slag nélkül is megoldható. A külön rovaroldás, röprozsdaoldás és vízkőoldás megfelelő vizes öblítési lehetőséghez kötött."
+      },
+      {
+        "question": "Hogyan készítsem elő az autót?",
+        "answer": "A személyes tárgyakat érdemes előre kivenni az utastérből és a csomagtartóból, hogy hozzáférjek a tisztítandó részekhez. A gyermekülések és más, hozzáférést akadályozó tárgyak kezelését előre egyeztetjük. Alkatrészek kiszerelése nem része a csomagnak."
+      },
+      {
+        "question": "Mi történik rossz idő esetén?",
+        "answer": "Ha eső, hó vagy hideg miatt nem tudok megfelelően dolgozni, másik időpontot beszélünk meg. A helyszín adottságaitól is függ, milyen időben végezhető el a munka."
+      }
+    ],
+    "related": [
+      {
+        "question": "Több külső ápolást és védelmet szeretnél?",
+        "text": "Alapos külső mosás műanyagápolással és kerámiás védelemmel.",
+        "label": "Alapos külső mosás és védelem",
+        "href": "/szolgaltatasok/alapos-kulso-mosas-es-vedelem/",
+        "id": "kulso-vedelem"
+      },
+      {
+        "question": "Csak egy gyors külső frissítés kell?",
+        "text": "Kézi mosás és gyorsfényesítő ápolás a rendezett külsőért.",
+        "label": "Gyors mosás",
+        "href": "/szolgaltatasok/gyors-mosas/",
+        "id": "kulso-mosas"
+      },
+      {
+        "question": "Most inkább a belteret tennéd rendbe?",
+        "text": "Aprólékos belső tisztítás, felületi üléskezelés és ápolás.",
+        "label": "Belső tisztítás és ápolás",
+        "href": "/szolgaltatasok/belso-tisztitas-es-apolas/",
+        "id": "belso"
+      }
+    ],
+    "metaDescription": "Külső-belső tisztítás és ápolás háznál Budapest XXII. kerületében, Szigetszentmiklóson és környékükön."
+  }
+}

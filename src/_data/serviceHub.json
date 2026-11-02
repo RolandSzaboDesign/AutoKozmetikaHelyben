@@ -1,0 +1,46 @@
+{
+  "groups": [
+    {
+      "id": "csomagok",
+      "title": "Csomagok és alapárak",
+      "items": [
+        {
+          "serviceKey": "quick",
+          "benefit": "Ha a külsőt frissítenéd fel, és rendezett, tiszta autóval indulnál tovább.",
+          "features": [
+            "Kézi külső mosás és egyszerű falctisztítás",
+            "Felnik, gumik és külső üvegek tisztítása, gumiápolás",
+            "Gyorsfényesítő, szintetikus gyorsviaszos ápolás"
+          ]
+        },
+        {
+          "serviceKey": "exterior",
+          "benefit": "Ha a mosás mellé a külső felületek ápolását és kerámiás védelmet is szeretnéd.",
+          "features": [
+            "Kézi mosás, felnik, gumik és külső üvegek",
+            "Külső műanyagok tisztítása és ápolása",
+            "Kerámiás spray- vagy waxvédelem"
+          ]
+        },
+        {
+          "serviceKey": "interior",
+          "benefit": "Ha újra jó érzés lenne beülni egy aprólékosan megtisztított, ápolt beltérbe.",
+          "features": [
+            "Belső felületek, tárolók és apró részletek tisztítása",
+            "Ülések és szőnyegek felületi tisztítása, belső üvegek",
+            "Műanyagápolás, bőrüléseknél tisztítás és ápolás"
+          ]
+        },
+        {
+          "serviceKey": "complete",
+          "benefit": "Ha kívül-belül rendbe tennéd az autót, egyetlen kiszállással.",
+          "features": [
+            "A teljes alapos külső mosás és védelem",
+            "A teljes belső tisztítás és ápolás",
+            "4.900 Ft kedvezmény a két külön alapárhoz képest"
+          ]
+        }
+      ]
+    }
+  ]
+}

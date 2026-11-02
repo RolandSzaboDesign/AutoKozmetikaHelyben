@@ -3,14 +3,24 @@
     "author": "Kibédiné Mária",
     "rating": 5,
     "source": "Google",
-    "text": "Nagyon alapos, precíz és igényes munkát végzett, látszik, hogy szívvel-lélekkel dolgozik. Az eredmény magáért beszél, teljes mértékben elégedett vagyok!",
+    "shortText": "Nagyon alapos, precíz és igényes munkát végzett…",
+    "text": "Nagyon alapos, precíz és igényes munkát végzett, látszik, hogy szívvel-lélekkel dolgozik.",
     "fullText": "Ma Roland jött hozzánk, és a már eleve gyönyörű autóból még szebbet varázsolt! Nagyon alapos, precíz és igényes munkát végzett, látszik, hogy szívvel-lélekkel dolgozik. Az eredmény magáért beszél, teljes mértékben elégedett vagyok! 😊 Szívből ajánlom mindenkinek, aki igazán szép és minőségi munkát szeretne! 🚙✨"
   },
   {
     "author": "Tamás Bíró",
     "rating": 5,
     "source": "Google",
+    "shortText": "Jó munkához idő kell. Ajánlom mindenkinek.",
     "text": "Rögtön neki is állt és aprólékosan 2 óra alatt kész is lett. Jó munkához idő kell. Ajánlom mindenkinek.",
     "fullText": "Időpont egyeztetés után még aznap kijött adott egy ajánlatot az autó belső takarításra és rábólintottam. Rögtön neki is állt és aprólékosan 2 óra alatt kész is lett. Jó munkához idő kell. Ajánlom mindenkinek."
+  },
+  {
+    "author": "Várbíró Gergő",
+    "rating": 5,
+    "source": "Google",
+    "shortText": "Nagyon szép lett az autóm, látszik hogy, szereti amit csinál és ért is hozzá.",
+    "text": "Nagyon szép lett az autóm, látszik hogy, szereti amit csinál és ért is hozzá. Köszönöm a professzionális munkát nagyon tetszik",
+    "fullText": "Nagyon szép lett az autóm, látszik hogy, szereti amit csinál és ért is hozzá. Köszönöm a professzionális munkát nagyon tetszik"
   }
 ]

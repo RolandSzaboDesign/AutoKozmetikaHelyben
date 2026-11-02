@@ -1,508 +1,107 @@
 ---
 layout: base.html
-title: Mobil autókozmetika Budapest XXII. kerületében
-description: Külső és belső autótisztítás, gondos ápolás háznál a XXII. kerületben. Kérj visszahívást és ingyenes helyszíni állapotfelmérést Rolandtól.
+title: Mobil autókozmetika Budapest XXII. kerületében és környékén
+eleventyComputed:
+  description: "Kézi autókozmetika Budapest XXII. kerületében, Szigetszentmiklóson és környékükön. Külső mosás {{ servicePages.quick.price | forint }} Ft-tól, belső tisztítás és ápolás {{ servicePages.interior.price | forint }} Ft-tól. Egyeztess közvetlenül Rolanddal."
 ---
-
-<script type="application/ld+json">
-	{{ schema | json }}
+<script type='application/ld+json'>
+  {{ schema | json }}
 </script>
-<main id="tartalom">
-	<section class="hero" aria-labelledby="hero-title">
-		<div class="container hero__layout">
-			<div class="hero__copy">
-				<p class="eyebrow hero__location">
-					Budapest XXII. kerület
-				</p>
-				<h1 id="hero-title">
-					Mobil autókozmetika
-					<br>
-					<span>
-						ott, ahol parkolsz.
-					</span>
-				</h1>
-				<p class="hero__lead">
-					Kézi autómosás, belső tisztítás és ápolás. <br>Én megyek hozzád, és mindent helyben végzek.
-				</p>
-				<div class="hero__actions">
-					<a class="button" href="#kapcsolat">
-						Visszahívást kérek
-						<span aria-hidden="true">
-							↗
-						</span>
-					</a>
-					<p class="hero__phone">
-						Vagy hívj:
-						<a href="{{ site.contact.telephoneHref }}">
-							{{ site.author.telephone }}
-						</a>
-					</p>
-				</div>
-				<a class="hero__person" href="#roland">
-					<img src="{{ site.author.image }}" alt="Szabó Roland" width="52" height="52" decoding="async">
-					<span>
-						<strong>
-							Roland vagyok.
-						</strong>
-						<span>
-							Velem egyeztetsz, én dolgozom az autódon.
-						</span>
-					</span>
-				</a>
-			</div>
-			<figure class="hero__visual">
-				<img src="/assets/images/hero-800.webp" srcset="/assets/images/hero-480.webp 480w, /assets/images/hero-800.webp 800w, /assets/images/hero-1200.webp 1200w, /assets/images/hero-1600.webp 1600w" sizes="(min-width: 1464px) 679px, (min-width: 900px) calc((100vw - 106px) / 2), calc(100vw - 40px)" alt="Autófelni kézi tisztítása helyszíni autókozmetika során" width="1600" height="1078" fetchpriority="high" decoding="async">
-			</figure>
-		</div>
-	</section>
-	<section id="igy-mukodik" class="section section--soft process" aria-labelledby="process-title">
-		<div class="container process__layout">
-			<div class="process__content">
-				<div class="section-heading">
-					<p class="eyebrow">
-						<span class="eyebrow__number" aria-hidden="true">
-							01
-						</span>
-						Így működik
-					</p>
-					<h2 id="process-title">
-						Ingyenes állapotfelmérés,
-						<br>
-						és ott helyben adok árajánlatot.
-					</h2>
-				</div>
-				<div class="process__body">
-					<ol class="steps">
-						<li>
-							<span class="steps__number" aria-hidden="true">
-								1
-							</span>
-							<h3>
-								Telefonon
-								<br>
-								egyeztetünk
-							</h3>
-						</li>
-						<li>
-							<span class="steps__number" aria-hidden="true">
-								2
-							</span>
-							<h3>
-								A helyszínen
-								<br>
-								mondok egy árat
-							</h3>
-						</li>
-						<li>
-							<span class="steps__number" aria-hidden="true">
-								3
-							</span>
-							<h3>
-								Ha minden jó,
-								<br>
-								akár kezdhetek is
-							</h3>
-						</li>
-					</ol>
-					<p>
-						Az autó állapota alapján a helyszínen mondok árat. Ha elfogadod az ajánlatot, és előre így egyeztettünk, akkor akár rögtön neki is állhatok.
-					</p>
-				</div>
-				<a class="button button--secondary process__assessment" href="#kapcsolat">
-					Ingyenes helyszíni felmérés
-				</a>
-				<p class="process__no-obligation">
-					Nem kötelez megrendelésre.
-				</p>
-			</div>
-			<aside class="process__review reviews" aria-label="Ügyfélvélemény a Google-ról">
-				<h3 class="eyebrow">
-					Aki már kipróbálta
-				</h3>
-				{% assign item = testimonials[0] %}
-				<blockquote class="review">
-					<div class="review__stars" aria-label="5 csillag az 5-ből">
-						<span aria-hidden="true">
-							★★★★★
-						</span>
-					</div>
-					<p>
-						„
-						{{ item.text | escape }}
-						”
-					</p>
-					<footer>
-						<strong>
-							{{ item.author | escape }}
-						</strong>
-						<span>
-							Google-értékelés · részlet
-						</span>
-					</footer>
-				</blockquote>
-				<a class="reviews__source" href="{{ site.contact.googleReviews }}" target="_blank" rel="noopener noreferrer">
-					Vélemények a Google-on
-					<span aria-hidden="true">
-						↗
-					</span>
-				</a>
-			</aside>
-		</div>
-	</section>
-	<section id="szolgaltatasok" class="section services" aria-labelledby="services-title">
-		<div class="container">
-			<div class="section-heading services__heading">
-				<div>
-					<p class="eyebrow">
-						<span class="eyebrow__number" aria-hidden="true">
-							02
-						</span>
-						Amit kérhetsz
-					</p>
-					<h2 id="services-title">
-						Külső és belső tisztítás és ápolás
-					</h2>
-				</div>
-				<p>
-					Kérhetsz csak külső mosást, csak belső takarítást vagy mindkettőt. <br>Megbeszéljük, mire van szükséged, és csak azt csinálom meg.
-				</p>
-			</div>
-			<div class="services__grid">
-				<article class="service">
-					<h3>
-						Külső tisztítás és ápolás
-					</h3>
-					<ul class="treatment-list">
-						<li>
-							Kíméletes kézi mosás, szintetikus waxos védelem
-						</li>
-						<li>
-							Felnik és gumik tisztítása, ápolása
-						</li>
-						<li>
-							Külső üvegek tisztítása
-						</li>
-						<li>
-							Külső műanyagok ápolása
-						</li>
-					</ul>
-				</article>
-				<article class="service">
-					<h3>
-						Belső tisztítás és ápolás
-					</h3>
-					<ul class="treatment-list">
-						<li>
-							Portalanítás, a szellőzőknél is
-						</li>
-						<li>
-							Belső felületek és ajtókárpitok tisztítása, ápolása
-						</li>
-						<li>
-							Belső üvegek tisztítása
-						</li>
-						<li>
-							Szőnyegek tisztítása
-						</li>
-					</ul>
-				</article>
-			</div>
-			<aside class="services__note" aria-labelledby="extras-title">
-				<h3 id="extras-title">
-					A külön kezelésekről te döntesz.
-				</h3>
-				<ul class="extras-list">
-					<li>
-						Rovarmaradványok eltávolítása
-					</li>
-					<li>
-						Röprozsda eltávolítása
-					</li>
-					<li>
-						Vízkőfoltok eltávolítása
-					</li>
-					<li>
-						Kerámia spray-védelem
-					</li>
-					<li>
-						Vízlepergető üvegkezelés
-					</li>
-					<li>
-						Csomagtartó és motortér tisztítása
-					</li>
-				</ul>
-				<p>
-					A felméréskor megbeszéljük, mire van szükség, és mennyi plusz munkával, illetve díjjal jár. Csak azt végzem el, amit kérsz.
-				</p>
-			</aside>
-		</div>
-	</section>
-	<section id="munkak" class="section section--soft work" aria-labelledby="work-title">
-		<div class="container">
-			<div class="section-heading work__heading">
-				<p class="eyebrow">
-					<span class="eyebrow__number" aria-hidden="true">
-						03
-					</span>
-					Saját munkák · saját fotók
-				</p>
-				<h2 id="work-title">
-					Ilyen lett a végeredmény.
-				</h2>
-			</div>
-			<div class="work__grid">
-				<figure class="work__landscape">
-					<img src="/assets/images/kia-interior-800.webp" srcset="/assets/images/kia-interior-480.webp 480w, /assets/images/kia-interior-800.webp 800w, /assets/images/kia-interior-1200.webp 1200w, /assets/images/kia-interior-1600.webp 1600w" sizes="(min-width: 1464px) 690px, (min-width: 700px) calc((100vw - 84px) / 2), calc(100vw - 40px)" alt="A Kia XCeed megtisztított utastere a vezetőoldal felől" width="800" height="534" loading="lazy" decoding="async">
-					<figcaption>
-						Kia XCeed · belső tisztítás és ápolás
-					</figcaption>
-				</figure>
-				<figure class="work__portrait">
-					<img src="/assets/images/mazda-wheel-800.webp" srcset="/assets/images/mazda-wheel-480.webp 480w, /assets/images/mazda-wheel-800.webp 712w" sizes="(min-width: 1464px) 335px, (min-width: 700px) calc((100vw - 124px) / 4), calc((100vw - 52px) / 2)" alt="A Mazda CX-5 tisztított felnije és ápolt gumija" width="712" height="1079" loading="lazy" decoding="async">
-					<figcaption>
-						Mazda CX-5 · felni- és gumiápolás
-					</figcaption>
-				</figure>
-				<figure class="work__portrait">
-					<img src="/assets/images/hyundai-seat-800.webp" srcset="/assets/images/hyundai-seat-480.webp 480w, /assets/images/hyundai-seat-800.webp 712w" sizes="(min-width: 1464px) 335px, (min-width: 700px) calc((100vw - 124px) / 4), calc((100vw - 52px) / 2)" alt="A Hyundai i30 félbőr ülése tisztítás után" width="712" height="1079" loading="lazy" decoding="async">
-					<figcaption>
-						Hyundai i30 · félbőr ülés
-					</figcaption>
-				</figure>
-				<figure class="work__portrait">
-					<img src="/assets/images/ford-interior-800.webp" srcset="/assets/images/ford-interior-480.webp 480w, /assets/images/ford-interior-800.webp 713w" sizes="(min-width: 1464px) 335px, (min-width: 700px) calc((100vw - 124px) / 4), calc((100vw - 52px) / 2)" alt="A Ford Transit utastere a vezetőoldal felől" width="713" height="1079" loading="lazy" decoding="async">
-					<figcaption>
-						Ford Transit · utastér
-					</figcaption>
-				</figure>
-				<figure class="work__portrait">
-					<img src="/assets/images/kia-detail-800.webp" srcset="/assets/images/kia-detail-480.webp 480w, /assets/images/kia-detail-800.webp 710w" sizes="(min-width: 1464px) 335px, (min-width: 700px) calc((100vw - 124px) / 4), calc((100vw - 52px) / 2)" alt="A narancssárga Kia ápolt fényezése a fényszóró körül" width="710" height="1079" loading="lazy" decoding="async">
-					<figcaption>
-						Kia XCeed · külső ápolás
-					</figcaption>
-				</figure>
-				<figure class="work__landscape">
-					<img src="/assets/images/lexus-engine-800.webp" srcset="/assets/images/lexus-engine-480.webp 480w, /assets/images/lexus-engine-800.webp 800w" sizes="(min-width: 1464px) 690px, (min-width: 700px) calc((100vw - 84px) / 2), calc(100vw - 40px)" alt="A Lexus tisztított motortere" width="800" height="536" loading="lazy" decoding="async">
-					<figcaption>
-						Lexus RX450h · motortér
-					</figcaption>
-				</figure>
-			</div>
-		</div>
-	</section>
-	<section class="section about-reviews" aria-labelledby="about-title">
-		<div class="container about-reviews__layout">
-			<article id="roland" class="about">
-				<p class="eyebrow">
-					<span class="eyebrow__number" aria-hidden="true">
-						04
-					</span>
-					Rólam
-				</p>
-				<div class="about__profile">
-					<img class="about__avatar" src="{{ site.author.image }}" alt="{{ site.author.imageAlt }}" width="96" height="96" loading="lazy" decoding="async">
-					<div>
-						<h2 id="about-title">
-							Szia, Roland vagyok.
-						</h2>
-						<p>
-							Profi fotós, és túlbuzgó autókozmetikus
-						</p>
-					</div>
-				</div>
-				<p>
-					Szeretem, amikor jólesik visszanézni az autómra, és ugyanolyan jó érzés újra beülni. A sajátomat ezért tartom tisztán, másokéval pedig azért kezdtem foglalkozni, mert szívesen segítek abban, amihez értek és amit örömmel csinálok.
-				</p>
-				<p>
-					Azt szeretném, hogy neked is jólessen beülni az autódba, és parkolás után még egyszer visszanézni rá.
-				</p>
-			</article>
-			<aside class="reviews" aria-labelledby="reviews-title">
-				<h3 id="reviews-title" class="eyebrow">
-					Google-vélemények
-				</h3>
-				<div class="reviews__list">
-					{% for item in testimonials %}
-						{% unless forloop.first %}
-							<blockquote class="review">
-								<div class="review__stars" aria-label="5 csillag az 5-ből">
-									<span aria-hidden="true">
-										★★★★★
-									</span>
-								</div>
-								<p>
-									„
-									{{ item.text | escape }}
-									”
-								</p>
-								<footer>
-									<strong>
-										{{ item.author | escape }}
-									</strong>
-									<span>
-										Google-értékelés · részlet
-									</span>
-								</footer>
-							</blockquote>
-						{% endunless %}
-					{% endfor %}
-				</div>
-				<a class="reviews__source" href="{{ site.contact.googleReviews }}" target="_blank" rel="noopener noreferrer">
-					Vélemények a Google-on
-					<span aria-hidden="true">
-						↗
-					</span>
-				</a>
-			</aside>
-		</div>
-	</section>
-	<section id="kapcsolat" class="section section--soft contact-section" aria-labelledby="contact-title">
-		<div class="container contact-layout">
-			<div class="contact-copy">
-				<p class="eyebrow">
-					<span class="eyebrow__number" aria-hidden="true">
-						05
-					</span>
-					Beszéljük meg
-				</p>
-				<h2 id="contact-title">
-					Kérj visszahívást,
-					<br>
-					vagy hívj fel.
-				</h2>
-				<a class="direct-contact__phone" href="{{ site.contact.telephoneHref }}">
-					{{ site.author.telephone }}
-				</a>
-				<p>
-					Add meg a számod, és általában 1–2 órán belül visszahívlak.
-				</p>
-				<p class="contact-copy__small">
-					A felmérés ingyenes. Csak akkor kezdek dolgozni, ha a helyszínen megbeszélt munkát és árat elfogadod.
-				</p>
-				<div class="social-links" aria-label="További kapcsolatfelvételi lehetőségek">
-					<a href="{{ site.contact.whatsapp }}">
-						WhatsApp
-					</a>
-					<a href="{{ site.contact.messenger }}">
-						Messenger
-					</a>
-					<a href="{{ site.contact.emailHref }}">
-						E-mail
-					</a>
-				</div>
-			</div>
-			<form class="callback-form" name="visszahivas" method="POST" action="/koszonom/" netlify netlify-honeypot="bot-field">
-				<input type="hidden" name="form-name" value="visszahivas">
-				<input type="hidden" name="utm_source">
-				<input type="hidden" name="utm_medium">
-				<input type="hidden" name="utm_campaign">
-				<input type="hidden" name="utm_content">
-				<input type="hidden" name="utm_placement">
-				<input type="hidden" name="landing_url">
-				<p hidden>
-					<label>
-						Ne töltsd ki ezt a mezőt:
-						<input name="bot-field" tabindex="-1" autocomplete="off">
-					</label>
-				</p>
-				<div class="field">
-					<label for="name">
-						Név
-					</label>
-					<input id="name" name="nev" type="text" autocomplete="name" placeholder="Hogy szólíthatlak?" required>
-				</div>
-				<div class="field">
-					<label for="phone">
-						Telefonszám
-					</label>
-					<input id="phone" name="telefonszam" type="tel" autocomplete="tel" inputmode="tel" placeholder="Ezen a számon kereslek" required>
-				</div>
-				<div class="field">
-					<label for="car">
-						Autó típusa
-					</label>
-					<input id="car" name="auto-tipusa" type="text" placeholder="Pl. Kia XCeed" required>
-				</div>
-				<div class="field">
-					<label for="location">
-						Kerület / település
-					</label>
-					<input id="location" name="helyszin" type="text" placeholder="Pl. XXII. Rózsakert utca" required>
-				</div>
-				<details class="form-extra" data-focus-on-open="#message">
-					<summary>
-						Szeretnél még valamit hozzátenni?
-					</summary>
-					<div class="field">
-						<label for="message">
-							Megjegyzés
-							<span>
-								(nem kötelező)
-							</span>
-						</label>
-						<textarea id="message" name="megjegyzes" rows="4"></textarea>
-					</div>
-				</details>
-				<button class="button button--full" type="submit">
-					Hívj vissza
-					<span aria-hidden="true">
-						↗
-					</span>
-				</button>
-				<p class="form-note">
-					Telefonon megbeszéljük a helyszínt és az időpontot.
-				</p>
-				<p class="form-privacy">
-					A megadott adataidat csak a kapcsolatfelvételhez és az egyeztetéshez használom. Nem küldök hírlevelet.
-					<a href="/adatkezeles/">
-						Adatkezelési tájékoztató
-					</a>
-				</p>
-				<p data-form-status role="status" aria-live="polite" hidden></p>
-			</form>
-		</div>
-	</section>
-	<section class="section faq-section" aria-labelledby="faq-title">
-		<div class="container container--narrow">
-			<p class="eyebrow">
-				<span class="eyebrow__number" aria-hidden="true">
-					06
-				</span>
-				Pár fontos dolog
-			</p>
-			<h2 id="faq-title">
-				Gyakori kérdések
-			</h2>
-			<div class="faq-list">
-				{% for item in faq %}
-					<details class="faq-item">
-						<summary>
-							{{ item.question }}
-						</summary>
-						<p>
-							{{ item.answer }}
-						</p>
-					</details>
-				{% endfor %}
-			</div>
-		</div>
-	</section>
-	<section class="section final-cta">
-		<div class="container final-cta__inner">
-			<h2>
-				Jó lenne újra egy tiszta autóba beülni?
-			</h2>
-			<div class="final-cta__actions">
-				<a class="button button--warm" href="#kapcsolat">
-					Visszahívást kérek
-					<span aria-hidden="true">
-						↗
-					</span>
-				</a>
-				<a class="final-cta__phone" href="{{ site.contact.telephoneHref }}">
-					{{ site.author.telephone }}
-				</a>
-			</div>
-		</div>
-	</section>
+<main id='tartalom' class='homepage'>
+  <section class='hero home-hero' aria-labelledby='hero-title'>
+    <div class='container home-hero__layout'>
+      <div class='home-hero__intro'>
+        <p class='eyebrow'>Mobil autókozmetika · {{ site.serviceAreaLabel }}</p>
+        <h1 id='hero-title'>
+          Alapos kézi autóápolás,<br>
+          <span>ott, ahol parkolsz.</span>
+        </h1>
+        <p class='home-hero__lead'>
+          Külső és belső tisztítás, gondos ápolással. Velem egyeztetsz, én dolgozom az autódon.
+        </p>
+        <div class='home-hero__actions'><a class='button' href='#kapcsolat'>Kapcsolatfelvétel</a></div>
+        <p class='home-hero__reassurance'>A munkát és a végleges árat előre megbeszéljük.</p>
+        {% include 'hero-reviews.html' %}
+      </div>
+      {% include 'hero-pricing.html' %}
+    </div>
+  </section>
+  {% include 'pricing.html' %}
+
+  {% include 'gallery.html' %}
+  <section id='igy-mukodik' class='section section--soft process' aria-labelledby='process-title'>
+    <div class='container process__layout'>
+      <div class='process__content'>
+        <div class='section-heading'>
+          <h2 id='process-title'>Egyeztetés menete</h2>
+        </div>
+        <div class='process__body'>
+          <p>
+            Hívj fel, vagy hagyd meg a számod, és visszahívlak. Meséld el, milyen az autód állapota, és mit
+            szeretnél rendbe tenni rajta.
+          </p>
+          <p>
+            Ha kell, kérek néhány fotót, vagy megnézem az autót személyesen. Ezután megbeszéljük, mit csinálok
+            meg, mennyibe kerül, és mikor tudok menni.
+          </p>
+        </div>
+        <p class='process__no-obligation'>
+          Az érdeklődés és a helyszíni megtekintés nem kötelez megrendelésre.
+        </p>
+      </div>
+      <figure class='process__portrait'>
+        <img
+          src='/assets/images/hero-800.webp'
+          srcset='/assets/images/hero-480.webp 480w, /assets/images/hero-800.webp 800w, /assets/images/hero-1200.webp 1200w'
+          sizes='(min-width: 900px) 44vw, calc(100vw - 40px)'
+          width='800'
+          height='539'
+          alt='Roland egy autó felnijét tisztítja kézzel'
+          loading='lazy'
+          decoding='async'
+        >
+      </figure>
+    </div>
+  </section>
+  <section class='section about-reviews' aria-labelledby='about-title'>
+    <div class='container about-reviews__layout'>
+      <article id='roland' class='about'>
+        <div class='about__profile'>
+          <img
+            class='about__avatar'
+            src='{{ site.author.image }}'
+            alt='{{ site.author.imageAlt }}'
+            width='96'
+            height='96'
+            loading='lazy'
+            decoding='async'
+          >
+          <div>
+            <h2 id='about-title'>Szia, Roland vagyok.</h2>
+            <p>Profi fotós, és túlbuzgó autókozmetikus</p>
+          </div>
+        </div>
+        <p>
+          Szeretem, ha az autóm kívül-belül tiszta és ápolt. Mások autóival is azért kezdtem foglalkozni, mert
+          örömömet lelem az aprólékos munkában és a látványos eredményben.
+        </p>
+        <p>
+          A te autódra is ugyanígy figyelek. Azt szeretném, hogy jó érzés legyen újra beülnöd, és parkolás
+          után szívesen nézz vissza rá.
+        </p>
+      </article>
+      <aside class='reviews' aria-label='Google-vélemények'>
+        <div class='reviews__list'>
+          {% for item in testimonials %}
+            {% unless forloop.first %}
+              {% include 'review.html' %}
+            {% endunless %}
+          {% endfor %}
+        </div>
+        {% include 'review-source.html' %}
+      </aside>
+    </div>
+  </section>
+  {% include 'contact.html' %}
+  {% include 'faq.html' %}
 </main>

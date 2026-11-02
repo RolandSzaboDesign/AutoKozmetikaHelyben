@@ -1,0 +1,36 @@
+<ul class='service-details{% if detailExtra %} service-details--extras{% endif %}'>
+  {% for item in detailItems %}
+    <li>
+      <h3>
+        {% if detailExtra %}
+          <svg
+            class='service-page__plus'
+            viewBox='0 0 20 20'
+            fill='none'
+            stroke='currentColor'
+            stroke-width='2'
+            stroke-linecap='round'
+            aria-hidden='true'
+          >
+            <path d="M10 4v12M4 10h12"/>
+          </svg>
+        {% else %}
+          <svg
+            class='service-page__check'
+            viewBox='0 0 20 20'
+            fill='none'
+            stroke='currentColor'
+            stroke-width='2'
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            aria-hidden='true'
+          >
+            <path d="m4 10 4 4 8-8"/>
+          </svg>
+        {% endif -%}
+        {{- item.name | escape }}
+      </h3>
+      <p>{{ item.text | escape }}</p>
+    </li>
+  {% endfor %}
+</ul>

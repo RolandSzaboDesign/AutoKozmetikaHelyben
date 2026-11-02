@@ -1,6 +1,5 @@
-node_modules/
-public/
+/node_modules/
+/public/
+/.local/
+/source-review/
 .DS_Store
-source-review/
-.local/
-artifacts/

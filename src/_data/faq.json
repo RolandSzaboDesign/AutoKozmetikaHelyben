@@ -1,35 +1,47 @@
 [
   {
-    "question": "Mennyibe kerül?",
-    "answer": "Ezt az autó mellett tudom megmondani. Nem ugyanannyi munka lemosni egy poros autót, mint eltávolítani a rászáradt rovarokat és vízkőfoltokat. Mielőtt elkezdem, elmondom, mit javaslok, mennyi idővel és milyen díjjal számolj. A felmérés ingyenes, és nem kell utána megrendelned a munkát."
+    "question": "Mennyibe kerül, és mikor kapok végleges árat?",
+    "answer": "A csomagoknál feltüntetett összegek normál szennyezettségű személyautókra és kisebb crossoverekre vonatkoznak, XXII. kerületi kiszállással együtt. Nagyobb autó vagy több munka esetén egyedi ajánlatot adok. Telefonon, szükség esetén fotók vagy helyszíni megtekintés alapján egyeztetünk. A vállalt munkát és a fizetendő összeget kezdés előtt megbeszéljük."
   },
   {
-    "question": "A felmérés után rögtön kezdhetsz?",
-    "answer": "Igen, ha telefonon így beszéltük meg, és a helyszín meg az időjárás is megfelelő. Minden szükséges eszközt viszek. Ha elfogadod az ajánlatot, rögtön nekiállhatok."
+    "question": "Mikor szükséges felár vagy egyedi ajánlat?",
+    "answer": "Nagyobb jármű, sok állatszőr, rendkívüli szennyezettség vagy külön kért kezelés esetén. Az autó állapotáról fotók is segíthetnek. A többletmunkát és annak díját mindig előre megbeszéljük."
+  },
+  {
+    "question": "Mindig szükséges helyszíni állapotfelmérés?",
+    "answer": "Nem minden esetben. Sok munkát telefonon, szükség esetén néhány fotó alapján is meg tudunk beszélni. Ha az autó állapota vagy a helyszín miatt indokolt, ingyenes helyszíni megtekintést egyeztetünk. Ez nem kötelez megrendelésre."
+  },
+  {
+    "question": "A megtekintés után rögtön kezdhetsz?",
+    "answer": "Igen, ha telefonon így egyeztettünk, a helyszín és az időjárás megfelelő, és elfogadod az ajánlatot. A porszívózáshoz szükséges ügyféloldali felszerelést is előre megbeszéljük."
   },
   {
     "question": "Kérhetek csak külső vagy csak belső tisztítást?",
-    "answer": "Persze. Csak egy külső mosással is kereshetsz, és kérhetsz külön belső takarítást is. Az ajtókereteket akkor tisztítom meg, ha kívül-belül kéred a munkát. A csomagtartót és a motorteret külön megbeszéljük."
+    "answer": "Igen. Két külső csomagból választhatsz, és külön belső tisztítást és ápolást is kérhetsz. A külső-belső csomag a teljes alapos külsőt és a teljes belsőt egyesíti. A hozzáférhető csomagtér a belső munka része; a motortér külön egyeztetett extra."
   },
   {
-    "question": "Hol tudsz dolgozni?",
-    "answer": "Főleg a XXII. kerületben dolgozom: Budafokon, Budatétényben és Nagytétényben. A közeli XI., XX. és XXI. kerület, illetve Szigetszentmiklós is szóba jöhet. Saját kocsibeálló vagy más alkalmas magánterület a legjobb, ahol körbe tudom járni az autót. Telefonon megbeszéljük, nálad megoldható-e."
+    "question": "Hol dolgozol, és mennyi a kiszállás?",
+    "answer": "Budapest XXII. kerületében, a közeli XI., XX. és XXI. kerületben, valamint Szigetszentmiklóson és környékükön egyeztethető helyszíni autóápolás. A XXII. kerületi kiszállást az alapárak tartalmazzák; más helyszínen előre megbeszéljük a vállalást és az esetleges kiszállási díjat. Saját kocsibeálló vagy más alkalmas magánterület a legjobb."
   },
   {
-    "question": "Kell vizet vagy áramot biztosítanom?",
-    "answer": "Viszek vizet és akkumulátoros eszközöket, így a szokásos tisztításhoz nem kell helyszíni csatlakozás. Ha van víz vagy áram, az megkönnyíti a munkát. Ha valamelyik külön kezeléshez szükségem lesz rá, azt előre megbeszéljük."
+    "question": "Kell vizet, áramot vagy porszívót biztosítanom?",
+    "answer": "A külső mosáshoz viszek vizet és saját felszerelést. Ha az autó állapota miatt helyszíni vízre vagy áramra is szükség lesz, azt előre egyeztetjük. Saját porszívóm jelenleg nincs: porszívózást az általad biztosított, megfelelő porszívóval tudok végezni. Ha ezt nem tudod biztosítani, a vállalható belső munkáról külön egyeztetünk."
   },
   {
-    "question": "Mennyi ideig tart?",
-    "answer": "Egy kisebb munka körülbelül 1–1,5 óra. Egy alapos külső-belső tisztítás 4–5 óra is lehet, erősebb szennyeződésnél több. Telefonon mondok egy becslést, amit a helyszínen pontosítok."
+    "question": "Mennyi ideig tart a tisztítás?",
+    "answer": "A külső mosás általában 60–90 perc, az alapos külső kezelés körülbelül 2 óra. Normál állapotú autónál a belső tisztítás nagyjából 2 óra, a külső-belső munka körülbelül 4 óra. Ezek becslések: a méret, a bőrülések és a szennyezettség is befolyásolják az időt. Sok állatszőrnél vagy erős szennyeződésnél hosszabb munkával és egyedi ajánlattal számolj."
   },
   {
-    "question": "Milyen belső tisztítást vállalsz?",
-    "answer": "Kézzel tisztítom és ápolom a belső felületeket, általában enyhén vagy közepesen szennyezett autókon. Porszívózást és gépi kárpittisztítást jelenleg nem végzek. A foltoknál előre elmondom, mit tudok vállalni. Penészes vagy gépi mélytisztítást igénylő belteret nem vállalok."
+    "question": "Mit tartalmaz a belső tisztítás, és jár hozzá ápolás?",
+    "answer": "A tetőkárpit kíméletes portörlésétől a műszerfalon, tárolókon és apró részleteken át a hozzáférhető csomagtérig tisztítom a belteret. Az ülések és szőnyegek felületi tisztítást, szükség szerint helyi foltkezelést kapnak. A megfelelő műanyag felületek ápolása és a bőrülések tisztítása, ápolása is a csomag része. Extrakciós kárpitmosást nem végzek."
+  },
+  {
+    "question": "Polírozást vagy tartós kerámiabevonatot is vállalsz?",
+    "answer": "Polírozást és tartós kerámiabevonat telepítését jelenleg nem vállalok. Az alapos külső csomag a helyszínhez igazított kerámiás spray- vagy waxvédelmet tartalmaz. A Rain-Off vízlepergető üvegkezelés külön kérhető extra."
   },
   {
     "question": "Ott kell maradnom az autó mellett?",
-    "answer": "Nem kell végig ott lenned. Az elején megbeszéljük a munkát, a végén együtt átnézzük az autót. Belső takarításhoz a kulcsra is szükségem lesz. Közben nyugodtan intézheted a dolgaidat."
+    "answer": "Nem kell végig ott lenned. Az elején megbeszéljük a munkát, a végén együtt átnézzük az autót. Belső takarításhoz az autót ki kell nyitnod. Közben nyugodtan intézheted a dolgaidat."
   },
   {
     "question": "Mi történik rossz idő esetén?",

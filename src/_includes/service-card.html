@@ -1,0 +1,18 @@
+<a class='service-card' href='{{ cardService.url }}' data-service='{{ cardService.id }}'>
+  <h3 class='service-heading'>
+    {% render 'service-icon.html', iconId: cardService.id -%}
+    <span>{{ cardTitle | default: cardService.name | escape }}</span>
+  </h3>
+  <p class='service-card__price'>{% render 'price.html', priceValue: cardService.price %}</p>
+  <p>{{ cardDescription | escape }}</p>
+  {% if cardFeatures %}
+    <ul class='service-card__features'>
+      {% for feature in cardFeatures %}
+        <li>{{ feature | escape }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  <span class='service-card__details'>
+    {{- cardLinkLabel | default: 'Részletes csomagtartalom' | escape -}}
+  </span>
+</a>
