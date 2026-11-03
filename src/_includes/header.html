@@ -5,7 +5,10 @@
       <span> helyben </span>
     </a>
     <nav class='site-header__actions' aria-label='Fő navigáció'>
-      <a class='site-header__pricing' href='/szolgaltatasok/'>Szolgáltatások</a>
+      <div class='site-header__links'>
+        <a class='site-header__pricing' href='/szolgaltatasok/'{% if page.url == '/szolgaltatasok/' %} aria-current='page'{% elsif page.url contains '/szolgaltatasok/' %} aria-current='true'{% endif %}>Szolgáltatások</a>
+        <a class='site-header__pricing' href='/kiszallasi-teruletek/'{% if page.url == '/kiszallasi-teruletek/' %} aria-current='page'{% elsif page.url contains '/kiszallasi-teruletek/' %} aria-current='true'{% endif %}>Kiszállási területek</a>
+      </div>
       <a
         class='site-header__phone'
         href='{{ site.contact.telephoneHref }}'
