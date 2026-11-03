@@ -5,10 +5,6 @@
       <p class='home-work__lead'>
         Saját fotók az elkészült autókról. A képekre kattintva nagyobb méretben is körülnézhetsz.
       </p>
-      {% assign draftPhotos = gallery | where: 'draft', true -%}
-      {%- if draftPhotos.size > 0 %}
-        <p class='gallery-draft-note'>A képaláírások leírásai egyelőre szerkesztendő példaszövegek.</p>
-      {% endif %}
     </div>
     <div class='work__grid home-gallery__grid'>
       {% for photo in gallery %}
