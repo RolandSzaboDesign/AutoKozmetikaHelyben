@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const vm = require('node:vm');
 const fs = require('node:fs');
 const source = fs.readFileSync('src/assets/js/analytics.js', 'utf8');
-function setup(hostname = 'autokozmetikahelyben.hu') {
+function setup(hostname = 'autokozmetikahelyben.hu', serviceId = 'belso') {
   const documentListeners = new Map();
   const formListeners = new Map();
   const sent = [];
@@ -15,7 +15,7 @@ function setup(hostname = 'autokozmetikahelyben.hu') {
   };
   const form = {
     querySelector: (selector) =>
-      selector === '[name="csomag"]' ? { value: 'belso' } : selector === '.form-extra' ? details : null,
+      selector === '[name="csomag"]' ? { value: serviceId } : selector === '.form-extra' ? details : null,
     addEventListener: (name, fn) => formListeners.set(name, fn),
   };
   const context = {
@@ -104,4 +104,18 @@ test('localhost never forwards custom analytics events', () => {
   app.openDetails();
   app.formListeners.get('callback:success')({ detail: { package: 'belso' } });
   assert.equal(app.sent.length, 0);
+});
+
+test('standalone service IDs survive page attribution and confirmed callbacks', () => {
+  for (const id of ['felni-melytisztitas', 'ozonos-kezeles']) {
+    const app = setup(undefined, id);
+    app.click('/szolgaltatasok/' + id + '/', id, '.home-services');
+    app.formListeners.get('callback:success')({ detail: { package: id } });
+    assert.deepEqual(app.sent.find((event) => event.name === 'service_click').props, {
+      page: id, package: id, location: 'services',
+    });
+    assert.deepEqual(app.sent.find((event) => event.name === 'form_success').props, {
+      page: id, form: 'visszahivas', package: id,
+    });
+  }
 });

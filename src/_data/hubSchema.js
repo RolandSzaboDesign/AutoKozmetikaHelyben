@@ -1,24 +1,28 @@
 const site = require('./site.json');
-const hub = require('./serviceHub.json');
-const services = require('./servicePages.json');
+const catalog = require('./serviceCatalog');
+
+const entries = [
+  ...Object.values(catalog.packageCards).map(({ service }) => ({
+    name: service.name,
+    url: site.url + service.url,
+  })),
+  ...[...catalog.standaloneTreatments, ...catalog.addonTreatments].map((treatment) => ({
+    name: treatment.name,
+    url: site.url + (treatment.url || '/szolgaltatasok/#' + treatment.id),
+  })),
+];
 
 module.exports = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Autókozmetikai szolgáltatások',
-  url: `${site.url}/szolgaltatasok/`,
+  url: site.url + '/szolgaltatasok/',
   mainEntity: {
     '@type': 'ItemList',
-    itemListElement: hub.groups
-      .flatMap((group) => group.items)
-      .map((card, index) => {
-        const service = services[card.serviceKey];
-        return {
-          '@type': 'ListItem',
-          position: index + 1,
-          name: service.name,
-          url: `${site.url}${service.url}`,
-        };
-      }),
+    itemListElement: entries.map((entry, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      ...entry,
+    })),
   },
 };

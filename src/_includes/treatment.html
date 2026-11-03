@@ -1,0 +1,36 @@
+<article id='{{ treatment.id }}' class='treatment' aria-labelledby='{{ treatment.id }}-title'>
+  <div class='treatment__content'>
+    <h3 id='{{ treatment.id }}-title'>{{ treatment.name | escape }}</h3>
+    <p class='treatment__price'>
+      {% if treatment.price %}
+        <span class='treatment__amount'>{% render 'price.html', priceValue: treatment.price, priceFrom: treatment.from %}</span>
+        {% if treatment.unit %}<span class='treatment__price-note'>/ {{ treatment.unit | escape }}</span>{% endif %}
+      {% else %}
+        <strong class='treatment__quote'>{{ treatment.quote | escape }}</strong>
+        {% if treatment.priceNote %}<span class='treatment__price-note'>· {{ treatment.priceNote | escape }}</span>{% endif %}
+      {% endif %}
+    </p>
+    <p class='treatment__description'>{{ treatment.text | escape }}</p>
+    <div class='treatment__packages'>
+      <p>Ezek mellé kérheted:</p>
+      <ul>
+        {% for key in treatment.packages %}
+          {% assign package = packageData[key] %}
+          <li><a href='{{ package.url }}'>{{ package.name | escape }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% if treatment.url %}
+      <a class='text-link treatment__details' data-service='{{ treatment.id }}' href='{{ treatment.url }}' aria-label='{{ treatment.name | escape }}: részletek és feltételek'>Részletek és feltételek</a>
+    {% endif %}
+  </div>
+  {% if treatment.photos.size > 0 %}
+    <div class='treatment__photos'>
+      {% for photo in treatment.photos %}
+        <figure>
+          <img src='{{ photo.src | escape }}' alt='{{ photo.alt | escape }}' width='{{ photo.width }}' height='{{ photo.height }}' loading='lazy' decoding='async'>
+        </figure>
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>

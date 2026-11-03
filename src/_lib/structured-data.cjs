@@ -24,6 +24,7 @@ function serviceSchema(service, site) {
       price: service.price,
       priceCurrency: 'HUF',
       description:
+        service.offerDescription ||
         'Alapár személyautókra és személyautó méretű crossoverekre, szokásos szennyezettség mellett. A végleges ár előzetes egyeztetés alapján.',
     },
   };

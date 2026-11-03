@@ -3,6 +3,8 @@
     <h2 id='faq-title'>Gyakori kérdések</h2>
     {% if serviceKey -%}
       {%- assign faqItems = servicePages[serviceKey].faq -%}
+    {%- elsif treatmentKey -%}
+      {%- assign faqItems = treatments[treatmentKey].faq -%}
     {%- else -%}
       {%- assign faqItems = faq -%}
     {%- endif %}

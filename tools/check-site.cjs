@@ -4,6 +4,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 const services = require('../src/_data/servicePages.json');
 const site = require('../src/_data/site.json');
+const treatments = require('../src/_data/treatments.json');
+const catalog = require('../src/_data/serviceCatalog');
 const root = path.resolve(__dirname, '../public');
 for (const name of fs.readdirSync(path.resolve(__dirname, '../src/assets/js'))) {
   if (name.endsWith('.js'))
@@ -35,7 +37,10 @@ for (const [file, html] of pages) {
     /<script\b[^>]*type=['"]application\/ld\+json['"][^>]*>([\s\S]*?)<\/script>/g,
   ))
     JSON.parse(match[1]);
-  for (const href of [...attrs(html, 'href'), ...attrs(html, 'src')]) {
+  const responsiveImages = attrs(html, 'srcset').flatMap((value) =>
+    value.split(',').map((candidate) => candidate.trim().split(/\s+/)[0]),
+  );
+  for (const href of [...attrs(html, 'href'), ...attrs(html, 'src'), ...responsiveImages]) {
     if ((!href.startsWith('/') && !href.startsWith('#')) || href.startsWith('//')) continue;
     const url = new URL(
       href.replaceAll('&amp;', '&'),
@@ -51,6 +56,9 @@ for (const [file, html] of pages) {
       );
     linkCount++;
   }
+  for (const match of html.matchAll(/<strong class=['"]gallery-title['"]>([\s\S]*?)<\/strong>/g))
+    assert(match[1].trim(), label + ': image viewer title must not be empty');
+  assert(!/TODO|FIXME|szerkesztendő példaszövegek|Saját fotó helye/i.test(html), label + ': unfinished copy');
   if (html.includes('callback-form')) {
     assert(!/<select\b/.test(html));
     assert(!/name=['"]megjegyzes['"]/.test(html));
@@ -91,12 +99,65 @@ for (const service of Object.values(services)) {
   assert.equal((lists[1][1].match(/<li>/g) || []).length, service.extras.length);
   assert(fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8').includes(service.url));
 }
+
+const serviceIds = [...Object.values(services), ...Object.values(treatments)].map((item) => item.id);
+assert.equal(serviceIds.length, new Set(serviceIds).size, 'Service and treatment IDs must be unique');
+const analyticsSource = fs.readFileSync(path.resolve(__dirname, '../src/assets/js/analytics.js'), 'utf8');
+for (const [serviceKey, service] of Object.entries(services)) {
+  for (const extra of service.extras) {
+    const treatment = treatments[extra.treatmentKey];
+    assert(treatment, serviceKey + ': unknown treatment reference');
+    assert(treatment.packages.includes(serviceKey), serviceKey + ': incompatible treatment');
+  }
+}
+for (const [key, treatment] of Object.entries(treatments)) {
+  assert(['standalone', 'addon'].includes(treatment.group), key + ': invalid treatment group');
+  assert(treatment.name && treatment.text, key + ': treatment content missing');
+  for (const packageKey of treatment.packages) {
+    assert(services[packageKey]?.extras.some((extra) => extra.treatmentKey === key), key + ': package reference missing');
+  }
+  const heroSource = treatment.photos?.[0]?.src;
+  for (const comparison of treatment.comparisons || []) {
+    assert(comparison.before.src !== heroSource && comparison.after.src !== heroSource, key + ': gallery shares hero file');
+    assert.notEqual(comparison.before.src, comparison.after.src, key + ': comparison reuses one file');
+  }
+  const photos = [
+    ...(treatment.photos || []),
+    ...(treatment.workPhotos || []),
+    ...(treatment.comparisons || []).flatMap((pair) => [pair.before, pair.after]),
+  ];
+  for (const photo of photos) {
+    assert(photo.alt?.trim(), key + ': image description missing');
+    assert(photo.width > 0 && photo.height > 0, key + ': image dimensions missing');
+    assert(fs.existsSync(path.resolve(__dirname, '../src' + photo.src)), key + ': image file missing');
+  }
+  if (!treatment.url) continue;
+  const html = pages.get(path.join(root, treatment.url, 'index.html'));
+  assert(html, key + ': detail page missing');
+  assert(html.includes(site.url + treatment.url), key + ': canonical URL missing');
+  assert(html.includes('"price":' + treatment.price), key + ': schema price differs');
+  assert(html.includes(treatment.offerDescription), key + ': schema conditions differ');
+  const expectedPrice = String(treatment.price).replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ' Ft' + (treatment.from ? '-tól' : '');
+  assert(html.match(/<title>([\s\S]*?)<\/title>/)[1].includes(expectedPrice), key + ': title price differs');
+  assert(html.match(/<meta name=['"]description['"] content=['"]([^'"]+)/)[1].includes(expectedPrice), key + ': meta price differs');
+  assert(analyticsSource.includes("'" + treatment.id + "'"), key + ': analytics allowlist missing');
+  const panel = html.match(/<div class=['"]service-page__price-panel['"]>([\s\S]*?)<\/div>/)[1];
+  assert.equal((panel.match(/class=['"]price__suffix['"]/g) || []).length, treatment.from ? 1 : 0, key + ': fixed/starting price mismatch');
+  const fields = [...html.matchAll(/<input\b[^>]*>/g)].map((match) => match[0]);
+  assert(fields.some((field) => /name=['"]csomag['"]/.test(field) && attrs(field, 'value')[0] === treatment.id), key + ': form context missing');
+  assert.equal((html.match(/data-gallery-index=/g) || []).length, (treatment.comparisons?.length || 0) * 2 + (treatment.workPhotos?.length || 0), key + ': gallery incomplete');
+  assert.equal((html.match(/class=['"]faq-item['"]/g) || []).length, treatment.faq.length, key + ': FAQ incomplete');
+  assert(fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8').includes(treatment.url), key + ': sitemap entry missing');
+}
+
 const home = pages.get(path.join(root, 'index.html'));
 assert.equal((home.match(/data-gallery-index=/g) || []).length, 6);
 assert(!home.includes('steps__number') && !home.includes('final-cta'));
 assert.equal((home.match(/class=['"]service-card['"]/g) || []).length, 4);
 assert.equal((home.match(/class=['"]price__suffix['"]/g) || []).length, 8);
 assert(home.includes('gallery.js'));
+for (const treatment of catalog.standalonePages)
+  assert(home.includes("href='" + treatment.url + "'"), 'Home link missing: ' + treatment.name);
 assert(!fs.existsSync(path.resolve(__dirname, '../src/_data/packages.json')));
 console.log(
   `PASS: ${pages.size} pages, ${linkCount} local links/assets, schemas, forms, service contents and shared components.`,

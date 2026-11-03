@@ -1,7 +1,7 @@
 ---
 layout: base.html
 title: Autókozmetikai szolgáltatások és alapárak | Autókozmetika helyben
-description: Válassz kézi külső mosást, alapos külső ápolást, belső vagy külső-belső tisztítást Budapest XXII. kerületében, Szigetszentmiklóson és környékükön. Csomagtartalmak és alapárak egy helyen.
+description: Válassz kézi külső mosást, alapos külső ápolást, belső vagy külső-belső tisztítást Budapest XXII. kerületében, Szigetszentmiklóson és környékükön. Csomagok, önállóan is kérhető szolgáltatások és mosás mellé választható kezelések.
 permalink: /szolgaltatasok/
 hasContact: true
 contactBackground: white
@@ -16,9 +16,14 @@ contactBackground: white
       <p class='eyebrow'>Kézi autóápolás háznál · {{ site.serviceAreaLabel }}</p>
       <h1 id='hub-title'>Szolgáltatások</h1>
       <p class='service-hub__lead'>
-        Csak kívül, csak belül, vagy teljesen? Válaszd ki, mire van szüksége az autódnak. A részletes
-        oldalakon megtalálod a csomagtartalmat, az extrákat és a tudnivalókat.
+        Teljes autóápolást keresel, vagy csak egy részletet tennél rendbe? Válassz mosási csomagot,
+        önálló szolgáltatást vagy a mosás mellé kérhető kezelést.
       </p>
+      <nav class='service-hub__jump-links' aria-label='Szolgáltatástípusok'>
+        <a href='#csomagok'>Mosás és autóápolás</a>
+        <a href='#onallo-szolgaltatasok'>Önállóan is kérhető</a>
+        <a href='#kiegeszito-kezelesek'>Mosás mellé kérhető</a>
+      </nav>
     </div>
   </section>
   {% for group in serviceHub.groups %}
@@ -46,6 +51,30 @@ contactBackground: white
       </div>
     </section>
   {% endfor %}
+  <section id='onallo-szolgaltatasok' class='section treatment-section' aria-labelledby='standalone-title'>
+    <div class='container'>
+      <div class='section-heading'>
+        <h2 id='standalone-title'>Önállóan is kérhető szolgáltatások</h2>
+        <p>Ezekért külön is kijövök. Választhatod őket önállóan vagy a megfelelő mosási csomag kiegészítéseként.</p>
+      </div>
+      {% for treatment in serviceCatalog.standaloneTreatments %}
+        {% render 'treatment.html', treatment: treatment, packageData: servicePages %}
+      {% endfor %}
+      <a class='button treatment-section__cta' href='#kapcsolat'>Kapcsolatfelvétel</a>
+    </div>
+  </section>
+  <section id='kiegeszito-kezelesek' class='section section--soft treatment-section' aria-labelledby='addon-title'>
+    <div class='container'>
+      <div class='section-heading'>
+        <h2 id='addon-title'>Mosás mellé kérhető kezelések</h2>
+        <p>Ha valamelyik felület külön figyelmet igényel, ezekkel egészíthetjük ki a mosást. Az alábbi kezelések felárasak; ahol valamelyik csomag már tartalmazza az ápolást, azt külön jelzem.</p>
+      </div>
+      {% for treatment in serviceCatalog.addonTreatments %}
+        {% render 'treatment.html', treatment: treatment, packageData: servicePages %}
+      {% endfor %}
+      <p class='treatment-section__note'>Mondd el, mit szeretnél rendbe tenni, és segítek kiválasztani a megfelelő kezelést. A javasolt munkát és a végleges árat előre megbeszéljük.</p>
+    </div>
+  </section>
   {% include 'contact.html' %}
 </main>
 <script type='application/ld+json'>

@@ -30,35 +30,5 @@
       {% endfor %}
     </div>
   </div>
-  <dialog class='gallery-viewer' aria-labelledby='gallery-caption' aria-describedby='gallery-description'>
-    <div class='gallery-viewer__inner'>
-      <div class='gallery-viewer__top'>
-        <span data-gallery-counter aria-live='polite'></span
-        ><button type='button' class='button button--small button--secondary' data-gallery-close>
-          Bezárás
-        </button>
-      </div>
-      <img data-gallery-image alt=''>
-      <div class='gallery-viewer__bottom'>
-        <button
-          type='button'
-          class='button button--small button--secondary'
-          data-gallery-prev
-          aria-label='Előző kép'
-        >
-          Előző
-        </button>
-        <h2 id='gallery-caption'></h2>
-        <button
-          type='button'
-          class='button button--small button--secondary'
-          data-gallery-next
-          aria-label='Következő kép'
-        >
-          Következő
-        </button>
-      </div>
-      <p id='gallery-description' class='gallery-viewer__description'></p>
-    </div>
-  </dialog>
+  {% include 'gallery-viewer.html' %}
 </section>

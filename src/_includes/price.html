@@ -1,6 +1,1 @@
-<span class='price'
-  ><strong class='price__amount'>
-    {{- priceValue | forint }}
-    <small>Ft</small></strong
-  ><span class='price__suffix'>-tól</span></span
->
+<span class='price'><strong class='price__amount'>{{ priceValue | forint }} <small>Ft</small></strong>{% unless priceFrom == false %}<span class='price__suffix'>-tól</span>{% endunless %}</span>

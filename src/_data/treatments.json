@@ -1,0 +1,270 @@
+{
+  "wheels": {
+    "id": "felni-melytisztitas",
+    "group": "standalone",
+    "name": "Felni mélytisztítása és gumiápolás",
+    "price": 5000,
+    "from": true,
+    "unit": "4 kerékre",
+    "text": "A felnik külső felületének és hozzáférhető belső palástjának mélytisztítása, a gumik tisztításával és ápolásával. A kerekek az autón maradnak; slagos vízellátás szükséges.",
+    "packages": [
+      "quick",
+      "exterior",
+      "complete"
+    ],
+    "photos": [
+      {
+        "src": "/assets/images/kezelesek/felni-melytisztitas.webp",
+        "alt": "Narancssárga Kia XCeed első kereke fekete-ezüst felnivel",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "url": "/szolgaltatasok/felni-melytisztitas/",
+    "lead": "Makacs fékpor és lerakódások eltávolítása, a gumik tisztításával és ápolásával. Önállóan vagy külső mosás mellé is kérheted, a megbeszélt helyszínen.",
+    "metaDescription": "Felni mélytisztítása és gumiápolás 4 kerékre. Önállóan vagy mosás mellé, Budapest XXII. kerületében és környékén. Slagos vízellátás szükséges.",
+    "offerDescription": "Induló ár 4 kerékre, a felszerelt kerekek hozzáférhető felületeire, gumiápolással. Slagos vízellátás szükséges; a végleges árat előre egyeztetjük.",
+    "priceContext": "4 kerékre. A végleges árat a felnik állapota alapján előre egyeztetjük.",
+    "requirement": "A munkához helyszíni, slagos vízellátás szükséges.",
+    "included": [
+      {
+        "name": "Felnik külső felülete",
+        "text": "A makacs fékpor és lerakódások célzott tisztítása, szükség esetén többféle tisztítószerrel."
+      },
+      {
+        "name": "Hozzáférhető belső palást",
+        "text": "A felszerelt keréknél elérhető belső felületek tisztítása. A kerekek az autón maradnak."
+      },
+      {
+        "name": "Gumik tisztítása és ápolása",
+        "text": "A gumioldalfalak tisztítása és ápolása a rendezett összképért."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Kérhetem autómosás nélkül is?",
+        "answer": "Igen, ezért külön is kijövök. Gyors mosás, alapos külső vagy külső-belső csomag mellé is kérhető."
+      },
+      {
+        "question": "Mire van szükség a helyszínen?",
+        "answer": "Slagos vízellátásra van szükség a tisztítószerek és a feloldott szennyeződések alapos leöblítéséhez. A helyszíni feltételeket előre egyeztetjük."
+      },
+      {
+        "question": "Leszereled a kerekeket?",
+        "answer": "A kerekek az autón maradnak. A külső felület és a felszerelt keréknél hozzáférhető belső palást tisztítását vállalom."
+      },
+      {
+        "question": "Mitől függ a végleges ár?",
+        "answer": "A feltüntetett induló ár négy kerékre vonatkozik, gumiápolással. A végleges összeg a felnik állapotától és a szükséges munka mennyiségétől függ; ezt a kezdés előtt megbeszéljük."
+      }
+    ],
+    "comparisons": [
+      {
+        "before": {
+          "src": "/assets/images/kezelesek/felni-melytisztitas-01-elotte.webp",
+          "alt": "Narancssárga Kia XCeed első kereke szennyezett felnivel és gumioldalfallal",
+          "width": 1200,
+          "height": 900
+        },
+        "after": {
+          "src": "/assets/images/kezelesek/felni-melytisztitas-01-utana.webp",
+          "alt": "Narancssárga Kia XCeed első kereke tisztítás és gumiápolás után",
+          "width": 1200,
+          "height": 900
+        }
+      },
+      {
+        "before": {
+          "src": "/assets/images/kezelesek/felni-melytisztitas-02-elotte.webp",
+          "alt": "Szürke autó első kereke szennyezett fekete felnivel és gumioldalfallal",
+          "width": 1200,
+          "height": 900
+        },
+        "after": {
+          "src": "/assets/images/kezelesek/felni-melytisztitas-02-utana.webp",
+          "alt": "Szürke autó első kereke tisztítás és gumiápolás után",
+          "width": 1200,
+          "height": 900
+        }
+      }
+    ],
+    "workPhotos": []
+  },
+  "ozone": {
+    "id": "ozonos-kezeles",
+    "group": "standalone",
+    "name": "Beltér ózonos kezelése",
+    "price": 5000,
+    "from": false,
+    "text": "Az utastér ózonos kezelése, az azt követő szellőztetéssel. A szag forrásának megszüntetését és a belső tisztítást nem helyettesíti. Helyszíni áramellátás szükséges, az átadás időpontját előre egyeztetjük.",
+    "packages": [
+      "interior",
+      "complete"
+    ],
+    "photos": [
+      {
+        "src": "/assets/images/kezelesek/ozonos-kezeles.webp",
+        "alt": "Ózongenerátor egy üres autó utasterében, az első utas lábterében",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "url": "/szolgaltatasok/ozonos-belterkezeles/",
+    "lead": "Az utastér gépi ózonos kezelése, a végén szellőztetéssel. Önállóan vagy belső tisztítás mellé is kérheted, előre egyeztetett helyszínen.",
+    "metaDescription": "Beltér ózonos kezelése, önállóan vagy belső tisztítás mellé. Budapest XXII. kerületében és környékén, helyszíni áramellátással.",
+    "offerDescription": "A feltüntetett ár önállóan és csomag mellé is érvényes; az ózonos kezelést és az azt követő szellőztetést tartalmazza. Helyszíni áramellátás szükséges.",
+    "priceContext": "A kezelés és az azt követő szellőztetés együtt. Az ár önállóan és csomag mellé is ugyanannyi.",
+    "requirement": "Helyszíni áramellátás szükséges, ezt előre egyeztetjük.",
+    "included": [
+      {
+        "name": "Kiegészítés a szagkezeléshez",
+        "text": "Kellemetlen utastéri szagok esetén egyeztethető kiegészítő kezelés. A visszatérő szag tartós rendezéséhez a kiváltó okkal és az érintett felületek tisztításával is foglalkozni kell."
+      },
+      {
+        "name": "Ózonos beltérkezelés",
+        "text": "A gépi kezelést az üres utastérben végzem. A készülék működése alatt az autóban ember és állat sem tartózkodhat."
+      },
+      {
+        "name": "Szellőztetés és átadás",
+        "text": "A kezelés után szellőztetem az autót. A visszaülés időpontját a készülék előírásai és a helyszíni feltételek alapján egyeztetjük."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Kérhetem belső takarítás nélkül is?",
+        "answer": "Igen, önálló szolgáltatásként is kérhető. Az ár önállóan és csomag mellé is ugyanannyi. A beltér állapotától függően a tisztítás vagy a szag forrásának megszüntetése külön feladat lehet."
+      },
+      {
+        "question": "Mire van szükség a helyszínen?",
+        "answer": "Helyszíni áramellátás szükséges az ózongenerátor működéséhez. Az áramvételi lehetőséget és az autó helyét telefonon egyeztetjük."
+      },
+      {
+        "question": "Minden kellemetlen szagot megszüntet?",
+        "answer": "Az eredmény a szag okától és az utastér állapotától függ. A szagot okozó szennyeződés, nedvesség vagy más kiváltó ok rendezése külön is szükséges lehet, ezért teljes és tartós szagmentességet előzetesen nem lehet garantálni."
+      },
+      {
+        "question": "Mikor használhatom újra az autót?",
+        "answer": "A kezelés alatt az utastér üres marad. Utána szellőztetés következik; a visszaülés és az átadás időpontját a készülék előírásai és a helyszíni feltételek alapján egyeztetjük."
+      }
+    ],
+    "relatedTitle": "A belteret is rendbe tennéd?",
+    "comparisons": [],
+    "workPhotos": [
+      {
+        "src": "/assets/images/kezelesek/ozonos-kezeles-01.webp",
+        "alt": "Kompakt ózongenerátor a szövetülés melletti gumiszőnyegen",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "src": "/assets/images/kezelesek/ozonos-kezeles-02.webp",
+        "alt": "Szürke autó üres utastere nyitott ajtókkal, szellőztetés közben",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "mediaTitle": "A kezelés képekben"
+  },
+  "engine": {
+    "id": "motorter-tisztitas",
+    "group": "addon",
+    "name": "Motortér tisztítása és ápolása",
+    "price": 3000,
+    "from": true,
+    "text": "A motortér hozzáférhető felületeinek és a motorháztető aljának tisztítása, öblítés után légfúvós szárítással és a műanyagok ápolásával. Slagos vízellátás szükséges.",
+    "packages": [
+      "quick",
+      "exterior",
+      "complete"
+    ],
+    "photos": [
+      {
+        "src": "/assets/images/kezelesek/motorter-tisztitas.webp",
+        "alt": "Lexus RX450h megtisztított motortere nyitott motorháztető alatt",
+        "width": 1200,
+        "height": 900
+      }
+    ]
+  },
+  "plastics": {
+    "id": "kulso-muanyagapolas",
+    "group": "addon",
+    "name": "Külső műanyagok ápolása",
+    "quote": "Egyedi ajánlat",
+    "priceNote": "a műanyag felületek mennyisége és állapota alapján",
+    "text": "A megfakult külső műanyagok színélénkítő ápolása a rendezettebb összképért. Az alapos külső és a külső-belső csomag már tartalmazza.",
+    "packages": [
+      "quick"
+    ],
+    "photos": [
+      {
+        "src": "/assets/images/kezelesek/kulso-muanyagapolas.webp",
+        "alt": "Kék Ford első lökhárítójának és hűtőrácsának fekete műanyag felületei",
+        "width": 1200,
+        "height": 900
+      }
+    ]
+  },
+  "iron": {
+    "id": "roprozsdaoldas",
+    "group": "addon",
+    "name": "Vegyszeres röprozsdaoldás",
+    "quote": "Egyedi ajánlat",
+    "priceNote": "a kezelendő felület és a szennyezettség alapján",
+    "text": "A fényezésre tapadt fémszennyeződések vegyszeres oldása, alapos slagos öblítéssel. A karosszéria korróziójának javítását nem tartalmazza.",
+    "packages": [
+      "quick",
+      "exterior",
+      "complete"
+    ],
+    "photos": [
+      {
+        "src": "/assets/images/kezelesek/roprozsdaoldas.webp",
+        "alt": "Ezüst autó ajtaján lefolyó röprozsdaoldó halvány lilás reakcióval",
+        "width": 1200,
+        "height": 900
+      }
+    ]
+  },
+  "scale": {
+    "id": "vizkooldas",
+    "group": "addon",
+    "name": "Vízkőoldás",
+    "quote": "Egyedi ajánlat",
+    "text": "A rászáradt vízcseppek után maradó ásványi lerakódások célzott kezelése. A várható eredményt a felület mérete és állapota alapján egyeztetjük. Slagos vízellátás szükséges.",
+    "packages": [
+      "quick",
+      "exterior",
+      "complete"
+    ],
+    "photos": [
+      {
+        "src": "/assets/images/kezelesek/vizkooldas.webp",
+        "alt": "Ásványi vízfoltok szürke motorháztetőn, mellette mikroszálas kendő",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "priceNote": "személyes felmérés alapján"
+  },
+  "glass": {
+    "id": "szelvedo-vizlepergeto-kezelese",
+    "group": "addon",
+    "name": "Szélvédő vízlepergető kezelése",
+    "quote": "Ár egyeztetéssel",
+    "text": "A megtisztított szélvédő vízlepergető kezelése segíti, hogy az esővíz cseppekbe álljon össze és könnyebben távozzon a felületről. A csomagok üvegtisztításán felül kérhető.",
+    "packages": [
+      "quick",
+      "exterior",
+      "complete"
+    ],
+    "photos": [
+      {
+        "src": "/assets/images/kezelesek/szelvedo-vizlepergeto-kezelese.webp",
+        "alt": "Apró esőcseppek egy parkoló autó szélvédőjén",
+        "width": 1200,
+        "height": 900
+      }
+    ]
+  }
+}

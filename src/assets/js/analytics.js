@@ -2,7 +2,15 @@
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
   const live = ['autokozmetikahelyben.hu', 'www.autokozmetikahelyben.hu'].includes(location.hostname);
-  const packageIds = new Set(['kulso-mosas', 'kulso-vedelem', 'belso', 'teljes', 'nem-tudom']);
+  const packageIds = new Set([
+    'kulso-mosas',
+    'kulso-vedelem',
+    'belso',
+    'teljes',
+    'felni-melytisztitas',
+    'ozonos-kezeles',
+    'nem-tudom',
+  ]);
   const form = document.querySelector('form[name="visszahivas"]');
   const serviceId = form?.querySelector('[name="csomag"]')?.value;
   const pageContext = document.querySelector('.homepage')

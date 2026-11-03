@@ -62,7 +62,7 @@ eleventyComputed:
         <p class='service-page__intro'>{{ service.extrasIntro | escape }}</p>
         <span class='service-page__extra-badge'>Feláras extrák · az alapár nem tartalmazza</span>
       </div>
-      {% render 'service-item-list.html', detailItems: service.extras, detailExtra: true %}
+      {% render 'service-item-list.html', detailItems: service.extras, detailExtra: true, treatmentData: treatments %}
     </div>
   </section>
   {% include 'contact.html' %}

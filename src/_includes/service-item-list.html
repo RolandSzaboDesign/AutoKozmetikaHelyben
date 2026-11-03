@@ -1,5 +1,7 @@
 <ul class='service-details{% if detailExtra %} service-details--extras{% endif %}'>
   {% for item in detailItems %}
+    {% assign detail = item %}
+    {% if item.treatmentKey %}{% assign detail = treatmentData[item.treatmentKey] %}{% endif %}
     <li>
       <h3>
         {% if detailExtra %}
@@ -28,9 +30,12 @@
             <path d="m4 10 4 4 8-8"/>
           </svg>
         {% endif -%}
-        {{- item.name | escape }}
+        {{- detail.name | escape }}
       </h3>
-      <p>{{ item.text | escape }}</p>
+      <p>{{ detail.text | escape }}</p>
+      {% if item.treatmentKey %}
+        <a class='treatment-detail-link' aria-label='{{ detail.name | escape }}: ár és feltételek' href='{% if detail.url %}{{ detail.url }}{% else %}/szolgaltatasok/#{{ detail.id }}{% endif %}'>Ár és feltételek</a>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>

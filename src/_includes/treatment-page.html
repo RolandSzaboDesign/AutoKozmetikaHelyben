@@ -1,0 +1,58 @@
+---
+layout: base.html
+eleventyComputed:
+  title: "{{ treatments[treatmentKey].name }} – {{ treatments[treatmentKey].price | forint }} Ft{% if treatments[treatmentKey].from %}-tól{% endif %} | {{ site.title }}"
+  description: "{{ treatments[treatmentKey].metaDescription }} {{ treatments[treatmentKey].price | forint }} Ft{% if treatments[treatmentKey].from %}-tól{% endif %}."
+---
+{% assign treatment = treatments[treatmentKey] %}
+<main id='tartalom' class='service-page treatment-page'>
+  <section class='service-page__hero' aria-labelledby='service-title'>
+    <div class='container'>
+      <nav class='service-page__breadcrumb' aria-label='Morzsamenü'>
+        <a href='/'>Főoldal</a><span aria-hidden='true'>/</span><a href='/szolgaltatasok/'>Szolgáltatások</a>
+      </nav>
+      <div class='service-page__hero-grid'>
+        <div>
+          <p class='eyebrow'>Önálló szolgáltatás · {{ site.serviceAreaLabel }}</p>
+          <h1 id='service-title'>{{ treatment.name | escape }}</h1>
+          <p class='service-page__lead'>{{ treatment.lead | escape }}</p>
+          <div class='service-page__price-panel'>
+            {% render 'price.html', priceValue: treatment.price, priceFrom: treatment.from %}
+            <p>{{ treatment.priceContext | escape }}</p>
+          </div>
+          <a class='button' href='#kapcsolat'>Kapcsolatfelvétel</a>
+          <p class='treatment-page__requirement'>{{ treatment.requirement | escape }}</p>
+        </div>
+        {% assign heroPhoto = treatment.photos | first %}
+        {% if heroPhoto %}
+          <figure class='service-page__photo'>
+            <img src='{{ heroPhoto.src | escape }}' alt='{{ heroPhoto.alt | escape }}' width='{{ heroPhoto.width }}' height='{{ heroPhoto.height }}' fetchpriority='high'>
+          </figure>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  <section class='section section--soft' aria-labelledby='service-included'>
+    <div class='container'>
+      <h2 id='service-included'>Mit tartalmaz a kezelés?</h2>
+      {% render 'service-item-list.html', detailItems: treatment.included %}
+    </div>
+  </section>
+  {% include 'treatment-media.html' %}
+  {% include 'contact.html' %}
+  {% include 'faq.html' %}
+  <nav class='section section--soft' aria-labelledby='service-related'>
+    <div class='container'>
+      <h2 id='service-related'>{{ treatment.relatedTitle | default: 'Mosást is kérnél mellé?' | escape }}</h2>
+      <div class='service-cards service-cards--related{% if treatment.packages.size == 2 %} service-cards--pair{% endif %}'>
+        {% for key in treatment.packages %}
+          {% assign card = serviceCatalog.packageCards[key] %}
+          {% render 'service-card.html', cardService: card.service, cardDescription: card.description %}
+        {% endfor %}
+      </div>
+      <a class='text-link treatment-page__hub-link' href='/szolgaltatasok/'>Összes szolgáltatás</a>
+    </div>
+  </nav>
+</main>
+<script type='application/ld+json'>{{ treatment | serviceSchema: site | json }}</script>
+<script type='application/ld+json'>{{ treatment.faq | faqSchema | json }}</script>

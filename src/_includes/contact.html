@@ -28,7 +28,7 @@
       <input
         type='hidden'
         name='csomag'
-        value='{% if serviceKey %}{{ servicePages[serviceKey].id }}{% else %}nem-tudom{% endif %}'
+        value='{% if serviceKey %}{{ servicePages[serviceKey].id }}{% elsif treatmentKey %}{{ treatments[treatmentKey].id }}{% else %}nem-tudom{% endif %}'
       >
       <input type='hidden' name='utm_source'>
       <input type='hidden' name='utm_medium'>
