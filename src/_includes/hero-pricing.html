@@ -21,8 +21,12 @@
     {% endfor %}
   </ul>
   <p id='hero-pricing-note' class='hero-pricing__note'>
+    {% if pricingNote %}
+      {{ pricingNote | escape }}
+    {% else %}
     Személyautókra és személyautó méretű crossoverekre. XXII. kerületi kiszállással; nagyobb autóra vagy
     többletmunkára előzetes ajánlat.
+    {% endif %}
   </p>
   <a class='text-link hero-pricing__details' href='/szolgaltatasok/'>Csomagok összehasonlítása</a>
 </aside>

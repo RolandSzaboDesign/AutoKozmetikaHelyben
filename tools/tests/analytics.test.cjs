@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const vm = require('node:vm');
 const fs = require('node:fs');
 const source = fs.readFileSync('src/assets/js/analytics.js', 'utf8');
-function setup(hostname = 'autokozmetikahelyben.hu', serviceId = 'belso') {
+function setup(hostname = 'autokozmetikahelyben.hu', serviceId = 'belso', areaId) {
   const documentListeners = new Map();
   const formListeners = new Map();
   const sent = [];
@@ -21,7 +21,11 @@ function setup(hostname = 'autokozmetikahelyben.hu', serviceId = 'belso') {
   const context = {
     location: { hostname },
     document: {
-      querySelector: (selector) => (selector.startsWith('form[') ? form : null),
+      querySelector: (selector) => selector.startsWith('form[')
+        ? form
+        : selector === '[data-area-page]' && areaId
+          ? { dataset: { areaPage: areaId } }
+          : null,
       querySelectorAll: () => [],
       getElementById: () => null,
       addEventListener: (name, fn) => (name === 'DOMContentLoaded' ? fn() : documentListeners.set(name, fn)),
@@ -104,6 +108,23 @@ test('localhost never forwards custom analytics events', () => {
   app.openDetails();
   app.formListeners.get('callback:success')({ detail: { package: 'belso' } });
   assert.equal(app.sent.length, 0);
+});
+
+test('area calls and callbacks retain fixed attribution without forwarding arbitrary area text', () => {
+  for (const id of [...require('../../src/_data/locationData.json').map((item) => item.analyticsId), 'areas']) {
+    const app = setup(undefined, 'nem-tudom', id);
+    app.click('tel:+36000000000');
+    app.formListeners.get('callback:success')({ detail: { package: 'nem-tudom' } });
+    assert.equal(app.sent.find((event) => event.name === 'phone_click').props.page, id);
+    assert.equal(app.sent.find((event) => event.name === 'form_success').props.page, id);
+  }
+  const app = setup(undefined, 'nem-tudom', 'private-free-text');
+  app.click('tel:+36000000000');
+  assert.equal(app.sent[0].props.page, 'other');
+  assert(!JSON.stringify(app.sent).includes('private-free-text'));
+  const local = setup('localhost', 'nem-tudom', 'area-22');
+  local.click('tel:+36000000000');
+  assert.equal(local.sent.length, 0);
 });
 
 test('standalone service IDs survive page attribution and confirmed callbacks', () => {

@@ -13,7 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
   ]);
   const form = document.querySelector('form[name="visszahivas"]');
   const serviceId = form?.querySelector('[name="csomag"]')?.value;
-  const pageContext = document.querySelector('.homepage')
+  const areaId = document.querySelector('[data-area-page]')?.dataset.areaPage;
+  const areaIds = new Set(['area-22', 'area-diosd', 'area-erd', 'area-torokbalint', 'area-szigetszentmiklos', 'areas']);
+  const pageContext = areaIds.has(areaId)
+    ? areaId
+    : document.querySelector('.homepage')
     ? 'home'
     : document.querySelector('.service-hub')
       ? 'services'
@@ -66,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'about-title': 'about',
     'contact-title': 'contact',
     'faq-title': 'faq',
+    'location-title': 'area',
     'service-included': 'included',
     'service-extras': 'extras',
     'service-related': 'related',

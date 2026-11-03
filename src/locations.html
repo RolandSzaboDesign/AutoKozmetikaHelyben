@@ -1,0 +1,19 @@
+---
+layout: base.html
+pagination:
+  data: locationPages
+  size: 1
+  alias: location
+  addAllPagesToCollections: true
+permalink: "{{ location.url }}"
+hasContact: true
+eleventyComputed:
+  title: "{{ location.title }}"
+  description: "{{ location.description }}"
+---
+<main id='tartalom' class='homepage location-page' data-area-page='{{ location.analyticsId }}'>
+  {% include 'landing-content.html' %}
+</main>
+<script type='application/ld+json'>
+  {{ location | locationSchema: site, servicePages | json }}
+</script>

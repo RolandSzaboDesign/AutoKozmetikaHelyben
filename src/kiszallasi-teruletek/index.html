@@ -1,0 +1,44 @@
+---
+layout: base.html
+title: Kiszállási területek | Autókozmetika helyben
+description: Mobil autókozmetika egyeztetett helyszínen. A XXII. kerületi kiszállás ingyenes; más címnél a vállalást és az esetleges díjakat előre megbeszéljük.
+hasContact: true
+---
+<main id='tartalom' class='location-page areas-hub' data-area-page='areas'>
+  <section class='hero home-hero' aria-labelledby='hero-title'>
+    <div class='container home-hero__layout'>
+      <div class='home-hero__intro'>
+        <p class='eyebrow'>Mobil autókozmetika</p>
+        <h1 id='hero-title'>Kiszállási területek</h1>
+        <p class='home-hero__lead'>Előre egyeztetett, alkalmas helyszínen tisztítom az autódat. Válaszd ki, hol parkolsz, és nézd meg a helyszíni autóápolás részleteit.</p>
+        <div class='home-hero__actions'>
+          <a class='button' href='#kapcsolat'>Kapcsolatfelvétel</a>
+        </div>
+        <p class='location-page__services-link'><a class='text-link' href='/szolgaltatasok/'>Csomagok és szolgáltatások</a></p>
+      </div>
+      <aside class='hero-pricing area-pricing' aria-labelledby='areas-pricing-title'>
+        <h2 id='areas-pricing-title'>Területek és kiszállási díjak</h2>
+        <ul class='hero-pricing__list' aria-describedby='areas-pricing-note'>
+          {% for area in locationPages %}
+            <li>
+              <a class='hero-pricing__option' href='{{ area.url }}' aria-label='{{ area.label | escape }} – {% if area.deliveryFee == 0 %}ingyenes kiszállás{% else %}{{ area.deliveryFee | forint }} Ft kiszállási díj{% endif %} – részletek'>
+                <span class='hero-pricing__name'>{{ area.label | escape }}</span>
+                <span class='hero-pricing__price'>{% if area.deliveryFee == 0 %}Ingyenes{% else %}{% render 'price.html', priceValue: area.deliveryFee, priceFrom: false %}{% endif %}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        <p id='areas-pricing-note' class='hero-pricing__note'>A kiszállási díj a választott csomag alapárán felül értendő. Az esetleges parkolási költséget külön, előre egyeztetjük.</p>
+      </aside>
+    </div>
+  </section>
+  <section class='section section--soft' aria-labelledby='other-area-title'>
+    <div class='container container--narrow'>
+      <h2 id='other-area-title'>Más helyszínre kérnéd?</h2>
+      <p>Mondd el, melyik kerületben vagy településen áll az autó, és milyen tisztítást szeretnél. A vállalást, a kiszállás díját és az esetleg felmerülő parkolási költséget előre egyeztetjük.</p>
+      <p>Saját kocsibeálló vagy más alkalmas magánterület a legjobb. A helyszín adottságait és a választott munkához szükséges feltételeket telefonon megbeszéljük.</p>
+    </div>
+  </section>
+  {% assign contactBackground = 'white' %}
+  {% include 'contact.html' %}
+</main>

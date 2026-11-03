@@ -13,5 +13,12 @@
       <a href='{{ site.contact.instagram }}'> Instagram </a>
     </nav>
     <p class='site-footer__copyright'>© 2026</p>
+    <nav class='site-footer__areas' aria-label='Kiszállási területek'>
+      <span>Kiszállási területek</span>
+      {% for area in locationPages %}
+        <a href='{{ area.url }}'>{{ area.label | escape }}</a>
+      {% endfor %}
+      <a href='/kiszallasi-teruletek/'>Összes kiszállási terület</a>
+    </nav>
   </div>
 </footer>

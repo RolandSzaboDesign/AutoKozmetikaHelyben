@@ -1,12 +1,14 @@
 <section class='section faq-section' aria-labelledby='faq-title'>
   <div class='container container--narrow'>
     <h2 id='faq-title'>Gyakori kérdések</h2>
-    {% if serviceKey -%}
+    {% if location -%}
+      {%- assign faqItems = location.faq -%}
+    {%- elsif serviceKey -%}
       {%- assign faqItems = servicePages[serviceKey].faq -%}
     {%- elsif treatmentKey -%}
       {%- assign faqItems = treatments[treatmentKey].faq -%}
     {%- else -%}
-      {%- assign faqItems = faq -%}
+      {%- assign faqItems = siteFaq -%}
     {%- endif %}
     <div class='faq-list'>
       {% for item in faqItems %}

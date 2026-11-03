@@ -1,54 +1,66 @@
 [
   {
     "question": "Mennyibe kerül, és mikor kapok végleges árat?",
-    "answer": "A csomagoknál feltüntetett összegek normál szennyezettségű személyautókra és kisebb crossoverekre vonatkoznak, XXII. kerületi kiszállással együtt. Nagyobb autó vagy több munka esetén egyedi ajánlatot adok. Telefonon, szükség esetén fotók vagy helyszíni megtekintés alapján egyeztetünk. A vállalt munkát és a fizetendő összeget kezdés előtt megbeszéljük."
+    "answer": "A csomagoknál feltüntetett összegek normál szennyezettségű személyautókra és kisebb crossoverekre vonatkoznak, XXII. kerületi kiszállással együtt. Nagyobb autó vagy több munka esetén egyedi ajánlatot adok. Telefonon, szükség esetén fotók vagy helyszíni megtekintés alapján egyeztetünk. A vállalt munkát és a fizetendő összeget kezdés előtt megbeszéljük.",
+    "id": "pricing"
   },
   {
     "question": "Mikor szükséges felár vagy egyedi ajánlat?",
-    "answer": "Nagyobb jármű, sok állatszőr, rendkívüli szennyezettség vagy külön kért kezelés esetén. Az autó állapotáról fotók is segíthetnek. A többletmunkát és annak díját mindig előre megbeszéljük."
+    "answer": "Nagyobb jármű, sok állatszőr, rendkívüli szennyezettség vagy külön kért kezelés esetén. Az autó állapotáról fotók is segíthetnek. A többletmunkát és annak díját mindig előre megbeszéljük.",
+    "id": "surcharges"
   },
   {
     "question": "Mindig szükséges helyszíni állapotfelmérés?",
-    "answer": "Sok munkát telefonon, szükség esetén néhány fotó alapján is meg tudunk beszélni. Ha az autó állapota vagy a helyszín miatt indokolt, ingyenes helyszíni megtekintést egyeztetünk. Ez nem kötelez megrendelésre."
+    "answer": "Sok munkát telefonon, szükség esetén néhány fotó alapján is meg tudunk beszélni. Ha az autó állapota vagy a helyszín miatt indokolt, ingyenes helyszíni megtekintést egyeztetünk. Ez nem kötelez megrendelésre.",
+    "id": "assessment"
   },
   {
     "question": "A megtekintés után rögtön kezdhetsz?",
-    "answer": "Igen, ha telefonon így egyeztettünk, a helyszín és az időjárás megfelelő, és elfogadod az ajánlatot. A porszívózáshoz szükséges ügyféloldali felszerelést is előre megbeszéljük."
+    "answer": "Igen, ha telefonon így egyeztettünk, a helyszín és az időjárás megfelelő, és elfogadod az ajánlatot. A porszívózáshoz szükséges ügyféloldali felszerelést is előre megbeszéljük.",
+    "id": "start"
   },
   {
     "question": "Kérhetek csak külső vagy csak belső tisztítást?",
-    "answer": "Igen. Két külső csomagból választhatsz, és külön belső tisztítást és ápolást is kérhetsz. A külső-belső csomag a teljes alapos külsőt és a teljes belsőt egyesíti. A hozzáférhető csomagtér a belső munka része; a motortér külön egyeztetett extra."
+    "answer": "Igen. Két külső csomagból választhatsz, és külön belső tisztítást és ápolást is kérhetsz. A külső-belső csomag a teljes alapos külsőt és a teljes belsőt egyesíti. A hozzáférhető csomagtér a belső munka része; a motortér külön egyeztetett extra.",
+    "id": "package-choice"
   },
   {
     "question": "Hol dolgozol, és mennyi a kiszállás?",
-    "answer": "Budapest XXII. kerületében, a közeli XI., XX. és XXI. kerületben, valamint Szigetszentmiklóson és környékükön egyeztethető helyszíni autóápolás. A XXII. kerületi kiszállást az alapárak tartalmazzák; más helyszínen előre megbeszéljük a vállalást és az esetleges kiszállási díjat. Saját kocsibeálló vagy más alkalmas magánterület a legjobb."
+    "id": "coverage"
   },
   {
+    "id": "equipment",
     "question": "Kell vizet, áramot vagy porszívót biztosítanom?",
-    "answer": "A külső mosáshoz viszek vizet és saját felszerelést. Ha az autó állapota miatt helyszíni vízre vagy áramra is szükség lesz, azt előre egyeztetjük. Saját porszívóm jelenleg nincs: porszívózást az általad biztosított, megfelelő porszívóval tudok végezni. Ha ezt nem tudod biztosítani, a vállalható belső munkáról külön egyeztetünk."
+    "answer": "A külső mosáshoz 20 liter vizet viszek két kannában, így az alapmosás az általad biztosított víz nélkül is megoldható. Egyes külön kezelésekhez helyszíni, slagos vízellátás szükséges. Áramforrást nem viszek: az ózongenerátorhoz és a hálózati porszívóhoz helyszíni áram kell. Saját porszívóm jelenleg nincs; porszívózáshoz az általad biztosított, megfelelő porszívót használom. Enélkül a vállalható belső munkát előre megbeszéljük."
   },
   {
     "question": "Mennyi ideig tart a tisztítás?",
-    "answer": "A külső mosás általában 60–90 perc, az alapos külső kezelés körülbelül 2 óra. Normál állapotú autónál a belső tisztítás nagyjából 2 óra, a külső-belső munka körülbelül 4 óra. Ezek becslések: a méret, a bőrülések és a szennyezettség is befolyásolják az időt. Sok állatszőrnél vagy erős szennyeződésnél hosszabb munkával és egyedi ajánlattal számolj."
+    "answer": "A külső mosás általában 60–90 perc, az alapos külső kezelés körülbelül 2 óra. Normál állapotú autónál a belső tisztítás nagyjából 2 óra, a külső-belső munka körülbelül 4 óra. Ezek becslések: a méret, a bőrülések és a szennyezettség is befolyásolják az időt. Sok állatszőrnél vagy erős szennyeződésnél hosszabb munkával és egyedi ajánlattal számolj.",
+    "id": "duration"
   },
   {
+    "id": "interior-scope",
     "question": "Mit tartalmaz a belső tisztítás, és jár hozzá ápolás?",
     "answer": "A tetőkárpit kíméletes portörlésétől a műszerfalon, tárolókon és apró részleteken át a hozzáférhető csomagtérig tisztítom a belteret. Az ülések és szőnyegek felületi tisztítást, szükség szerint helyi foltkezelést kapnak. A megfelelő műanyag felületek ápolása és a bőrülések tisztítása, ápolása is a csomag része. Extrakciós kárpitmosást nem végzek."
   },
   {
     "question": "Polírozást vagy tartós kerámiabevonatot is vállalsz?",
-    "answer": "Polírozást és tartós kerámiabevonat telepítését jelenleg nem vállalok. Az alapos külső csomag a helyszínhez igazított kerámiás spray- vagy waxvédelmet tartalmaz. A vízlepergető üvegkezelés külön kérhető extra."
+    "answer": "Polírozást és tartós kerámiabevonat telepítését jelenleg nem vállalok. Az alapos külső csomag a helyszínhez igazított kerámiás spray- vagy waxvédelmet tartalmaz. A vízlepergető üvegkezelés külön kérhető extra.",
+    "id": "service-limits"
   },
   {
     "question": "Ott kell maradnom az autó mellett?",
-    "answer": "Az elején megbeszéljük a munkát, a végén együtt átnézzük az autót. Belső takarításhoz az autót ki kell nyitnod. Közben nyugodtan intézheted a dolgaidat."
+    "answer": "Az elején megbeszéljük a munkát, a végén együtt átnézzük az autót. Belső takarításhoz az autót ki kell nyitnod. Közben nyugodtan intézheted a dolgaidat.",
+    "id": "handover"
   },
   {
+    "id": "weather",
     "question": "Mi történik rossz idő esetén?",
     "answer": "Ha eső, hó vagy hideg miatt nem tudok megfelelően dolgozni, másik időpontot beszélünk meg. A helyszíntől is függ, milyen időben végezhető el a munka."
   },
   {
     "question": "Hogyan tudok fizetni?",
-    "answer": "Készpénzzel vagy azonnali banki átutalással."
+    "answer": "Készpénzzel vagy azonnali banki átutalással.",
+    "id": "payment"
   }
 ]

@@ -25,7 +25,11 @@
     "googleReviews": "https://www.google.com/search?q=Aut%C3%B3KozmetikaHelyben.hu&stick=H4sIAAAAAAAA_-NgU1I1qLBIM7Q0TLU0NLEwMUxJMTW2MqhINDUySDE0MDM1SklLBAovYpVwLC05vNk7vyo3tSQzO9EjNacyKTVPL6MUAOubA21EAAAA&hl=hu"
   },
   "serviceAreaLabel": "Budapest XXII. kerülete és környéke",
+  "travelFees": { "budapest22": 0, "nearby": 2000 },
   "areaServed": [
+    { "@type": "City", "name": "Diósd" },
+    { "@type": "City", "name": "Érd" },
+    { "@type": "City", "name": "Törökbálint" },
     {
       "@type": "Place",
       "name": "Budapest XI. kerület"

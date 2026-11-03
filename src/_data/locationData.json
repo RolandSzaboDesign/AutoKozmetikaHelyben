@@ -1,0 +1,166 @@
+[
+  {
+    "key": "budapest-22",
+    "analyticsId": "area-22",
+    "url": "/kiszallasi-teruletek/budapest-22-kerulet/",
+    "name": "Budapest XXII. kerület",
+    "label": "XXII. kerület · Budafok-Tétény",
+    "title": "Mobil autókozmetika XXII. kerület, Budafok-Tétény | Autókozmetika helyben",
+    "heading": "Mobil autókozmetika Budapest XXII. kerületében",
+    "lead": "Külső mosás és belső tisztítás Budafokon, Budatétényben és Nagytétényben, előre egyeztetett, alkalmas helyszínen. Velem beszéled meg a munkát, és én megyek az autódhoz.",
+    "description": "Mobil autókozmetika Budafok-Tétényben, ingyenes XXII. kerületi kiszállással. Külső mosás és belső tisztítás, előre egyeztetett helyszínen és áron.",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Budapest XXII. kerület, Budafok-Tétény"
+    },
+    "intro": {
+      "heading": "Autókozmetika a XXII. kerületben, ahol az autód áll",
+      "paragraphs": [
+        "Ha Budafokon, Budatétényben vagy Nagytétényben parkol az autód, és ráférne egy külső mosás, belső tisztítás vagy teljes külső-belső ápolás, elmegyek az előre egyeztetett, alkalmas helyszínre, és ott végzem el a munkát.",
+        "A tisztítás közben nyugodtan intézheted a dolgaidat. Az elején megbeszéljük a kért feladatokat, az átadáskor pedig együtt átnézzük az autót. Az alábbi csomagok között megtalálod a külön külső, belső és a teljes külső-belső tisztítást is."
+      ],
+      "facts": [
+        {
+          "label": "Kiszállási terület",
+          "text": "Budapest XXII. kerülete, Budafok-Tétény"
+        },
+        {
+          "label": "Kiszállási díj",
+          "type": "deliveryFee"
+        },
+        {
+          "label": "Munkavégzés helye",
+          "text": "Előre egyeztetett, alkalmas helyszín az autódnál"
+        }
+      ]
+    },
+    "process": {
+      "paragraphs": [
+        "Hívj fel, vagy hagyd meg a számod, és visszahívlak. Mondd el, hol áll az autó a XXII. kerületben, milyen az állapota, és milyen tisztítást szeretnél.",
+        "A címmel együtt a munkaterületet is megbeszéljük. Saját kocsibeálló vagy más alkalmas magánterület a legjobb, ahol körbe tudom járni az autót. Társasházi vagy más parkolónál előre tisztázzuk, hogy ott elvégezhető-e a választott munka, és milyen helyszíni felszerelésre lesz szükség.",
+        "Szükség esetén fotókat kérek, vagy személyesen megnézem az autót. Ezután egyeztetjük a munkát, az időpontot és a végleges árat. Feláras feladatot csak a jóváhagyásoddal végzek."
+      ]
+    },
+    "deliveryZone": "budapest22"
+  },
+  {
+    "key": "diosd",
+    "analyticsId": "area-diosd",
+    "url": "/kiszallasi-teruletek/diosd/",
+    "name": "Diósd",
+    "label": "Diósd",
+    "title": "Mobil autókozmetika Diósdon | Autókozmetika helyben",
+    "heading": "Mobil autókozmetika Diósdon",
+    "deliveryZone": "nearby",
+    "lead": "Kézi külső mosás és belső tisztítás az autódnál, előre megbeszélt helyszínen. Egyeztessünk a kért munkáról, a pontos címről és az időpontról.",
+    "description": "Kézi külső mosás, belső tisztítás és ápolás Diósdon, előre egyeztetett helyszínen. Csomagárak, kiszállási díj és közvetlen egyeztetés Rolanddal.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Diósd"
+    },
+    "intro": {
+      "heading": "Autókozmetika Diósdon, ahol az autód parkol",
+      "paragraphs": [
+        "Ha Diósdon parkol az autód, és ráférne egy külső mosás, a beltér rendbetétele vagy mindkettő, előre egyeztetett, alkalmas helyszínen elvégzem a munkát. Saját kocsibeálló vagy más megfelelő magánterület esetén az autó a megszokott helyén maradhat.",
+        "Választhatsz gyors külső frissítést, alaposabb külső mosást és védelmet, külön belső tisztítást vagy teljes külső-belső ápolást. Az autó állapota és a helyszín alapján együtt megbeszéljük, melyik csomag illik az igényedhez."
+      ]
+    },
+    "process": {
+      "paragraphs": [
+        "Hívj fel, vagy hagyd meg a számod, és visszahívlak. Mondd el a pontos címet, az autó típusát, állapotát és azt, milyen tisztítást szeretnél.",
+        "A munkaterületet is egyeztetjük: fontos, hogy körbe tudjam járni az autót. Társasházi vagy más közös parkolónál előre megbeszéljük a munkavégzés lehetőségét, illetve a kért kezeléshez szükséges víz- és áramvételi lehetőséget.",
+        "Szükség esetén fotókat kérek az autóról. A munkát, a csomagárat, a kiszállási díjat, az esetleges további költségeket és az időpontot előre tisztázzuk. Feláras feladatot csak a jóváhagyásoddal végzek."
+      ]
+    }
+  },
+  {
+    "key": "erd",
+    "analyticsId": "area-erd",
+    "url": "/kiszallasi-teruletek/erd/",
+    "name": "Érd",
+    "label": "Érd",
+    "title": "Mobil autókozmetika Érden | Autókozmetika helyben",
+    "heading": "Mobil autókozmetika Érden",
+    "deliveryZone": "nearby",
+    "lead": "Külső mosás, belső tisztítás és gondos ápolás, egyeztetett érdi helyszínen. A pontos cím és az autó állapota alapján beszéljük meg a munkát és az időpontot.",
+    "description": "Kézi külső mosás, belső tisztítás és ápolás Érden, előre egyeztetett helyszínen. Csomagárak, kiszállási díj és közvetlen egyeztetés Rolanddal.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Érd"
+    },
+    "intro": {
+      "heading": "Autókozmetika Érden, a megbeszélt helyszínen",
+      "paragraphs": [
+        "Ha Érden áll az autód, és a poros beltér, a koszos karosszéria vagy mindkettő miatt keresel segítséget, kérhetsz helyszíni tisztítást. A pontos címet és a parkolási lehetőséget egyeztetjük, hogy a választott munka ott elvégezhető legyen.",
+        "Külön külső és belső csomagot is választhatsz. Ha kívül-belül rendbe tennéd az autót, a teljes csomag az alapos külső mosást és védelmet a belső tisztítással és ápolással együtt tartalmazza. Az árakat és a részletes tartalmat lent találod."
+      ]
+    },
+    "process": {
+      "paragraphs": [
+        "Hívj fel, vagy kérj visszahívást. A pontos címmel, az autó típusával és a kért tisztítással kezdjük az egyeztetést. Erős szennyeződésnél vagy sok állatszőrnél néhány fotó is segíthet.",
+        "Megbeszéljük, hol tudok dolgozni az autón. Saját kocsibeálló vagy más alkalmas magánterület a legjobb; közös parkolónál a hozzáférést és a munkavégzés feltételeit előre tisztázzuk. A víz- és áramigény a választott kezeléstől függ.",
+        "Az időpont előtt egyeztetjük a vállalt feladatokat és a végleges összeget, a kiszállási díjjal és az esetleges parkolási költséggel együtt. A munka végén közösen átnézzük az autót."
+      ]
+    }
+  },
+  {
+    "key": "torokbalint",
+    "analyticsId": "area-torokbalint",
+    "url": "/kiszallasi-teruletek/torokbalint/",
+    "name": "Törökbálint",
+    "label": "Törökbálint",
+    "title": "Mobil autókozmetika Törökbálinton | Autókozmetika helyben",
+    "heading": "Mobil autókozmetika Törökbálinton",
+    "deliveryZone": "nearby",
+    "lead": "Kézi autótisztítás és ápolás, előre egyeztetett törökbálinti helyszínen. Velem beszéled meg a részleteket, és én dolgozom az autódon.",
+    "description": "Kézi külső mosás, belső tisztítás és ápolás Törökbálinton, előre egyeztetett helyszínen. Csomagárak, kiszállási díj és közvetlen egyeztetés Rolanddal.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Törökbálint"
+    },
+    "intro": {
+      "heading": "Autókozmetika Törökbálinton, az autódnál",
+      "paragraphs": [
+        "Ha Törökbálinton parkol az autód, és tisztább külsőt, rendezett belteret vagy teljes külső-belső ápolást szeretnél, a megbeszélt, alkalmas helyszínen elvégzem a munkát. A helyszín és az időpont egyeztetése után a tisztítás idejét szabadon használhatod a dolgaidra.",
+        "Az elején átbeszéljük, milyen eredményt szeretnél, az átadáskor pedig együtt megnézzük az autót. A csomagok tartalma és alapára ugyanaz, mint a szolgáltatásoldalakon; a kiszállás külön tétel."
+      ]
+    },
+    "process": {
+      "paragraphs": [
+        "Hívj fel, vagy hagyd meg a számod. Mondd el, hol áll az autó, milyen az állapota, és csak külső, csak belső vagy teljes tisztítást kérnél.",
+        "A pontos címmel együtt a munkaterületet is megbeszéljük. Olyan helyre van szükség, ahol körbe tudom járni az autót. Társasházi vagy más közös parkolónál a munkavégzés lehetőségét, a szükséges felszerelést és az esetleges parkolási díjat is előre tisztázzuk.",
+        "Szükség esetén fotókkal pontosítjuk a feladatot. A választott csomagot, a kiszállást, az esetleges további költségeket és az időpontot a munka előtt egyeztetjük. Belső tisztításnál az autó nyitását is megbeszéljük."
+      ]
+    }
+  },
+  {
+    "key": "szigetszentmiklos",
+    "analyticsId": "area-szigetszentmiklos",
+    "url": "/kiszallasi-teruletek/szigetszentmiklos/",
+    "name": "Szigetszentmiklós",
+    "label": "Szigetszentmiklós",
+    "title": "Mobil autókozmetika Szigetszentmiklóson | Autókozmetika helyben",
+    "heading": "Mobil autókozmetika Szigetszentmiklóson",
+    "deliveryZone": "nearby",
+    "lead": "Kézi külső mosás, belső tisztítás és ápolás, előre egyeztetett helyszínen. Mondd el, hol áll az autód, és milyen munkát szeretnél, a részleteket közvetlenül velem beszéled meg.",
+    "description": "Külső mosás és belső tisztítás Szigetszentmiklóson, egyeztetett helyszínen. Csomagárak, kiszállási feltételek és közvetlen egyeztetés Rolanddal.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Szigetszentmiklós"
+    },
+    "intro": {
+      "heading": "Autókozmetika Szigetszentmiklóson, ahol az autód parkol",
+      "paragraphs": [
+        "Ha Szigetszentmiklóson parkol az autód, és külső mosásra, belső tisztításra vagy a kettőre együtt van szükséged, előre egyeztetett, alkalmas helyszínen elvégzem a munkát. Lakihegyről is kereshetsz: a pontos címet és a munkaterületet az időpont előtt megbeszéljük.",
+        "A tisztítás alatt nyugodtan intézheted a dolgaidat. Az elején egyeztetjük a kért feladatokat, az átadáskor pedig együtt átnézzük az autót. A külön külső, belső és teljes csomagok tartalmát és alapárát lent találod."
+      ]
+    },
+    "process": {
+      "paragraphs": [
+        "Hívj fel, vagy hagyd meg a számod, és visszahívlak. A pontos cím, az autó típusa és állapota alapján beszéljük meg, milyen tisztításra van szükséged. Ha indokolt, néhány fotót is kérek.",
+        "Olyan munkaterületre van szükség, ahol körbe tudom járni az autót. Saját kocsibeálló vagy más alkalmas magánterület a legjobb. Közös parkolónál előre tisztázzuk, hogy ott elvégezhető-e a munka, és megbeszéljük a választott kezeléshez szükséges helyszíni feltételeket.",
+        "A feladatokat, az időpontot és a végleges összeget előre egyeztetjük, a kiszállással és az esetleges parkolási költséggel együtt. Belső tisztításnál az autó nyitását is megbeszéljük. Feláras munkát csak a jóváhagyásoddal végzek."
+      ]
+    }
+  }
+]

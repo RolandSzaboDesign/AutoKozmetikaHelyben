@@ -151,6 +151,12 @@ for (const [key, treatment] of Object.entries(treatments)) {
 }
 
 const home = pages.get(path.join(root, 'index.html'));
+const siteFaq = require('../src/_data/siteFaq')();
+const homeSchemas = [...home.matchAll(/<script\b[^>]*type=['"]application\/ld\+json['"][^>]*>([\s\S]*?)<\/script>/g)]
+  .flatMap((match) => JSON.parse(match[1]));
+const homeFaqSchema = homeSchemas.find((schema) => schema['@type'] === 'FAQPage');
+assert.deepEqual(homeFaqSchema.mainEntity.map((item) => item.acceptedAnswer.text), siteFaq.map((item) => item.answer));
+for (const item of siteFaq) assert(home.includes(item.answer), 'Home FAQ differs: ' + item.id);
 assert.equal((home.match(/data-gallery-index=/g) || []).length, 6);
 assert(!home.includes('steps__number') && !home.includes('final-cta'));
 assert.equal((home.match(/class=['"]service-card['"]/g) || []).length, 4);
@@ -159,6 +165,41 @@ assert(home.includes('gallery.js'));
 for (const treatment of catalog.standalonePages)
   assert(home.includes("href='" + treatment.url + "'"), 'Home link missing: ' + treatment.name);
 assert(!fs.existsSync(path.resolve(__dirname, '../src/_data/packages.json')));
+const locationPages = require('../src/_data/locationPages')();
+const sitemap = fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8');
+for (const location of locationPages) {
+  const html = pages.get(path.join(root, location.url, 'index.html'));
+  assert(html, location.key + ': local page missing');
+  assert(html.includes("rel='canonical' href='" + site.url + location.url + "'"));
+  assert(sitemap.includes('<loc>' + site.url + location.url + '</loc>'));
+  assert(html.includes("data-area-page='" + location.analyticsId + "'"));
+  assert(analyticsSource.includes("'" + location.analyticsId + "'"), location.key + ': analytics allowlist missing');
+  assert(html.includes(location.deliveryLabel));
+  assert.equal(location.deliveryFee, site.travelFees[location.deliveryZone]);
+  assert.equal((html.match(/Mennyibe kerül a tisztítás és a kiszállás\?/g) || []).length, 1);
+  if (location.deliveryFee > 0) assert(!html.includes('Ingyenes XXII. kerületi kiszállás'));
+  assert(html.includes('callback-form') && html.includes('mobile-contact'));
+  const schemas = [...html.matchAll(/<script\b[^>]*type=['"]application\/ld\+json['"][^>]*>([\s\S]*?)<\/script>/g)]
+    .flatMap((match) => JSON.parse(match[1]));
+  const service = schemas.find((schema) => schema['@type'] === 'Service');
+  assert.deepEqual(service.areaServed, location.areaServed);
+  assert.equal(service.url, site.url + location.url);
+  for (const item of Object.values(services)) {
+    const offer = service.offers.find((offer) => offer.url === site.url + item.url);
+    assert.equal(offer.price, item.price);
+    assert.equal(offer.priceCurrency, 'HUF');
+    assert(offer.description.includes(location.deliveryDescription));
+    assert(html.includes("href='" + item.url + "'"));
+  }
+  const breadcrumb = schemas.find((schema) => schema['@type'] === 'BreadcrumbList');
+  assert.equal(breadcrumb.itemListElement.at(-1).item, service.url);
+  for (const item of location.faq) {
+    assert(html.includes(item.question) && html.includes(item.answer));
+  }
+}
+const areas = pages.get(path.join(root, 'kiszallasi-teruletek/index.html'));
+assert(areas && areas.includes('callback-form'));
+assert(sitemap.includes('<loc>' + site.url + '/kiszallasi-teruletek/</loc>'));
 console.log(
   `PASS: ${pages.size} pages, ${linkCount} local links/assets, schemas, forms, service contents and shared components.`,
 );
