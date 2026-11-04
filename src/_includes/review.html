@@ -2,12 +2,7 @@
   <div class='review__stars' role='img' aria-label='5 csillag az 5-ből'>
     <span aria-hidden='true'> ★★★★★ </span>
   </div>
-  <p>
-    „
-    <span class='review__full'>{{ item.text | escape }}</span
-    ><span class='review__short'>{{ item.shortText | escape }}</span>
-    ”
-  </p>
+  <p><span class='review__full'>„{{ item.text | strip | escape }}”</span><span class='review__short'>„{{ item.shortText | strip | escape }}”</span></p>
   <footer>
     <strong>
       {{ item.author | escape }}

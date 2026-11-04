@@ -528,6 +528,12 @@ p + p {
   object-fit: contain;
 }
 
+@media (min-width: 1024px) {
+  .brand {
+    font-size: 1.5rem;
+  }
+}
+
 .brand__accent {
   color: var(--teal);
 }
@@ -1508,15 +1514,28 @@ h2 {
   align-items: center;
 }
 
-@media (max-width: 699px) {
+@media (max-width: 767.98px) {
   html {
-    scroll-padding-top: 120px;
+    scroll-padding-top: 132px;
   }
 
   .site-header .site-header__inner {
     flex-wrap: wrap;
-    gap: 0;
-    padding-block: 8px;
+    gap: 8px 0;
+    padding-block: 12px;
+  }
+
+  .site-header .brand {
+    font-size: 1.06rem;
+  }
+
+  .site-header__actions > .button {
+    display: none;
+  }
+
+  .site-header__phone {
+    min-width: 44px;
+    justify-content: center;
   }
 
   .site-header .brand__accent {
@@ -1612,6 +1631,7 @@ h2 {
   font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.45;
+  text-align: left;
 }
 
 .hero-pricing__note {
@@ -1619,10 +1639,13 @@ h2 {
   font-size: 0.75rem;
   line-height: 1.55;
   color: var(--muted);
+  text-align: left;
 }
 
 .hero-pricing__summary {
   grid-column: 1 / -1;
+  padding-left: 40px;
+  text-align: left;
   font-size: 0.82rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2190,6 +2213,9 @@ h2 {
   .hero-pricing__name {
     gap: 8px;
   }
+  .hero-pricing__summary {
+    padding-left: 30px;
+  }
   .hero-pricing__name .service-icon {
     width: 22px;
     height: 22px;
@@ -2549,4 +2575,88 @@ main h3 + p[class]:where(:not(.service-card__price, .treatment__price)) {
   min-height: 44px;
   color: var(--teal);
   font-weight: 600;
+}
+
+@media (max-width: 1023.98px) {
+  .home-hero,
+  .service-page__hero,
+  .service-hub__hero {
+    text-align: center;
+  }
+
+  .home-hero__layout,
+  .service-page__hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .home-hero .hero-pricing {
+    width: 100%;
+    max-width: 680px;
+    margin-inline: auto;
+  }
+
+  .home-hero__intro,
+  .home-hero__lead,
+  .service-page__hero h1,
+  .service-page__lead,
+  .service-page__price-panel,
+  .service-page__photo,
+  .service-hub__lead,
+  .treatment-page__requirement {
+    margin-inline: auto;
+  }
+
+  .home-hero__intro,
+  .service-page__photo {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .service-page__photo {
+    max-width: 680px;
+  }
+
+  .home-hero__actions,
+  .service-page__hero-actions,
+  .service-page__price-facts,
+  .service-hub__jump-links,
+  .home-hero .eyebrow,
+  .service-page__hero .eyebrow,
+  .service-hub__hero .eyebrow,
+  .home-hero .service-page__breadcrumb,
+  .service-page__hero .service-page__breadcrumb,
+  .service-hub__hero .service-page__breadcrumb {
+    justify-content: center;
+  }
+
+  .service-page__breadcrumb {
+    flex-wrap: wrap;
+  }
+
+  .home-hero .button,
+  .service-page__hero .button {
+    width: min(100%, 280px);
+    min-height: 48px;
+    justify-content: center;
+  }
+
+  .home-hero__review,
+  .service-page__review {
+    width: 100%;
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+  .home-hero .review,
+  .service-page__hero .review {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .home-hero .review footer,
+  .service-page__hero .review footer {
+    justify-content: center;
+  }
+
 }
