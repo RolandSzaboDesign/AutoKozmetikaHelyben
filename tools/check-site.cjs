@@ -81,7 +81,8 @@ for (const [file, html] of pages) {
     assert(html.includes('/assets/js/forms.js') && html.includes('/assets/js/analytics.js'));
   }
 }
-for (const service of Object.values(services)) {
+const serviceMedia = require('../src/_data/serviceMedia')();
+for (const [serviceKey, service] of Object.entries(services)) {
   const html = pages.get(path.join(root, service.url, 'index.html'));
   assert(html, service.url);
   assert(html.includes('"price":' + service.price));
@@ -97,6 +98,11 @@ for (const service of Object.values(services)) {
   assert.equal(lists.length, 2);
   assert.equal((lists[0][1].match(/<li>/g) || []).length, service.included.length);
   assert.equal((lists[1][1].match(/<li>/g) || []).length, service.extras.length);
+  const includedSection = html.match(/<section[^>]*aria-labelledby=['"]service-included['"][^>]*>([\s\S]*?)<\/section>/)[1];
+  assert(includedSection.includes("id='service-extras'"), serviceKey + ': extras must share the included section');
+  const media = serviceMedia[serviceKey];
+  assert.equal((html.match(/data-gallery-index=/g) || []).length, media.workPhotos.length + media.comparisons.length * 2, serviceKey + ': gallery incomplete');
+  assert.equal((html.match(/<dialog class=['"]gallery-viewer['"]/g) || []).length, 1, serviceKey + ': gallery viewer missing or duplicated');
   assert(fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8').includes(service.url));
 }
 

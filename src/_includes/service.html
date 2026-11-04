@@ -71,18 +71,15 @@ eleventyComputed:
           {%- endfor %}
         </div>
       {% endif %}
-    </div>
-  </section>
-  <section class='section' aria-labelledby='service-extras'>
-    <div class='container'>
-      <div>
+      <div class='service-page__extras' aria-labelledby='service-extras'>
         <h2 id='service-extras'>Külön kérhető kezelések</h2>
         <p class='service-page__intro'>{{ service.extrasIntro | escape }}</p>
         <span class='service-page__extra-badge'>Feláras extrák · az alapár nem tartalmazza</span>
+        {% render 'service-item-list.html', detailItems: service.extras, detailExtra: true, treatmentData: treatments %}
       </div>
-      {% render 'service-item-list.html', detailItems: service.extras, detailExtra: true, treatmentData: treatments %}
     </div>
   </section>
+  {% render 'work-media.html', media: serviceMedia[serviceKey] %}
   {% include 'contact.html' %}
   {% include 'faq.html' %}
   <nav class='section section--soft' aria-labelledby='service-related'>

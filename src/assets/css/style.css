@@ -158,6 +158,11 @@
   font-size: 0.75rem;
   font-weight: 700;
 }
+.service-page__extras {
+  margin-top: clamp(32px, 5vw, 56px);
+  padding-top: clamp(28px, 4vw, 40px);
+  border-top: 1px solid var(--line);
+}
 .service-page__review .reviews__source {
   margin-top: 12px;
 }
@@ -2453,9 +2458,19 @@ main h3 + p[class]:where(:not(.service-card__price, .treatment__price)) {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
+.treatment-comparison__caption {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
 .treatment-work__photos {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 24px;
+}
+.treatment-work__photos > figure:only-child {
+  width: 100%;
+  max-width: 680px;
 }
 .treatment-work .work__grid figure {
   margin: 0;

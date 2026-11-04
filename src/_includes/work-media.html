@@ -1,0 +1,29 @@
+{% if media.comparisons.size > 0 or media.workPhotos.size > 0 %}
+  <section class='section work treatment-work' aria-labelledby='work-title'>
+    <div class='container'>
+      <div class='section-heading'>
+        <h2 id='work-title'>{{ media.mediaTitle | default: 'Eredmények képekben' | escape }}</h2>
+        {% if media.mediaIntro %}<p>{{ media.mediaIntro | escape }}</p>{% endif %}
+      </div>
+      {% for comparison in media.comparisons %}
+        <div class='treatment-comparison'>
+          <div class='work__grid treatment-comparison__grid'>
+            {% assign beforeIndex = forloop.index0 | append: '-elotte' %}
+            {% assign afterIndex = forloop.index0 | append: '-utana' %}
+            {% render 'treatment-work-photo.html', photo: comparison.before, photoTitle: 'Előtte', photoIndex: beforeIndex %}
+            {% render 'treatment-work-photo.html', photo: comparison.after, photoTitle: 'Utána', photoIndex: afterIndex %}
+          </div>
+          {% if comparison.caption %}<p class='treatment-comparison__caption'>{{ comparison.caption | escape }}</p>{% endif %}
+        </div>
+      {% endfor %}
+      {% if media.workPhotos.size > 0 %}
+        <div class='work__grid treatment-work__photos'>
+          {% for photo in media.workPhotos %}
+            {% render 'treatment-work-photo.html', photo: photo, photoTitle: photo.title, photoIndex: forloop.index0 %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+    {% include 'gallery-viewer.html' %}
+  </section>
+{% endif %}

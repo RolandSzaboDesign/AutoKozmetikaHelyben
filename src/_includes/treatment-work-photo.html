@@ -1,7 +1,7 @@
 {% assign accessibleTitle = photoTitle | default: photo.alt | default: 'Fotó' %}
 <figure>
   <a href='{{ photo.large | default: photo.src | escape }}' data-gallery-index='{{ photoIndex }}' aria-label='{{ accessibleTitle | escape }}, kép nagyítása'>
-    <img src='{{ photo.src | escape }}' alt='{{ photo.alt | escape }}' width='{{ photo.width }}' height='{{ photo.height }}' loading='lazy' decoding='async'>
+    <img src='{{ photo.src | escape }}' alt='{{ photo.alt | escape }}' width='{{ photo.width }}' height='{{ photo.height }}' style='aspect-ratio: {{ photo.width }} / {{ photo.height }}' loading='lazy' decoding='async'>
   </a>
   <figcaption{% unless photoTitle %} hidden{% endunless %}>
     <strong class='gallery-title'>{{ accessibleTitle | escape }}</strong>
