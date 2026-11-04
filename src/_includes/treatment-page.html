@@ -18,6 +18,7 @@ eleventyComputed:
           <p class='service-page__lead'>{{ treatment.lead | escape }}</p>
           <div class='service-page__price-panel'>
             {% render 'price.html', priceValue: treatment.price, priceFrom: treatment.from %}
+            <p class='service-page__delivery'><strong>A XXII. kerületben a kiszállást is tartalmazza.</strong></p>
             <p>{{ treatment.priceContext | escape }}</p>
           </div>
           <a class='button' href='#kapcsolat'>Kapcsolatfelvétel</a>

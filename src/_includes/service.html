@@ -18,6 +18,24 @@ eleventyComputed:
           <p class='service-page__lead'>{{ service.lead | escape }}</p>
           <div class='service-page__price-panel'>
             {% render 'price.html', priceValue: service.price %}
+            <dl class='service-page__price-facts'>
+              <div>
+                <dt>Becsült idő</dt>
+                <dd>{{ service.estimatedDuration | escape }}</dd>
+              </div>
+              <div>
+                <dt>Kiszállás</dt>
+                <dd>A XXII. kerületben az árban</dd>
+              </div>
+            </dl>
+            {% if service.bundleComponents %}
+              {% assign separatePrice = 0 %}
+              {% for componentKey in service.bundleComponents %}
+                {% assign separatePrice = separatePrice | plus: servicePages[componentKey].price %}
+              {% endfor %}
+              {% assign bundleSaving = separatePrice | minus: service.price %}
+              <p class='service-page__saving'><strong>{{ bundleSaving | forint }} Ft-tal kedvezőbb, mint külön.</strong></p>
+            {% endif %}
             <p>Személyautókra és személyautó méretű crossoverekre. A végleges árat előre egyeztetjük.</p>
           </div>
           <div class='service-page__hero-actions'>

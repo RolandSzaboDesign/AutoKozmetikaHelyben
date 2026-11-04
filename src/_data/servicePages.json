@@ -2,8 +2,9 @@
   "exterior": {
     "id": "kulso-vedelem",
     "name": "Alapos külső mosás és védelem",
-    "lead": "Kézi mosás, külső műanyagápolás és kerámiás spray- vagy waxvédelem. Házhoz megyek, előre egyeztetett helyszínre.",
+    "lead": "Kézi külső mosás, falc- és felnitisztítás, gumiápolás, külső üvegtisztítás, külső műanyagok tisztítása és ápolása, kerámiás waxvédelem.",
     "price": 14900,
+    "estimatedDuration": "2 óra",
     "included": [
       {
         "name": "Karosszéria",
@@ -23,7 +24,7 @@
       },
       {
         "name": "Fényezésvédelem",
-        "text": "Kerámiás spray- vagy waxvédelem, a helyszínhez igazított eljárással."
+        "text": "Kerámiás waxvédelem a megtisztított fényezésen."
       },
       {
         "name": "Külső üvegek",
@@ -51,7 +52,7 @@
       {
         "question": "Csak egy gyors külső frissítés kell?",
         "text": "Kézi mosás és gyorsfényesítő ápolás a rendezett külsőért.",
-        "label": "Gyors mosás",
+        "label": "Gyors mosás + gyorsfény",
         "href": "/szolgaltatasok/gyors-mosas/",
         "id": "kulso-mosas"
       },
@@ -77,7 +78,7 @@
       },
       {
         "question": "Milyen védelmet kap az autó? Polírozást is tartalmaz a csomag?",
-        "answer": "A helyszínhez igazított kerámiás spray-t vagy waxot használok. A szolgáltatás polírozást nem tartalmaz."
+        "answer": "A megtisztított fényezés kerámiás waxvédelmet kap. A szolgáltatás polírozást nem tartalmaz."
       },
       {
         "question": "Mire vonatkozik az alapár, és mikor változhat?",
@@ -109,14 +110,15 @@
     },
     "reviewIndex": 0,
     "extrasIntro": "Az extrák tartalmát és díját a munka előtt egyeztetjük. A röprozsda- és vízkőoldáshoz megfelelő vizes öblítés szükséges.",
-    "metaDescription": "Kézi külső autómosás, külső műanyagápolás és kerámiás spray- vagy waxvédelem Budapest XXII. kerületében, Szigetszentmiklóson és környékükön."
+    "metaDescription": "Kézi külső autómosás, külső műanyagápolás és kerámiás waxvédelem Budapest XXII. kerületében, Szigetszentmiklóson és környékükön."
   },
   "quick": {
     "id": "kulso-mosas",
-    "name": "Gyors mosás",
+    "name": "Gyors mosás + gyorsfény",
     "price": 9900,
+    "estimatedDuration": "90 perc",
     "url": "/szolgaltatasok/gyors-mosas/",
-    "lead": "Kézi külső mosás, tiszta üvegek és ápolt kerekek, gyorsfényesítő ápolással. Házhoz megyek, előre egyeztetett helyszínre.",
+    "lead": "Kézi külső mosás, egyszerű falctisztítás, felnik külső felületének tisztítása, gumiápolás, külső üvegtisztítás, szintetikus gyorsviaszos ápolás.",
     "image": {
       "src": "/assets/images/szolgaltatasok/gyors-mosas.webp",
       "width": 1200,
@@ -174,7 +176,7 @@
     "faq": [
       {
         "question": "Miben más az alapos külső mosás?",
-        "answer": "Az alapos külső csomag a kézi mosás mellett külső műanyagápolást és kerámiás spray- vagy waxvédelmet is tartalmaz. A Gyors mosás befejező kezelése szintetikus gyorsfényesítő ápolás."
+        "answer": "Az alapos külső csomag a kézi mosás mellett külső műanyagápolást és kerámiás waxvédelmet is tartalmaz. A Gyors mosás befejező kezelése szintetikus gyorsfényesítő ápolás."
       },
       {
         "question": "Szükséges slagot biztosítanom?",
@@ -186,7 +188,7 @@
       },
       {
         "question": "Mennyi időre lesz szükség az autóra?",
-        "answer": "Normál állapotú személyautónál általában 60–90 perccel számolj. A pontos időt a méret és a szennyezettség alapján előre egyeztetjük."
+        "answer": "Normál állapotú személyautónál körülbelül 90 perccel számolj. A pontos időt a méret és a szennyezettség alapján előre egyeztetjük."
       },
       {
         "question": "Milyen helyszínen tudsz dolgozni?",
@@ -204,7 +206,7 @@
     "related": [
       {
         "question": "Több külső ápolást és védelmet szeretnél?",
-        "text": "Alapos külső mosás műanyagápolással és kerámiás védelemmel.",
+        "text": "Alapos külső mosás műanyagápolással és kerámiás waxvédelemmel.",
         "label": "Alapos külső mosás és védelem",
         "href": "/szolgaltatasok/alapos-kulso-mosas-es-vedelem/",
         "id": "kulso-vedelem"
@@ -224,14 +226,15 @@
         "id": "teljes"
       }
     ],
-    "metaDescription": "Gyors mosás háznál Budapest XXII. kerületében, Szigetszentmiklóson és környékükön."
+    "metaDescription": "Kézi külső mosás szintetikus gyorsviaszos ápolással, felni- és üvegtisztítással, gumiápolással. Házhoz megyek Budapest XXII. kerületében és környékén."
   },
   "interior": {
     "id": "belso",
     "name": "Belső tisztítás és ápolás",
     "price": 19900,
+    "estimatedDuration": "3 óra",
     "url": "/szolgaltatasok/belso-tisztitas-es-apolas/",
-    "lead": "Aprólékos beltéri tisztítás a tárolóktól a szellőzőkig, felületi üléskezeléssel és műanyagápolással. Házhoz megyek, előre egyeztetett helyszínre.",
+    "lead": "Műszerfal, ajtókárpitok, kezelőszervek, tárolók és szellőzők tisztítása, felületi ülés- és szőnyegtisztítás, padló és csomagtér portalanítása, belső üveg- és falctisztítás, műanyagápolás, bőrüléseknél tisztítás és bőrápolás.",
     "image": {
       "src": "/assets/images/szolgaltatasok/belso-tisztitas-es-apolas.webp",
       "width": 1200,
@@ -302,7 +305,7 @@
       },
       {
         "question": "Mennyi időre lesz szükség az autóra?",
-        "answer": "Az időigényt az autó mérete és állapota alapján előre egyeztetjük. A bőrülések, a makacs foltok és a sok állatszőr hosszabb munkát jelenthetnek, ezért ezekről már az ajánlatkéréskor beszéljünk."
+        "answer": "Normál állapotú személyautónál körülbelül 3 órával számolj. Az időigényt az autó mérete és állapota alapján előre egyeztetjük. A bőrülések, a makacs foltok és a sok állatszőr hosszabb munkát jelenthetnek."
       },
       {
         "question": "Ott kell maradnom a munka alatt?",
@@ -320,7 +323,7 @@
     "related": [
       {
         "question": "Több külső ápolást és védelmet szeretnél?",
-        "text": "Alapos külső mosás műanyagápolással és kerámiás védelemmel.",
+        "text": "Alapos külső mosás műanyagápolással és kerámiás waxvédelemmel.",
         "label": "Alapos külső mosás és védelem",
         "href": "/szolgaltatasok/alapos-kulso-mosas-es-vedelem/",
         "id": "kulso-vedelem"
@@ -328,7 +331,7 @@
       {
         "question": "Csak egy gyors külső frissítés kell?",
         "text": "Kézi mosás és gyorsfényesítő ápolás a rendezett külsőért.",
-        "label": "Gyors mosás",
+        "label": "Gyors mosás + gyorsfény",
         "href": "/szolgaltatasok/gyors-mosas/",
         "id": "kulso-mosas"
       },
@@ -346,8 +349,10 @@
     "id": "teljes",
     "name": "Külső-belső tisztítás és ápolás",
     "price": 29900,
+    "estimatedDuration": "5 óra",
+    "bundleComponents": ["exterior", "interior"],
     "url": "/szolgaltatasok/kulso-belso-tisztitas-es-apolas/",
-    "lead": "A teljes alapos külső és a teljes belső tisztítás egy alkalommal, tartalmi rövidítés nélkül. Kívül-belül tiszta, ápolt autó, egyetlen kiszállással.",
+    "lead": "Kézi külső mosás, falc-, felni- és üvegtisztítás, gumi- és külső műanyagápolás, kerámiás waxvédelem, aprólékos beltértisztítás a kezelőszervektől a csomagtérig, felületi ülés- és szőnyegtisztítás, belső üvegtisztítás és műanyagápolás, bőrüléseknél bőrápolás.",
     "image": {
       "src": "/assets/images/szolgaltatasok/kulso-belso-tisztitas-es-apolas.webp",
       "width": 1200,
@@ -366,7 +371,7 @@
       },
       {
         "name": "Külső ápolás és védelem",
-        "text": "Külső műanyagápolás és a helyszínhez igazított kerámiás spray- vagy waxvédelem."
+        "text": "Külső műanyagápolás és kerámiás waxvédelem."
       },
       {
         "name": "Belső felületek és részletek",
@@ -435,7 +440,7 @@
       },
       {
         "question": "Mennyi időre lesz szükség az autóra?",
-        "answer": "A teljes külső-belső munkára több órát érdemes szánni. A pontos időigényt az autó mérete, állapota és a kért extrák alapján előre egyeztetjük."
+        "answer": "Normál állapotú személyautónál körülbelül 5 órával számolj a teljes külső-belső munkára. A pontos időigényt az autó mérete, állapota és a kért extrák alapján előre egyeztetjük."
       },
       {
         "question": "Szükséges slagot biztosítanom?",
@@ -453,7 +458,7 @@
     "related": [
       {
         "question": "Több külső ápolást és védelmet szeretnél?",
-        "text": "Alapos külső mosás műanyagápolással és kerámiás védelemmel.",
+        "text": "Alapos külső mosás műanyagápolással és kerámiás waxvédelemmel.",
         "label": "Alapos külső mosás és védelem",
         "href": "/szolgaltatasok/alapos-kulso-mosas-es-vedelem/",
         "id": "kulso-vedelem"
@@ -461,7 +466,7 @@
       {
         "question": "Csak egy gyors külső frissítés kell?",
         "text": "Kézi mosás és gyorsfényesítő ápolás a rendezett külsőért.",
-        "label": "Gyors mosás",
+        "label": "Gyors mosás + gyorsfény",
         "href": "/szolgaltatasok/gyors-mosas/",
         "id": "kulso-mosas"
       },

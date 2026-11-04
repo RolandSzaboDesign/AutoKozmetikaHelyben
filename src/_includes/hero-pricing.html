@@ -9,13 +9,13 @@
           class='hero-pricing__option'
           href='{{ package.url }}'
           data-service='{{ package.id }}'
-          aria-label='{{ package.name | escape }} – {{ package.price | forint }} Ft alapár – részletek'
         >
           <span class='hero-pricing__name'>
             {%- render 'service-icon.html', iconId: package.id -%}
             <span>{{ package.name | escape }}</span></span
           >
-          <span class='hero-pricing__price'>{% render 'price.html', priceValue: package.price %}</span>
+          <span class='hero-pricing__price'>{% render 'price.html', priceValue: package.price, priceFrom: false %}</span>
+          <span class='hero-pricing__summary'>{{ card.heroSummary | escape }}</span>
         </a>
       </li>
     {% endfor %}

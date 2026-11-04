@@ -118,6 +118,30 @@
   font-size: 0.78rem;
   margin-top: 10px;
 }
+.service-page__price-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 28px;
+  margin: 16px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.service-page__price-facts dt {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.service-page__price-facts dd {
+  margin: 3px 0 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.service-page__price-panel .service-page__saving,
+.service-page__price-panel .service-page__delivery {
+  color: var(--teal);
+  font-size: 0.85rem;
+  margin-top: 14px;
+}
 .service-page__hero-actions {
   display: flex;
   align-items: center;
@@ -1572,6 +1596,18 @@ h2 {
   font-size: 0.75rem;
   line-height: 1.55;
   color: var(--muted);
+}
+
+.hero-pricing__summary {
+  grid-column: 1 / -1;
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.home-hero .hero-pricing__option:has(.hero-pricing__summary) {
+  row-gap: 6px;
 }
 
 .hero-pricing__details {

@@ -160,7 +160,7 @@ for (const item of siteFaq) assert(home.includes(item.answer), 'Home FAQ differs
 assert.equal((home.match(/data-gallery-index=/g) || []).length, 6);
 assert(!home.includes('steps__number') && !home.includes('final-cta'));
 assert.equal((home.match(/class=['"]service-card['"]/g) || []).length, 4);
-assert.equal((home.match(/class=['"]price__suffix['"]/g) || []).length, 8);
+assert.equal((home.match(/class=['"]price__suffix['"]/g) || []).length, 4);
 assert(home.includes('gallery.js'));
 for (const treatment of catalog.standalonePages)
   assert(home.includes("href='" + treatment.url + "'"), 'Home link missing: ' + treatment.name);
